@@ -10,19 +10,57 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkRangeInt(value: -3)
+        checkRangeInt(value: 2)
+        checkRangeInt(value: 5)
         
-        ifStatement()
-        ifElseStatement()
-        ifElseIfStatement()
-        ifNesting()
-        ifAnd()
-        ifOr()
+        checkRangeDouble(0.1)
+        checkRangeDouble(1.0)
+        checkRangeDouble(1.5)
+        
+        changeColor()
+        
+        let tokuten = arc4random_uniform(101)
+        let score = (sugaku:arc4random_uniform(101), eigo:arc4random_uniform(101))
+        
+        ifStatement(tokuten)
+        ifElseStatement(tokuten)
+        ifElseIfStatement(tokuten)
+        ifNesting(score.sugaku, score.eigo)
+        ifAnd(score.sugaku, score.eigo)
+        ifOr(score.sugaku, score.eigo)
         ifComma()
         
     }
     
+    //p68List　レンジ演算子の変化系
+       func checkRangeInt(value : Int){
+           let rangeInt = -5..<5
+           print(rangeInt.contains(value))
+       }
+    func checkRangeDouble(_ value : Double){
+            let rangeDouble = 0.0...1.0
+            print(rangeDouble.contains(value))
+    }
+    func changeColor(){
+            //p70List ビット演算子
+            //16進数RRGGBBをR、G、Bに分解
+            let RGB: UInt32 = 0x40E0D0
+            let red = (RGB & 0xFF0000) >> 16
+            let green = (RGB & 0x00FF00) >> 8
+            let blue = RGB & 0x0000FF
+            print("red \(red), green \(green), blue \(blue)")
+
+            //背景色に設定
+            let R = CGFloat(red)/255
+            let G = CGFloat(green)/255
+            let B = CGFloat(blue)/255
+            view.backgroundColor = UIColor(red:R, green:G, blue:B, alpha:1)
+    }
+    
+    
     //p73List　if文
-    func ifStatement(){
+    func ifStatement(_ tokuten:UInt32){
         let tokuten = 85
         if tokuten>=80 {
             print("素晴らしい!")
@@ -31,8 +69,8 @@ class ViewController: UIViewController {
     }
     
     //p74List if-else文
-    func ifElseStatement(){
-        let tokuten = arc4random_uniform(101)
+    func ifElseStatement(_ tokuten:UInt32){
+        
         if tokuten>=60 {
             print("おめでとう！合格です。")
         } else {
@@ -42,8 +80,7 @@ class ViewController: UIViewController {
     }
 
     //p75List if-else-if文
-    func ifElseIfStatement(){
-        let tokuten = arc4random_uniform(101)
+    func ifElseIfStatement(_ tokuten:UInt32){
         if tokuten<30 {
             print("がんばりましょう")
         } else if tokuten<80{
@@ -55,10 +92,7 @@ class ViewController: UIViewController {
     }
     
     //p75List ネスティング
-    func ifNesting(){
-        let sugaku = arc4random_uniform(101)
-        let eigo = arc4random_uniform(101)
-        
+    func ifNesting(_ sugaku:UInt32,_ eigo:UInt32){
         if sugaku>=50 {
             if eigo>=60 {
                 print("おめでとう！合格")
@@ -72,10 +106,7 @@ class ViewController: UIViewController {
     }
     
     //p76List if and
-    func ifAnd(){
-        let sugaku = arc4random_uniform(101)
-        let eigo = arc4random_uniform(101)
-        
+    func ifAnd(_ sugaku:UInt32,_ eigo:UInt32){
         if (sugaku>=50) && (eigo>=60) {
             print("おめでとう！合格")
         } else {
@@ -85,10 +116,7 @@ class ViewController: UIViewController {
     }
     
     //p75List if or
-    func ifOr(){
-        let sugaku = arc4random_uniform(101)
-        let eigo = arc4random_uniform(101)
-        
+    func ifOr(_ sugaku:UInt32,_ eigo:UInt32){
         if (sugaku>=60) || (eigo>=60) {
             print("おめでとう！合格")
         } else {
