@@ -15,6 +15,12 @@
 		C615B696252AEFD5008D3F0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C615B694252AEFD5008D3F0C /* LaunchScreen.storyboard */; };
 		C615B6A1252AEFD5008D3F0C /* SwiftStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B6A0252AEFD5008D3F0C /* SwiftStudyTests.swift */; };
 		C615B6AC252AEFD5008D3F0C /* SwiftStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B6AB252AEFD5008D3F0C /* SwiftStudyUITests.swift */; };
+		C62581D5252EEB65009C884C /* SwitchSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581D4252EEB65009C884C /* SwitchSample.swift */; };
+		C62581DA252EED99009C884C /* IfSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581D9252EED99009C884C /* IfSample.swift */; };
+		C62581DF252EEF00009C884C /* OperatorSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581DE252EEF00009C884C /* OperatorSample.swift */; };
+		C62581E4252EF0EC009C884C /* ForSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581E3252EF0EC009C884C /* ForSample.swift */; };
+		C62581E9252EF18A009C884C /* WhileSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581E8252EF18A009C884C /* WhileSample.swift */; };
+		C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581ED252EF247009C884C /* LoopOptionSample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		C615B6A7252AEFD5008D3F0C /* SwiftStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C615B6AB252AEFD5008D3F0C /* SwiftStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyUITests.swift; sourceTree = "<group>"; };
 		C615B6AD252AEFD5008D3F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C62581D4252EEB65009C884C /* SwitchSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSample.swift; sourceTree = "<group>"; };
+		C62581D9252EED99009C884C /* IfSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfSample.swift; sourceTree = "<group>"; };
+		C62581DE252EEF00009C884C /* OperatorSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorSample.swift; sourceTree = "<group>"; };
+		C62581E3252EF0EC009C884C /* ForSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForSample.swift; sourceTree = "<group>"; };
+		C62581E8252EF18A009C884C /* WhileSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhileSample.swift; sourceTree = "<group>"; };
+		C62581ED252EF247009C884C /* LoopOptionSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopOptionSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +114,12 @@
 				C615B689252AEFD5008D3F0C /* AppDelegate.swift */,
 				C615B68B252AEFD5008D3F0C /* SceneDelegate.swift */,
 				C615B68D252AEFD5008D3F0C /* ViewController.swift */,
+				C62581ED252EF247009C884C /* LoopOptionSample.swift */,
+				C62581E8252EF18A009C884C /* WhileSample.swift */,
+				C62581E3252EF0EC009C884C /* ForSample.swift */,
+				C62581DE252EEF00009C884C /* OperatorSample.swift */,
+				C62581D9252EED99009C884C /* IfSample.swift */,
+				C62581D4252EEB65009C884C /* SwitchSample.swift */,
 				C615B68F252AEFD5008D3F0C /* Main.storyboard */,
 				C615B692252AEFD5008D3F0C /* Assets.xcassets */,
 				C615B694252AEFD5008D3F0C /* LaunchScreen.storyboard */,
@@ -259,8 +277,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C615B68E252AEFD5008D3F0C /* ViewController.swift in Sources */,
+				C62581DA252EED99009C884C /* IfSample.swift in Sources */,
+				C62581E4252EF0EC009C884C /* ForSample.swift in Sources */,
+				C62581D5252EEB65009C884C /* SwitchSample.swift in Sources */,
 				C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */,
+				C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */,
 				C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */,
+				C62581DF252EEF00009C884C /* OperatorSample.swift in Sources */,
+				C62581E9252EF18A009C884C /* WhileSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
