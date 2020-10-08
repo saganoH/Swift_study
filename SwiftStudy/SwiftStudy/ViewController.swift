@@ -4,7 +4,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        sec2Sample()
         
+        
+    }
+    
+    func sec2Sample() {
         let operatorC = OperatorSample()
         operatorC.checkRangeInt(value: -3)
         operatorC.checkRangeInt(value: 2)
@@ -12,7 +18,7 @@ class ViewController: UIViewController {
         operatorC.checkRangeDouble(0.1)
         operatorC.checkRangeDouble(1.0)
         operatorC.checkRangeDouble(1.5)
-        operatorC.changeColor()
+        operatorC.changeColor(vc: self)
         
         let tokuten = arc4random_uniform(101)
         let score = (sugaku:arc4random_uniform(101), eigo:arc4random_uniform(101))
@@ -52,9 +58,6 @@ class ViewController: UIViewController {
         loopC.whileBreak()
         loopC.loopLabel()
         loopC.loopLabelBreak()
-        
-        print("-----chapter2 done-----")
-        
     }
     
 }

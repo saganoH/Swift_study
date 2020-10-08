@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 class LoopOptionSample {
     //p92List continue

@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 class WhileSample {
     //p89List while文

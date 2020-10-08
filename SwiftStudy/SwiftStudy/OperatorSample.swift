@@ -1,6 +1,6 @@
 import UIKit
 
-class OperatorSample: UIViewController {
+class OperatorSample {
     //p68List　レンジ演算子の変化系
     func checkRangeInt(value: Int) {
         let rangeInt = -5..<5
@@ -13,7 +13,7 @@ class OperatorSample: UIViewController {
     }
 
     //p70List ビット演算子
-    func changeColor() {
+    func changeColor(vc: ViewController) {
         //16進数RRGGBBをR、G、Bに分解
         let RGB: UInt32 = 0x40E0D0
         let red = (RGB & 0xFF0000) >> 16
@@ -25,6 +25,6 @@ class OperatorSample: UIViewController {
         let R = CGFloat(red)/255
         let G = CGFloat(green)/255
         let B = CGFloat(blue)/255
-        view.backgroundColor = UIColor(red: R, green: G, blue: B, alpha: 1)
+        vc.view.backgroundColor = UIColor(red: R, green: G, blue: B, alpha: 1)
     }
 }

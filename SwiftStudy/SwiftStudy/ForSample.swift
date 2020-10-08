@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 class ForSample {
     //p85List for-in文
