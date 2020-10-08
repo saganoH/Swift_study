@@ -298,7 +298,7 @@ class ViewController: UIViewController {
     
     //p87List 飛び飛びで繰り返す
     func forInStride() {
-        for num in stride(from: 10, to: 30, by: 3){
+        for num in stride(from: 10, to: 30, by: 3) {
             print(num, terminator: ",")
         }
     }
