@@ -5,7 +5,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sec2Sample()
+        //sec2Sample()
         
         //section3
     
