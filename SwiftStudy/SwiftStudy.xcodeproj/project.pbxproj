@@ -18,6 +18,8 @@
 		C615B696252AEFD5008D3F0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C615B694252AEFD5008D3F0C /* LaunchScreen.storyboard */; };
 		C615B6A1252AEFD5008D3F0C /* SwiftStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B6A0252AEFD5008D3F0C /* SwiftStudyTests.swift */; };
 		C615B6AC252AEFD5008D3F0C /* SwiftStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B6AB252AEFD5008D3F0C /* SwiftStudyUITests.swift */; };
+		C6226A1F253541D400E2B794 /* FunctionSampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6226A1E253541D400E2B794 /* FunctionSampleTest.swift */; };
+		C6226A2625354AE400E2B794 /* FunctionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603F368253023F70005F46F /* FunctionSample.swift */; };
 		C62581D5252EEB65009C884C /* SwitchSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581D4252EEB65009C884C /* SwitchSample.swift */; };
 		C62581DA252EED99009C884C /* IfSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581D9252EED99009C884C /* IfSample.swift */; };
 		C62581DF252EEF00009C884C /* OperatorSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581DE252EEF00009C884C /* OperatorSample.swift */; };
@@ -60,6 +62,7 @@
 		C615B6A7252AEFD5008D3F0C /* SwiftStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C615B6AB252AEFD5008D3F0C /* SwiftStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyUITests.swift; sourceTree = "<group>"; };
 		C615B6AD252AEFD5008D3F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6226A1E253541D400E2B794 /* FunctionSampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionSampleTest.swift; sourceTree = "<group>"; };
 		C62581D4252EEB65009C884C /* SwitchSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSample.swift; sourceTree = "<group>"; };
 		C62581D9252EED99009C884C /* IfSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfSample.swift; sourceTree = "<group>"; };
 		C62581DE252EEF00009C884C /* OperatorSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorSample.swift; sourceTree = "<group>"; };
@@ -139,7 +142,11 @@
 			children = (
 				C615B6A0252AEFD5008D3F0C /* SwiftStudyTests.swift */,
 				C615B6A2252AEFD5008D3F0C /* Info.plist */,
+
+				C6226A1E253541D400E2B794 /* FunctionSampleTest.swift */,
+
 				105D4D93253539480062B0E3 /* OperatorSampleTests.swift */,
+
 			);
 			path = SwiftStudyTests;
 			sourceTree = "<group>";
@@ -300,6 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6226A1F253541D400E2B794 /* FunctionSampleTest.swift in Sources */,
+				C6226A2625354AE400E2B794 /* FunctionSample.swift in Sources */,
 				C615B6A1252AEFD5008D3F0C /* SwiftStudyTests.swift in Sources */,
 				105D4D94253539480062B0E3 /* OperatorSampleTests.swift in Sources */,
 				105D4D982535394F0062B0E3 /* OperatorSample.swift in Sources */,

@@ -2,8 +2,8 @@ import Foundation
 
 class FunctionSample {
    //p96List
-    func funcDice() -> Int {
-        let number = 1 + arc4random_uniform(6)
+    func funcDice(_ num: UInt32) -> Int {
+        let number = 1 + num
         return Int(number)
     }
     

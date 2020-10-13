@@ -7,45 +7,7 @@ class ViewController: UIViewController {
         
         //sec2Sample()
         
-        //section3
-    
-        let functionC = FunctionSample()
-        for _ in 1...5 {
-            let num = functionC.funcDice()
-            print(num)
-        }
-        
-        functionC.thanks(num:5)
-        functionC.thanks(num:0)
-        
-        functionC.half(num: 25)
-        functionC.half(num: 9)
-        functionC.half(num: 12)
-        
-        let price = functionC.price1(ninzu: 5)
-        print(price)
-        
-        let sum = functionC.sum(numbers: 0.1, 0.7, 1.6)
-        print(sum)
-        
-        functionC.price()
-        
-        let result = functionC.testResult(kokugo: 98, sugaku: 39, eigo: 56)
-        print("合計 \(result.total)")
-        print("平均 \(result.average)")
-        
-        let ans1 = functionC.additionInt(a: 2, b: 3)
-        let ans2 = functionC.multiplicationInt(c: 2, d: 3)
-        let ans3 = functionC.tripleCalcInt(a: 2, b: 3, c: 4)
-        print(ans1)
-        print(ans2)
-        print(ans3)
-        
-        let myBMI = functionC.bmi(weight: 56.0, height: 172.5)
-        print(myBMI)
-        
-        let area = functionC.triangleArea(30, 16.5)
-        print(area)
+        sec3Sample()
     }
     
     func sec2Sample() {
@@ -97,5 +59,44 @@ class ViewController: UIViewController {
         loopC.loopLabel()
         loopC.loopLabelBreak()
     }
-    
+
+    func sec3Sample() {
+        let functionC = FunctionSample()
+        for _ in 1...5 {
+            let num = functionC.funcDice(arc4random_uniform(6))
+            print(num)
+        }
+        
+        functionC.thanks(num:5)
+        functionC.thanks(num:0)
+        
+        functionC.half(num: 25)
+        functionC.half(num: 9)
+        functionC.half(num: 12)
+        
+        let price = functionC.price1(ninzu: 5)
+        print(price)
+        
+        let sum = functionC.sum(numbers: 0.1, 0.7, 1.6)
+        print(sum)
+        
+        functionC.price()
+        
+        let result = functionC.testResult(kokugo: 98, sugaku: 39, eigo: 56)
+        print("合計 \(result.total)")
+        print("平均 \(result.average)")
+        
+        let ans1 = functionC.additionInt(a: 2, b: 3)
+        let ans2 = functionC.multiplicationInt(c: 2, d: 3)
+        let ans3 = functionC.tripleCalcInt(a: 2, b: 3, c: 4)
+        print(ans1)
+        print(ans2)
+        print(ans3)
+        
+        let myBMI = functionC.bmi(weight: 56.0, height: 172.5)
+        print(myBMI)
+        
+        let area = functionC.triangleArea(30, 16.5)
+        print(area)
+    }
 }
