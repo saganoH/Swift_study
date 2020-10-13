@@ -67,7 +67,7 @@ class ViewController: UIViewController {
     func sec3Sample() {
         let functionC = FunctionSample()
         for _ in 1...5 {
-            let num = functionC.funcDice()
+            let num = functionC.funcDice(arc4random_uniform(6))
             print(num)
         }
         
