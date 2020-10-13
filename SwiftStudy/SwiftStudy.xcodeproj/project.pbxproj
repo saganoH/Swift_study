@@ -18,7 +18,6 @@
 		C615B696252AEFD5008D3F0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C615B694252AEFD5008D3F0C /* LaunchScreen.storyboard */; };
 		C615B6A1252AEFD5008D3F0C /* SwiftStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B6A0252AEFD5008D3F0C /* SwiftStudyTests.swift */; };
 		C615B6AC252AEFD5008D3F0C /* SwiftStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B6AB252AEFD5008D3F0C /* SwiftStudyUITests.swift */; };
-		C6226A1A2535383600E2B794 /* StringSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6226A192535383600E2B794 /* StringSample.swift */; };
 		C6226A1F253541D400E2B794 /* FunctionSampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6226A1E253541D400E2B794 /* FunctionSampleTest.swift */; };
 		C6226A2625354AE400E2B794 /* FunctionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603F368253023F70005F46F /* FunctionSample.swift */; };
 		C62581D5252EEB65009C884C /* SwitchSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581D4252EEB65009C884C /* SwitchSample.swift */; };
@@ -63,7 +62,6 @@
 		C615B6A7252AEFD5008D3F0C /* SwiftStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C615B6AB252AEFD5008D3F0C /* SwiftStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyUITests.swift; sourceTree = "<group>"; };
 		C615B6AD252AEFD5008D3F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6226A192535383600E2B794 /* StringSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSample.swift; sourceTree = "<group>"; };
 		C6226A1E253541D400E2B794 /* FunctionSampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionSampleTest.swift; sourceTree = "<group>"; };
 		C62581D4252EEB65009C884C /* SwitchSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSample.swift; sourceTree = "<group>"; };
 		C62581D9252EED99009C884C /* IfSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfSample.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 				C615B692252AEFD5008D3F0C /* Assets.xcassets */,
 				C615B694252AEFD5008D3F0C /* LaunchScreen.storyboard */,
 				C615B697252AEFD5008D3F0C /* Info.plist */,
-				C6226A192535383600E2B794 /* StringSample.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -299,7 +296,6 @@
 				C62581D5252EEB65009C884C /* SwitchSample.swift in Sources */,
 				C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */,
 				C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */,
-				C6226A1A2535383600E2B794 /* StringSample.swift in Sources */,
 				C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */,
 				C603F369253023F70005F46F /* FunctionSample.swift in Sources */,
 				C62581DF252EEF00009C884C /* OperatorSample.swift in Sources */,

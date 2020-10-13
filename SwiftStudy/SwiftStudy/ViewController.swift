@@ -6,12 +6,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //sec2Sample()
-        //sec3Sample()
         
-        //sec4
-        
-    
-        
+        sec3Sample()
     }
     
     func sec2Sample() {
@@ -63,7 +59,7 @@ class ViewController: UIViewController {
         loopC.loopLabel()
         loopC.loopLabelBreak()
     }
-    
+
     func sec3Sample() {
         let functionC = FunctionSample()
         for _ in 1...5 {
@@ -103,5 +99,4 @@ class ViewController: UIViewController {
         let area = functionC.triangleArea(30, 16.5)
         print(area)
     }
-    
 }
