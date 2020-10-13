@@ -66,17 +66,17 @@ class FunctionSample {
         return (total, ave)
     }
     
-    //p108List
-    func calc(a: Int, b: Int) -> Int {
+    //p108List 名前変更したためoverloadしてない
+    func additionInt(a: Int, b: Int) -> Int {
         return a + b
     }
     
     //p109List
-    func calc(c: Int, d: Int) -> Int {
+    func multiplicationInt(c: Int, d: Int) -> Int {
         return c * d
     }
     
-    func calc(a: Int, b: Int, c: Int) -> Int {
+    func tripleCalcInt(a: Int, b: Int, c: Int) -> Int {
         return (a + b) * c
     }
     

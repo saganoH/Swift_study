@@ -34,9 +34,9 @@ class ViewController: UIViewController {
         print("合計 \(result.total)")
         print("平均 \(result.average)")
         
-        let ans1 = functionC.calc(a: 2, b: 3)
-        let ans2 = functionC.calc(c: 2, d: 3)
-        let ans3 = functionC.calc(a: 2, b: 3, c: 4)
+        let ans1 = functionC.additionInt(a: 2, b: 3)
+        let ans2 = functionC.multiplicationInt(c: 2, d: 3)
+        let ans3 = functionC.tripleCalcInt(a: 2, b: 3, c: 4)
         print(ans1)
         print(ans2)
         print(ans3)

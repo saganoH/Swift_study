@@ -93,7 +93,6 @@
 		C615B67D252AEFD4008D3F0C = {
 			isa = PBXGroup;
 			children = (
-				C603F368253023F70005F46F /* FunctionSample.swift */,
 				C615B688252AEFD5008D3F0C /* SwiftStudy */,
 				C615B69F252AEFD5008D3F0C /* SwiftStudyTests */,
 				C615B6AA252AEFD5008D3F0C /* SwiftStudyUITests */,
@@ -114,6 +113,7 @@
 		C615B688252AEFD5008D3F0C /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				C603F368253023F70005F46F /* FunctionSample.swift */,
 				C615B689252AEFD5008D3F0C /* AppDelegate.swift */,
 				C615B68B252AEFD5008D3F0C /* SceneDelegate.swift */,
 				C615B68D252AEFD5008D3F0C /* ViewController.swift */,
