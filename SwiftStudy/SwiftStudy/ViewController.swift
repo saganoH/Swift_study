@@ -5,7 +5,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //sec2Sample()
+        sec2Sample()
         
         //section3
     
@@ -50,12 +50,12 @@ class ViewController: UIViewController {
     
     func sec2Sample() {
         let operatorC = OperatorSample()
-        operatorC.checkRangeInt(value: -3)
-        operatorC.checkRangeInt(value: 2)
-        operatorC.checkRangeInt(value: 5)
-        operatorC.checkRangeDouble(0.1)
-        operatorC.checkRangeDouble(1.0)
-        operatorC.checkRangeDouble(1.5)
+        _ = operatorC.checkRangeInt(value: -3)
+        _ = operatorC.checkRangeInt(value: 2)
+        _ = operatorC.checkRangeInt(value: 5)
+        _ = operatorC.checkRangeDouble(0.1)
+        _ = operatorC.checkRangeDouble(1.0)
+        _ = operatorC.checkRangeDouble(1.5)
         operatorC.changeColor(vc: self)
         
         let tokuten = arc4random_uniform(101)

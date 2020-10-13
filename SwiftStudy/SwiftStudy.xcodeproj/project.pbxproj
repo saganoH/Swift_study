@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		105D4D94253539480062B0E3 /* OperatorSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D4D93253539480062B0E3 /* OperatorSampleTests.swift */; };
+		105D4D982535394F0062B0E3 /* OperatorSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581DE252EEF00009C884C /* OperatorSample.swift */; };
 		C603F369253023F70005F46F /* FunctionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603F368253023F70005F46F /* FunctionSample.swift */; };
 		C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B689252AEFD5008D3F0C /* AppDelegate.swift */; };
 		C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B68B252AEFD5008D3F0C /* SceneDelegate.swift */; };
@@ -42,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		105D4D93253539480062B0E3 /* OperatorSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorSampleTests.swift; sourceTree = "<group>"; };
 		C603F368253023F70005F46F /* FunctionSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionSample.swift; sourceTree = "<group>"; };
 		C615B686252AEFD5008D3F0C /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C615B689252AEFD5008D3F0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +139,7 @@
 			children = (
 				C615B6A0252AEFD5008D3F0C /* SwiftStudyTests.swift */,
 				C615B6A2252AEFD5008D3F0C /* Info.plist */,
+				105D4D93253539480062B0E3 /* OperatorSampleTests.swift */,
 			);
 			path = SwiftStudyTests;
 			sourceTree = "<group>";
@@ -297,6 +301,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C615B6A1252AEFD5008D3F0C /* SwiftStudyTests.swift in Sources */,
+				105D4D94253539480062B0E3 /* OperatorSampleTests.swift in Sources */,
+				105D4D982535394F0062B0E3 /* OperatorSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
