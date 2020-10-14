@@ -126,23 +126,23 @@ class StringSample {
     
     //p129　後ろを取り出す
     func rangeSubstring() {
-        let str = "東京都千代田区神南1-2-3"
-        let result = str.range(of: "東京都")
+        let address = "東京都千代田区神南1-2-3"
+        let result = address.range(of: "東京都")
         if let theRange = result {
-            let afterStr = str[theRange.upperBound...]
+            let afterStr = address[theRange.upperBound...]
             print(afterStr)
         } else {
-            print(str)
+            print(address)
         }
     }
     
     //p130 見つかった範囲を削除する
     func stringRemove() {
-        var str = "東京都千代田区神南1-2-3"
-        let result = str.range(of: "東京都")
+        var address = "東京都千代田区神南1-2-3"
+        let result = address.range(of: "東京都")
         if let theRange = result {
-            str.removeSubrange(theRange)
+            address.removeSubrange(theRange)
         }
-        print(str)
+        print(address)
     }
 }
