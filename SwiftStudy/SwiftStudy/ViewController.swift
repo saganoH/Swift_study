@@ -76,11 +76,11 @@ class ViewController: UIViewController {
         loopC.loopLabel()
         loopC.loopLabelBreak()
     }
-    
+
     func sec3Sample() {
         let functionC = FunctionSample()
         for _ in 1...5 {
-            let num = functionC.funcDice()
+            let num = functionC.funcDice(arc4random_uniform(6))
             print(num)
         }
         
@@ -116,5 +116,5 @@ class ViewController: UIViewController {
         let area = functionC.triangleArea(30, 16.5)
         print(area)
     }
-    
+
 }
