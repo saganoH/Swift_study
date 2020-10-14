@@ -9,11 +9,22 @@ class ViewController: UIViewController {
         //sec3Sample()
         
         //sec4
+        let stringSample = StringSample()
+        stringSample.stringIndex()
+        stringSample.indexAfter()
+        stringSample.indexOffsetBy()
+        stringSample.stringRangeOperator()
         
+        let recomendName = stringSample.stringCap("koseKi YuuTa")
+        print(recomendName)
         
-        
-    
-        
+        stringSample.stringCompare()
+        stringSample.stringBigger()
+        stringSample.stringCompareCase()
+        stringSample.stringHasPrefix()
+        stringSample.stringContains()
+        stringSample.rangeSubstring()
+        stringSample.stringRemove()
     }
     
     func sec2Sample() {
