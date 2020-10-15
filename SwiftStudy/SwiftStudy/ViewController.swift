@@ -7,24 +7,15 @@ class ViewController: UIViewController {
         
         //sec2Sample()
         //sec3Sample()
+        //sec4Sample()
         
-        //sec4
-        let stringSample = StringSample()
-        stringSample.stringIndex()
-        stringSample.indexAfter()
-        stringSample.indexOffsetBy()
-        stringSample.stringRangeOperator()
+        //sec5
+        let arrayC = ArraySample()
+        arrayC.arrayMake()
+        arrayC.arrayType()
+        arrayC.arrayRepeat()
+        arrayC.arrayRange()
         
-        let recomendName = stringSample.stringCap("koseKi YuuTa")
-        print(recomendName)
-        
-        stringSample.stringCompare()
-        stringSample.stringBigger()
-        stringSample.stringCompareCase()
-        stringSample.stringHasPrefix()
-        stringSample.stringContains()
-        stringSample.rangeSubstring()
-        stringSample.stringRemove()
     }
     
     func sec2Sample() {
@@ -115,6 +106,26 @@ class ViewController: UIViewController {
         
         let area = functionC.triangleArea(30, 16.5)
         print(area)
+    }
+    
+    func sec4Sample() {
+        let stringSample = StringSample()
+        stringSample.stringIndex()
+        stringSample.indexAfter()
+        stringSample.indexOffsetBy()
+        stringSample.stringRangeOperator()
+        
+        let recomendName = stringSample.stringCap("koseKi YuuTa")
+        print(recomendName)
+        
+        stringSample.stringCompare()
+        stringSample.stringBigger()
+        stringSample.stringCompareCase()
+        stringSample.stringHasPrefix()
+        stringSample.stringContains()
+        stringSample.rangeSubstring()
+        stringSample.stringRemove()
+        
     }
     
 }
