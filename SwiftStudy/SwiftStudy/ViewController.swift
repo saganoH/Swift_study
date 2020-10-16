@@ -11,7 +11,8 @@ class ViewController: UIViewController {
         //sec5Sample()
         
         //sec6
-        
+        let dictionaryC = DictionarySample()
+        dictionaryC.dictionarySample()
     }
     
     func sec2Sample() {
