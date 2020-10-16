@@ -15,7 +15,16 @@ class ViewController: UIViewController {
         arrayC.arrayType()
         arrayC.arrayRepeat()
         arrayC.arrayRange()
-        
+        arrayC.arrayAccess()
+        arrayC.arraySlice()
+        arrayC.arraySlice2()
+        arrayC.arrayAccessUpdate()
+        arrayC.arrayNesting()
+        arrayC.arrayEnumerate()
+        arrayC.arrayFirstLast()
+        arrayC.arrayIndex()
+        arrayC.arrayApendInsert()
+        arrayC.arrayRemove()
     }
     
     func sec2Sample() {
