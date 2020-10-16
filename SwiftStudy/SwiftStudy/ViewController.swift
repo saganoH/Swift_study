@@ -121,7 +121,6 @@ class ViewController: UIViewController {
         let area = functionC.triangleArea(30, 16.5)
         print(area)
     }
-<<<<<<< HEAD
     
     func sec4Sample() {
         let stringSample = StringSample()
@@ -143,7 +142,4 @@ class ViewController: UIViewController {
         
     }
     
-=======
-
->>>>>>> develop
 }
