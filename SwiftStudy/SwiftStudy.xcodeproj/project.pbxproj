@@ -17,6 +17,7 @@
 		C615B693252AEFD5008D3F0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C615B692252AEFD5008D3F0C /* Assets.xcassets */; };
 		C615B696252AEFD5008D3F0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C615B694252AEFD5008D3F0C /* LaunchScreen.storyboard */; };
 		C615B6AC252AEFD5008D3F0C /* SwiftStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B6AB252AEFD5008D3F0C /* SwiftStudyUITests.swift */; };
+		C6174A492537C30E00C1CF8F /* ArraySample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6174A482537C30E00C1CF8F /* ArraySample.swift */; };
 		C6226A1A2535383600E2B794 /* StringSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6226A192535383600E2B794 /* StringSample.swift */; };
 		C6226A1F253541D400E2B794 /* FunctionSampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6226A1E253541D400E2B794 /* FunctionSampleTest.swift */; };
 		C6226A2625354AE400E2B794 /* FunctionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603F368253023F70005F46F /* FunctionSample.swift */; };
@@ -61,6 +62,7 @@
 		C615B6A7252AEFD5008D3F0C /* SwiftStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C615B6AB252AEFD5008D3F0C /* SwiftStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyUITests.swift; sourceTree = "<group>"; };
 		C615B6AD252AEFD5008D3F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6174A482537C30E00C1CF8F /* ArraySample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySample.swift; sourceTree = "<group>"; };
 		C6226A192535383600E2B794 /* StringSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSample.swift; sourceTree = "<group>"; };
 		C6226A1E253541D400E2B794 /* FunctionSampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionSampleTest.swift; sourceTree = "<group>"; };
 		C62581D4252EEB65009C884C /* SwitchSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSample.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				C615B689252AEFD5008D3F0C /* AppDelegate.swift */,
 				C615B68B252AEFD5008D3F0C /* SceneDelegate.swift */,
 				C615B68D252AEFD5008D3F0C /* ViewController.swift */,
+				C6174A482537C30E00C1CF8F /* ArraySample.swift */,
 				C62581ED252EF247009C884C /* LoopOptionSample.swift */,
 				C62581E8252EF18A009C884C /* WhileSample.swift */,
 				C62581E3252EF0EC009C884C /* ForSample.swift */,
@@ -299,6 +302,7 @@
 				C6226A1A2535383600E2B794 /* StringSample.swift in Sources */,
 				C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */,
 				C603F369253023F70005F46F /* FunctionSample.swift in Sources */,
+				C6174A492537C30E00C1CF8F /* ArraySample.swift in Sources */,
 				C62581DF252EEF00009C884C /* OperatorSample.swift in Sources */,
 				C62581E9252EF18A009C884C /* WhileSample.swift in Sources */,
 			);
