@@ -1,5 +1,3 @@
-
-
 class ArraySample {
     //p132 配列を作る
     func arrayMake() {
@@ -152,5 +150,51 @@ class ArraySample {
         print("\(delColor)を削除しました。")
         delColor = colorArray.removeFirst()
         print("\(delColor)を削除しました。")
+        delColor = colorArray.removeLast()
+        print("\(delColor)を削除しました。")
+        colorArray.removeAll()
+        print(colorArray)
+    }
+    
+    //p144 配列の複製
+    func arrayCopy() {
+        var array1 = [1, 2, 3]
+        let array2 = array1
+        array1[0] = 99
+        print("array1\(array1)")
+        print("array2\(array2)")
+    }
+    
+    //p146　配列のソート
+    func arraySort() {
+        var ageArray = [34, 23, 31, 26, 28, 22]
+        ageArray.sort()
+        print(ageArray)
+    }
+    
+    //p146 ソート済みの配列を新規作成
+    func arraySorted() {
+        let fruit = ["orange", "apple", "pineapple", "banana"]
+        let fruitSorted = fruit.sorted()
+        print(fruit)
+        print(fruitSorted)
+    }
+    
+    //p147 フィルタ
+    func arrayFilter() {
+        let ageArray = [21, 30, 28, 35, 45, 52, 33]
+        let age30to39 = ageArray.filter({(age: Int) -> Bool in
+            return (age >= 30) && (age < 40)
+        })
+        print(age30to39)
+    }
+    
+    //p147　マップ
+    func arrayMap() {
+        let numbers = [10, 20, 30, 40]
+        let plusOnes = numbers.map({(num: Int) -> Int in
+            return num + 1
+        })
+        print(plusOnes)
     }
 }

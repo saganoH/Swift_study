@@ -25,6 +25,11 @@ class ViewController: UIViewController {
         arrayC.arrayIndex()
         arrayC.arrayApendInsert()
         arrayC.arrayRemove()
+        arrayC.arrayCopy()
+        arrayC.arraySort()
+        arrayC.arraySorted()
+        arrayC.arrayFilter()
+        arrayC.arrayMap()
     }
     
     func sec2Sample() {
