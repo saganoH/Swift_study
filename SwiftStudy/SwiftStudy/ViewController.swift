@@ -8,28 +8,10 @@ class ViewController: UIViewController {
         //sec2Sample()
         //sec3Sample()
         //sec4Sample()
+        //sec5Sample()
         
-        //sec5
-        let arrayC = ArraySample()
-        arrayC.arrayMake()
-        arrayC.arrayType()
-        arrayC.arrayRepeat()
-        arrayC.arrayRange()
-        arrayC.arrayAccess()
-        arrayC.arraySlice()
-        arrayC.arraySlice2()
-        arrayC.arrayAccessUpdate()
-        arrayC.arrayNesting()
-        arrayC.arrayEnumerate()
-        arrayC.arrayFirstLast()
-        arrayC.arrayIndex()
-        arrayC.arrayApendInsert()
-        arrayC.arrayRemove()
-        arrayC.arrayCopy()
-        arrayC.arraySort()
-        arrayC.arraySorted()
-        arrayC.arrayFilter()
-        arrayC.arrayMap()
+        //sec6
+        
     }
     
     func sec2Sample() {
@@ -142,4 +124,26 @@ class ViewController: UIViewController {
         
     }
     
+    func sec5Sample() {
+        let arrayC = ArraySample()
+        arrayC.arrayMake()
+        arrayC.arrayType()
+        arrayC.arrayRepeat()
+        arrayC.arrayRange()
+        arrayC.arrayAccess()
+        arrayC.arraySlice()
+        arrayC.arraySlice2()
+        arrayC.arrayAccessUpdate()
+        arrayC.arrayNesting()
+        arrayC.arrayEnumerate()
+        arrayC.arrayFirstLast()
+        arrayC.arrayIndex()
+        arrayC.arrayApendInsert()
+        arrayC.arrayRemove()
+        arrayC.arrayCopy()
+        arrayC.arraySort()
+        arrayC.arraySorted()
+        arrayC.arrayFilter()
+        arrayC.arrayMap()
+    }
 }
