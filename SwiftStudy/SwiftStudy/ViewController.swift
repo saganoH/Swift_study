@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         setC.SetColor()
         setC.setArraySet()
         setC.setInsertRemove()
+        setC.setContain()
+        setC.setForIn()
     }
     
     func sec2Sample() {

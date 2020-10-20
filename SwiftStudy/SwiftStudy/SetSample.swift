@@ -41,4 +41,23 @@ class SetSample {
             print("charsSetBには\(charsSetB.count)個の値が入っています。")
         }
     }
+    
+    //p168 セットに含まれている値かどうか
+    func setContain() {
+        let lunchSet: Set = ["カレー", "ナン", "チャイ"]
+        let member = "チャイ"
+        if lunchSet.contains(member) {
+            print("\(member)はセットに含まれています。")
+        } else {
+            print("\(member)はセットに含まれていません。")
+        }
+    }
+    
+    //p168 ソートして全て取り出す
+    func setForIn() {
+        let numSet: Set<Double> = [3.2, 5.8, 1.4, 9.6, 5.5, 2.7]
+        for num in numSet.sorted() {
+            print(num, terminator: "点")
+        }
+    }
 }
