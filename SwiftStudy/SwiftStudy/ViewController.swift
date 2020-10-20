@@ -13,6 +13,14 @@ class ViewController: UIViewController {
         //sec6
         let dictionaryC = DictionarySample()
         dictionaryC.dictionarySample()
+        dictionaryC.dictionaryEmpty()
+        dictionaryC.dictionaryAccess()
+        dictionaryC.updateMembers(theKey: "大阪", newValue: 17)
+        dictionaryC.updateMembers(theKey: "沖縄", newValue: 14)
+        dictionaryC.dictionaryCopy()
+        dictionaryC.dictionaryForIn()
+        dictionaryC.dictionaryRemove()
+        
     }
     
     func sec2Sample() {
