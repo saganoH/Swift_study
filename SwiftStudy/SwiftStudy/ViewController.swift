@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         setC.setInsertRemove()
         setC.setContain()
         setC.setForIn()
+        setC.setUnion()
+        setC.setIntersection()
+        setC.setSubtracting()
+        setC.setSymmetricDifference()
     }
     
     func sec2Sample() {

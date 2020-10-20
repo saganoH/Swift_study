@@ -60,4 +60,36 @@ class SetSample {
             print(num, terminator: "点")
         }
     }
+    
+    //p169　セットとセットを合わせる、和集合
+    func setUnion() {
+        let aSet: Set<String> = ["リンゴ", "みかん", "桃", "イチゴ"]
+        let bSet: Set<String> = ["イチゴ", "スイカ", "みかん", "バナナ"]
+        let cSet = aSet.union(bSet)
+        print(cSet)
+    }
+    
+    //p170　積集合
+    func setIntersection() {
+        let aSet: Set<String> = ["リンゴ", "みかん", "桃", "イチゴ"]
+        let bSet: Set<String> = ["イチゴ", "スイカ", "みかん", "バナナ"]
+        let cSet = aSet.intersection(bSet)
+        print(cSet)
+    }
+    
+    //p171　差集合
+    func setSubtracting() {
+        let aSet: Set<String> = ["リンゴ", "みかん", "桃", "イチゴ"]
+        let bSet: Set<String> = ["イチゴ", "スイカ", "みかん", "バナナ"]
+        let cSet = aSet.subtracting(bSet)
+        print(cSet)
+    }
+    
+    //p171　対称差
+    func setSymmetricDifference() {
+        let aSet: Set<String> = ["リンゴ", "みかん", "桃", "イチゴ"]
+        let bSet: Set<String> = ["イチゴ", "スイカ", "みかん", "バナナ"]
+        let cSet = aSet.symmetricDifference(bSet)
+        print(cSet)
+    }
 }
