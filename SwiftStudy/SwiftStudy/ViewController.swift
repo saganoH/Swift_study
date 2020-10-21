@@ -15,6 +15,16 @@ class ViewController: UIViewController {
         //sec8
         let optionalC = OptionalSample()
         optionalC.lastNumError()
+        optionalC.nilError()
+        optionalC.optionalDefault()
+        optionalC.optionalBinding()
+        optionalC.optionalBindingForin()
+        optionalC.optionalBindingWhile()
+        optionalC.optionalBindingGuard("サクラ", nil)
+        optionalC.optionalBindingGuard("バラ", 99)
+        optionalC.optionalBindingComma()
+        optionalC.optionalChain()
+        optionalC.optionalBindingChain()
     }
     
     func sec2Sample() {
