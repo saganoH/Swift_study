@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         setC.setIntersection()
         setC.setSubtracting()
         setC.setSymmetricDifference()
+        setC.setEqual()
+        setC.setIsDisjoint()
+        setC.setIsSubset()
+        setC.setIsSuperset()
     }
     
     func sec2Sample() {
