@@ -9,18 +9,23 @@ class ViewController: UIViewController {
         //sec3Sample()
         //sec4Sample()
         //sec5Sample()
+        //sec6Sample()
         
-        //sec6
-        let dictionaryC = DictionarySample()
-        dictionaryC.dictionarySample()
-        dictionaryC.dictionaryEmpty()
-        dictionaryC.dictionaryAccess()
-        dictionaryC.updateMembers(theKey: "大阪", newValue: 17)
-        dictionaryC.updateMembers(theKey: "沖縄", newValue: 14)
-        dictionaryC.dictionaryCopy()
-        dictionaryC.dictionaryForIn()
-        dictionaryC.dictionaryRemove()
-        
+        //sec7
+        let setC = SetSample()
+        setC.SetColor()
+        setC.setArraySet()
+        setC.setInsertRemove()
+        setC.setContain()
+        setC.setForIn()
+        setC.setUnion()
+        setC.setIntersection()
+        setC.setSubtracting()
+        setC.setSymmetricDifference()
+        setC.setEqual()
+        setC.setIsDisjoint()
+        setC.setIsSubset()
+        setC.setIsSuperset()
     }
     
     func sec2Sample() {
@@ -154,5 +159,17 @@ class ViewController: UIViewController {
         arrayC.arraySorted()
         arrayC.arrayFilter()
         arrayC.arrayMap()
+    }
+    
+    func sec6Sample() {
+        let dictionaryC = DictionarySample()
+        dictionaryC.dictionarySample()
+        dictionaryC.dictionaryEmpty()
+        dictionaryC.dictionaryAccess()
+        dictionaryC.updateMembers(theKey: "大阪", newValue: 17)
+        dictionaryC.updateMembers(theKey: "沖縄", newValue: 14)
+        dictionaryC.dictionaryCopy()
+        dictionaryC.dictionaryForIn()
+        dictionaryC.dictionaryRemove()
     }
 }
