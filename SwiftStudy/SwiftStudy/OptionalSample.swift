@@ -15,14 +15,12 @@ class OptionalSample {
         //num = nil エラーになる
         print(num)
         
-        var num2: Int? //オプショナルバリューであると明示
-        num2 = 5
-        //print(num2) エラーは消えるが、オプショナル型にラップされている
-        print(num2!) //アンラップ
+        let num2: Int? = nil //オプショナルバリューであると明示
+        print(num2) //アンラップ
     }
     
     //p180 オプショナルバリューの初期値
-    func optionalDefault() {
+    func calculatePrice() {
         var count: Int?
         var price: Int
         
@@ -52,7 +50,7 @@ class OptionalSample {
     }
     
     //p182 forIn×オプショナルバインディング
-    func optionalBindingForin() {
+    func sumInt() {
         var sum = 0
         let dic: [String: Int?] = ["a": 23, "b": nil, "c": 10, "d": nil]
         for (_, value) in dic {
@@ -64,22 +62,22 @@ class OptionalSample {
     }
     
     //p182 while×オプショナルバインディング
-    func optionalBindingWhile() {
-        let str: String? = "★☆"
-        var repeatString: String = ""
+    func starRepeating() {
+        let twoStars: String? = "★☆"
+        var repeatStars: String = ""
         var i = 0
-        while let stamp = str {
-            repeatString += stamp
+        while let stamp = twoStars {
+            repeatStars += stamp
             i += 1
             if i >= 10 {
                 break
             }
         }
-        print(repeatString)
+        print(repeatStars)
     }
     
     //p183 guard文×オプショナルバインディング
-    func optionalBindingGuard(_ who: String,_ level: Int?) {
+    func printGreeting(_ who: String,_ level: Int?) {
         guard let thelevel = level else {
             return
         }
@@ -92,7 +90,7 @@ class OptionalSample {
     }
     
     //p184 条件式×オプショナルバインディング
-    func optionalBindingComma() {
+    func printYears() {
         let year1: String = "2001"
         let year2: String = "2016"
         if let startYear = Int(year1), let endYear = Int(year2), startYear < endYear {
@@ -102,11 +100,11 @@ class OptionalSample {
     }
     
     //p185　オプショナルチェーン
-    func optionalChain() {
+    func printBallSize() {
         var balls: [(size: Int, color: String)] = []
         //var ballSize = balls.first.size 空なのでnilとなりエラーが発生
         var ballSize = balls.first?.size
-        print(ballSize) //nilはアンラップで取り出せない
+        print(ballSize) //nilをアンラップすると実行時エラーで落ちる
         
         balls = [(size: 2, color: "red"), (size: 4, color: "green")]
         ballSize = balls.first?.size
