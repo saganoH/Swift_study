@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         let optionalC = OptionalSample()
         optionalC.lastNumError()
         optionalC.nilError()
-        optionalC.calculatePrice()
+        optionalC.multiplyPrice()
         optionalC.optionalBinding()
         optionalC.sumInt()
         optionalC.starRepeating()

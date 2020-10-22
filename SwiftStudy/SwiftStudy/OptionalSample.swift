@@ -15,12 +15,13 @@ class OptionalSample {
         //num = nil エラーになる
         print(num)
         
-        let num2: Int? = nil //オプショナルバリューであると明示
+        var num2: Int? = nil //オプショナルバリューであると明示
+        num2 = 5
         print(num2) //アンラップ
     }
     
     //p180 オプショナルバリューの初期値
-    func calculatePrice() {
+    func multiplyPrice() {
         var count: Int?
         var price: Int
         
