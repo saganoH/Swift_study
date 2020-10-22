@@ -10,22 +10,21 @@ class ViewController: UIViewController {
         //sec4Sample()
         //sec5Sample()
         //sec6Sample()
+        //sec7Sample()
         
-        //sec7
-        let setC = SetSample()
-        setC.SetColor()
-        setC.setArraySet()
-        setC.setInsertRemove()
-        setC.setContain()
-        setC.setForIn()
-        setC.setUnion()
-        setC.setIntersection()
-        setC.setSubtracting()
-        setC.setSymmetricDifference()
-        setC.setEqual()
-        setC.setIsDisjoint()
-        setC.setIsSubset()
-        setC.setIsSuperset()
+        //sec8
+        let optionalC = OptionalSample()
+        optionalC.lastNumError()
+        optionalC.nilError()
+        optionalC.multiplyPrice()
+        optionalC.optionalBinding()
+        optionalC.sumInt()
+        optionalC.starRepeating()
+        optionalC.printGreeting("サクラ", nil)
+        optionalC.printGreeting("バラ", 99)
+        optionalC.printYears()
+        optionalC.printBallSize()
+        optionalC.optionalBindingChain()
     }
     
     func sec2Sample() {
@@ -171,5 +170,22 @@ class ViewController: UIViewController {
         dictionaryC.dictionaryCopy()
         dictionaryC.dictionaryForIn()
         dictionaryC.dictionaryRemove()
+    }
+    
+    func sec7Sample() {
+        let setC = SetSample()
+        setC.SetColor()
+        setC.setArraySet()
+        setC.setInsertRemove()
+        setC.setContain()
+        setC.setForIn()
+        setC.setUnion()
+        setC.setIntersection()
+        setC.setSubtracting()
+        setC.setSymmetricDifference()
+        setC.setEqual()
+        setC.setIsDisjoint()
+        setC.setIsSubset()
+        setC.setIsSuperset()
     }
 }
