@@ -106,11 +106,11 @@ class OptionalSample {
         var balls: [(size: Int, color: String)] = []
         //var ballSize = balls.first.size 空なのでnilとなりエラーが発生
         var ballSize = balls.first?.size
-        print(ballSize)
+        print(ballSize) //nilはアンラップで取り出せない
         
         balls = [(size: 2, color: "red"), (size: 4, color: "green")]
         ballSize = balls.first?.size
-        print(ballSize!)
+        print(ballSize)
     }
     
     //p186 アンラップした値を安全に取り出す
