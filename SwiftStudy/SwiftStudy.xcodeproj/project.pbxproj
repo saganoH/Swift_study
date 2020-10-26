@@ -10,6 +10,7 @@
 		105D4D94253539480062B0E3 /* OperatorSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D4D93253539480062B0E3 /* OperatorSampleTests.swift */; };
 		105D4D982535394F0062B0E3 /* OperatorSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581DE252EEF00009C884C /* OperatorSample.swift */; };
 		C603F369253023F70005F46F /* FunctionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603F368253023F70005F46F /* FunctionSample.swift */; };
+		C608B9692546A55100098140 /* ClassSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608B9682546A55100098140 /* ClassSample.swift */; };
 		C615A57E253E81640011B547 /* SetSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615A57D253E81640011B547 /* SetSample.swift */; };
 		C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B689252AEFD5008D3F0C /* AppDelegate.swift */; };
 		C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B68B252AEFD5008D3F0C /* SceneDelegate.swift */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		105D4D93253539480062B0E3 /* OperatorSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorSampleTests.swift; sourceTree = "<group>"; };
 		C603F368253023F70005F46F /* FunctionSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionSample.swift; sourceTree = "<group>"; };
+		C608B9682546A55100098140 /* ClassSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSample.swift; sourceTree = "<group>"; };
 		C615A57D253E81640011B547 /* SetSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetSample.swift; sourceTree = "<group>"; };
 		C615B686252AEFD5008D3F0C /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C615B689252AEFD5008D3F0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		C615B688252AEFD5008D3F0C /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				C608B9682546A55100098140 /* ClassSample.swift */,
 				C603F368253023F70005F46F /* FunctionSample.swift */,
 				C615B689252AEFD5008D3F0C /* AppDelegate.swift */,
 				C615B68B252AEFD5008D3F0C /* SceneDelegate.swift */,
@@ -303,6 +306,7 @@
 				C62581DA252EED99009C884C /* IfSample.swift in Sources */,
 				C615A57E253E81640011B547 /* SetSample.swift in Sources */,
 				C62581E4252EF0EC009C884C /* ForSample.swift in Sources */,
+				C608B9692546A55100098140 /* ClassSample.swift in Sources */,
 				C62581D5252EEB65009C884C /* SwitchSample.swift in Sources */,
 				C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */,
 				C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */,

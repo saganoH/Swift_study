@@ -11,20 +11,17 @@ class ViewController: UIViewController {
         //sec5Sample()
         //sec6Sample()
         //sec7Sample()
+        //sec8Sample()
         
-        //sec8
-        let optionalC = OptionalSample()
-        optionalC.lastNumError()
-        optionalC.nilError()
-        optionalC.multiplyPrice()
-        optionalC.optionalBinding()
-        optionalC.sumInt()
-        optionalC.starRepeating()
-        optionalC.printGreeting("サクラ", nil)
-        optionalC.printGreeting("バラ", 99)
-        optionalC.printYears()
-        optionalC.printBallSize()
-        optionalC.optionalBindingChain()
+        //sec9
+        let initSample1 = ClassSample(msg: "こんにちは")
+        initSample1.hello()
+        let initSample2 = ClassSample(msg: "こんにちは", name: "桜子")
+        initSample2.hello()
+        let initSample3 = ClassSample()
+        initSample3.hello()
+        
+        
     }
     
     func sec2Sample() {
@@ -187,5 +184,20 @@ class ViewController: UIViewController {
         setC.setIsDisjoint()
         setC.setIsSubset()
         setC.setIsSuperset()
+    }
+    
+    func sec8Sample() {
+        let optionalC = OptionalSample()
+        optionalC.lastNumError()
+        //optionalC.nilError()
+        optionalC.multiplyPrice()
+        optionalC.optionalBinding()
+        optionalC.sumInt()
+        optionalC.starRepeating()
+        optionalC.printGreeting("サクラ", nil)
+        optionalC.printGreeting("バラ", 99)
+        optionalC.printYears()
+        //optionalC.printBallSize()
+        optionalC.optionalBindingChain()
     }
 }
