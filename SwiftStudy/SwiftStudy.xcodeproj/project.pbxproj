@@ -30,6 +30,8 @@
 		C62581E4252EF0EC009C884C /* ForSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581E3252EF0EC009C884C /* ForSample.swift */; };
 		C62581E9252EF18A009C884C /* WhileSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581E8252EF18A009C884C /* WhileSample.swift */; };
 		C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581ED252EF247009C884C /* LoopOptionSample.swift */; };
+		C630E43D2547B2A300444C22 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E43C2547B2A300444C22 /* Circle.swift */; };
+		C630E4422547C0A200444C22 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E4412547C0A200444C22 /* Player.swift */; };
 		C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		C62581E3252EF0EC009C884C /* ForSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForSample.swift; sourceTree = "<group>"; };
 		C62581E8252EF18A009C884C /* WhileSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhileSample.swift; sourceTree = "<group>"; };
 		C62581ED252EF247009C884C /* LoopOptionSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopOptionSample.swift; sourceTree = "<group>"; };
+		C630E43C2547B2A300444C22 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		C630E4412547C0A200444C22 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +153,8 @@
 				C6174A4D2539432E00C1CF8F /* DictionarySample.swift */,
 				C615A57D253E81640011B547 /* SetSample.swift */,
 				C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */,
+				C630E43C2547B2A300444C22 /* Circle.swift */,
+				C630E4412547C0A200444C22 /* Player.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -302,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C630E43D2547B2A300444C22 /* Circle.swift in Sources */,
 				C615B68E252AEFD5008D3F0C /* ViewController.swift in Sources */,
 				C62581DA252EED99009C884C /* IfSample.swift in Sources */,
 				C615A57E253E81640011B547 /* SetSample.swift in Sources */,
@@ -309,6 +316,7 @@
 				C608B9692546A55100098140 /* ClassSample.swift in Sources */,
 				C62581D5252EEB65009C884C /* SwitchSample.swift in Sources */,
 				C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */,
+				C630E4422547C0A200444C22 /* Player.swift in Sources */,
 				C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */,
 				C6226A1A2535383600E2B794 /* StringSample.swift in Sources */,
 				C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */,

@@ -21,7 +21,22 @@ class ViewController: UIViewController {
         let initSample3 = ClassSample()
         initSample3.hello()
         
+        let myCircle = Circle()
+        print("半径\(myCircle.radius)")
+        print("面積\(myCircle.area)")
         
+        myCircle.area *= 2
+        print("半径\(myCircle.radius)")
+        print("面積\(myCircle.area)")
+        
+        myCircle.radius = 3.0
+        print("半径\(myCircle.radius)")
+        print("面積\(myCircle.area)")
+        
+        let thePlayer = Player()
+        thePlayer.level = 10
+        thePlayer.level = 10 //値が変化しないのでカウントされない
+        thePlayer.level = 15
     }
     
     func sec2Sample() {
