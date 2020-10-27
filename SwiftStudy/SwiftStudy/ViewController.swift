@@ -12,49 +12,11 @@ class ViewController: UIViewController {
         //sec6Sample()
         //sec7Sample()
         //sec8Sample()
+        //sec9Sample1()
         
-        //sec9
-        let initSample1 = ClassSample(msg: "こんにちは")
-        initSample1.hello()
-        let initSample2 = ClassSample(msg: "こんにちは", name: "桜子")
-        initSample2.hello()
-        let initSample3 = ClassSample()
-        initSample3.hello()
+        //sec9Sample2
         
-        //computedプロパティ
-        let myCircle = Circle()
-        print("半径\(myCircle.radius)")
-        print("面積\(myCircle.area)")
-        myCircle.area *= 2
-        print("半径\(myCircle.radius)")
-        print("面積\(myCircle.area)")
-        myCircle.radius = 3.0
-        print("半径\(myCircle.radius)")
-        print("面積\(myCircle.area)")
         
-        //プロパティオブザーバー
-        let thePlayer = Player()
-        thePlayer.level = 10
-        thePlayer.level = 10 //値が変化しないのでカウントされない
-        thePlayer.level = 15
-        
-        //クラスプロパティ
-        let car1 = Car()
-        let car2 = Car()
-        print("動いている車は\(Car.count)台")
-        car1.start()
-        car2.start()
-        print("動いている車は\(Car.count)台")
-        car2.stop()
-        print("動いている車は\(Car.count)台")
-        
-        //アクセス権
-        let player1 = Game()
-        let player2 = Game()
-        player1.addPoint(value: 5)
-        player2.addPoint(value: 7)
-        print("player1: レベル\(player1.level)") //読むことはできる
-        print("player2: レベル\(player2.level)")
     }
     
     func sec2Sample() {
@@ -222,7 +184,7 @@ class ViewController: UIViewController {
     func sec8Sample() {
         let optionalC = OptionalSample()
         optionalC.lastNumError()
-        //optionalC.nilError()
+        optionalC.nilError()
         optionalC.multiplyPrice()
         optionalC.optionalBinding()
         optionalC.sumInt()
@@ -230,7 +192,51 @@ class ViewController: UIViewController {
         optionalC.printGreeting("サクラ", nil)
         optionalC.printGreeting("バラ", 99)
         optionalC.printYears()
-        //optionalC.printBallSize()
+        optionalC.printBallSize()
         optionalC.optionalBindingChain()
+    }
+    
+    func sec9Sample1() {
+        let initSample1 = ClassSample(msg: "こんにちは")
+        initSample1.hello()
+        let initSample2 = ClassSample(msg: "こんにちは", name: "桜子")
+        initSample2.hello()
+        let initSample3 = ClassSample()
+        initSample3.hello()
+        
+        //computedプロパティ
+        let myCircle = Circle()
+        print("半径\(myCircle.radius)")
+        print("面積\(myCircle.area)")
+        myCircle.area *= 2
+        print("半径\(myCircle.radius)")
+        print("面積\(myCircle.area)")
+        myCircle.radius = 3.0
+        print("半径\(myCircle.radius)")
+        print("面積\(myCircle.area)")
+        
+        //プロパティオブザーバー
+        let thePlayer = Player()
+        thePlayer.level = 10
+        thePlayer.level = 10 //値が変化しないのでカウントされない
+        thePlayer.level = 15
+        
+        //クラスプロパティ
+        let car1 = Car()
+        let car2 = Car()
+        print("動いている車は\(Car.count)台")
+        car1.start()
+        car2.start()
+        print("動いている車は\(Car.count)台")
+        car2.stop()
+        print("動いている車は\(Car.count)台")
+        
+        //アクセス権
+        let player1 = Game()
+        let player2 = Game()
+        player1.addPoint(value: 5)
+        player2.addPoint(value: 7)
+        print("player1: レベル\(player1.level)") //読むことはできる
+        print("player2: レベル\(player2.level)")
     }
 }
