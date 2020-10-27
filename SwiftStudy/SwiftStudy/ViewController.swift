@@ -1,5 +1,19 @@
 import UIKit
 
+//p221 クラス拡張
+extension UIColor {
+    //若草色
+    class var wakakusa: UIColor {
+        //#ABC900
+        return UIColor(red: 0.6706, green: 0.7882, blue: 0.0, alpha: 1)
+    }
+    //紅赤色
+    class var beniaka: UIColor {
+        //#E5004F
+        return UIColor(red: 0.898, green: 0.0, blue: 0.3098, alpha: 1)
+    }
+}
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -15,8 +29,15 @@ class ViewController: UIViewController {
         //sec9Sample1()
         
         //sec9Sample2
-        
-        
+        //標準の色
+        let color1 = UIColor.red
+        //拡張した色
+        let color2 = UIColor.wakakusa
+        let color3 = UIColor.beniaka
+        //画面の背景色を紅赤色にする
+        view.backgroundColor = color3
+        print(color1)
+        print(color2)
     }
     
     func sec2Sample() {
