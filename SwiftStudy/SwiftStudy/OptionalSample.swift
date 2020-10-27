@@ -8,17 +8,17 @@ class OptionalSample {
         print(ans)
     }
     
-    //p176 nilエラー
-    func nilError() {
-        var num: Int
-        num = 5
-        //num = nil エラーになる
-        print(num)
-        
-        var num2: Int? = nil //オプショナルバリューであると明示
-        num2 = 5
-        print(num2) //アンラップ
-    }
+    //p176 nilエラー　黄色エラー邪魔なのでコメントアウト
+//    func nilError() {
+//        var num: Int
+//        num = 5
+//        //num = nil エラーになる
+//        print(num)
+//
+//        var num2: Int? = nil //オプショナルバリューであると明示
+//        num2 = 5
+//        print(num2) //アンラップ
+//    }
     
     //p180 オプショナルバリューの初期値
     func multiplyPrice() {
@@ -100,17 +100,17 @@ class OptionalSample {
         }
     }
     
-    //p185　オプショナルチェーン
-    func printBallSize() {
-        var balls: [(size: Int, color: String)] = []
-        //var ballSize = balls.first.size 空なのでnilとなりエラーが発生
-        var ballSize = balls.first?.size
-        print(ballSize) //nilをアンラップすると実行時エラーで落ちる
-        
-        balls = [(size: 2, color: "red"), (size: 4, color: "green")]
-        ballSize = balls.first?.size
-        print(ballSize)
-    }
+    //p185　オプショナルチェーン 黄色エラー邪魔なのでコメントアウト
+//    func printBallSize() {
+//        var balls: [(size: Int, color: String)] = []
+//        //var ballSize = balls.first.size 空なのでnilとなりエラーが発生
+//        var ballSize = balls.first?.size
+//        print(ballSize) //nilをアンラップすると実行時エラーで落ちる
+//
+//        balls = [(size: 2, color: "red"), (size: 4, color: "green")]
+//        ballSize = balls.first?.size
+//        print(ballSize)
+//    }
     
     //p186 アンラップした値を安全に取り出す
     func optionalBindingChain() {
