@@ -38,6 +38,15 @@ class ViewController: UIViewController {
         view.backgroundColor = color3
         print(color1)
         print(color2)
+        
+        //プロトコルを採用したクラスのインスタンスを作り、実行
+        let newGamePlayer = NewGame()
+        newGamePlayer.hit()
+        print(newGamePlayer.gamePoint)
+        newGamePlayer.miss()
+        print(newGamePlayer.gamePoint)
+        newGamePlayer.hit()
+        print(newGamePlayer.gamePoint)
     }
     
     func sec2Sample() {
