@@ -1,5 +1,19 @@
 import UIKit
 
+//p221 クラス拡張
+extension UIColor {
+    //若草色
+    class var wakakusa: UIColor {
+        //#ABC900
+        return UIColor(red: 0.6706, green: 0.7882, blue: 0.0, alpha: 1)
+    }
+    //紅赤色
+    class var beniaka: UIColor {
+        //#E5004F
+        return UIColor(red: 0.898, green: 0.0, blue: 0.3098, alpha: 1)
+    }
+}
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -12,49 +26,27 @@ class ViewController: UIViewController {
         //sec6Sample()
         //sec7Sample()
         //sec8Sample()
+        //sec9Sample1()
         
-        //sec9
-        let initSample1 = ClassSample(msg: "こんにちは")
-        initSample1.hello()
-        let initSample2 = ClassSample(msg: "こんにちは", name: "桜子")
-        initSample2.hello()
-        let initSample3 = ClassSample()
-        initSample3.hello()
+        //sec9Sample2
+        //標準の色
+        let color1 = UIColor.red
+        //拡張した色
+        let color2 = UIColor.wakakusa
+        let color3 = UIColor.beniaka
+        //画面の背景色を紅赤色にする
+        view.backgroundColor = color3
+        print(color1)
+        print(color2)
         
-        //computedプロパティ
-        let myCircle = Circle()
-        print("半径\(myCircle.radius)")
-        print("面積\(myCircle.area)")
-        myCircle.area *= 2
-        print("半径\(myCircle.radius)")
-        print("面積\(myCircle.area)")
-        myCircle.radius = 3.0
-        print("半径\(myCircle.radius)")
-        print("面積\(myCircle.area)")
-        
-        //プロパティオブザーバー
-        let thePlayer = Player()
-        thePlayer.level = 10
-        thePlayer.level = 10 //値が変化しないのでカウントされない
-        thePlayer.level = 15
-        
-        //クラスプロパティ
-        let car1 = Car()
-        let car2 = Car()
-        print("動いている車は\(Car.count)台")
-        car1.start()
-        car2.start()
-        print("動いている車は\(Car.count)台")
-        car2.stop()
-        print("動いている車は\(Car.count)台")
-        
-        //アクセス権
-        let player1 = Game()
-        let player2 = Game()
-        player1.addPoint(value: 5)
-        player2.addPoint(value: 7)
-        print("player1: レベル\(player1.level)") //読むことはできる
-        print("player2: レベル\(player2.level)")
+        //プロトコルを採用したクラスのインスタンスを作り、実行
+        let newGamePlayer = NewGame()
+        newGamePlayer.hit()
+        print(newGamePlayer.gamePoint)
+        newGamePlayer.miss()
+        print(newGamePlayer.gamePoint)
+        newGamePlayer.hit()
+        print(newGamePlayer.gamePoint)
     }
     
     func sec2Sample() {
@@ -222,7 +214,7 @@ class ViewController: UIViewController {
     func sec8Sample() {
         let optionalC = OptionalSample()
         optionalC.lastNumError()
-        //optionalC.nilError()
+        optionalC.nilError()
         optionalC.multiplyPrice()
         optionalC.optionalBinding()
         optionalC.sumInt()
@@ -230,7 +222,51 @@ class ViewController: UIViewController {
         optionalC.printGreeting("サクラ", nil)
         optionalC.printGreeting("バラ", 99)
         optionalC.printYears()
-        //optionalC.printBallSize()
+        optionalC.printBallSize()
         optionalC.optionalBindingChain()
+    }
+    
+    func sec9Sample1() {
+        let initSample1 = ClassSample(msg: "こんにちは")
+        initSample1.hello()
+        let initSample2 = ClassSample(msg: "こんにちは", name: "桜子")
+        initSample2.hello()
+        let initSample3 = ClassSample()
+        initSample3.hello()
+        
+        //computedプロパティ
+        let myCircle = Circle()
+        print("半径\(myCircle.radius)")
+        print("面積\(myCircle.area)")
+        myCircle.area *= 2
+        print("半径\(myCircle.radius)")
+        print("面積\(myCircle.area)")
+        myCircle.radius = 3.0
+        print("半径\(myCircle.radius)")
+        print("面積\(myCircle.area)")
+        
+        //プロパティオブザーバー
+        let thePlayer = Player()
+        thePlayer.level = 10
+        thePlayer.level = 10 //値が変化しないのでカウントされない
+        thePlayer.level = 15
+        
+        //クラスプロパティ
+        let car1 = Car()
+        let car2 = Car()
+        print("動いている車は\(Car.count)台")
+        car1.start()
+        car2.start()
+        print("動いている車は\(Car.count)台")
+        car2.stop()
+        print("動いている車は\(Car.count)台")
+        
+        //アクセス権
+        let player1 = Game()
+        let player2 = Game()
+        player1.addPoint(value: 5)
+        player2.addPoint(value: 7)
+        print("player1: レベル\(player1.level)") //読むことはできる
+        print("player2: レベル\(player2.level)")
     }
 }
