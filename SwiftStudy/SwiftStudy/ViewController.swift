@@ -27,26 +27,14 @@ class ViewController: UIViewController {
         //sec7Sample()
         //sec8Sample()
         //sec9Sample1()
+        //sec9Sample2()
         
-        //sec9Sample2
-        //標準の色
-        let color1 = UIColor.red
-        //拡張した色
-        let color2 = UIColor.wakakusa
-        let color3 = UIColor.beniaka
-        //画面の背景色を紅赤色にする
-        view.backgroundColor = color3
-        print(color1)
-        print(color2)
+        //sec10
+        let enumC = EnumSample()
+        let theStuff = enumC.packing(size: .M)
+        print(theStuff)
         
-        //プロトコルを採用したクラスのインスタンスを作り、実行
-        let newGamePlayer = NewGame()
-        newGamePlayer.hit()
-        print(newGamePlayer.gamePoint)
-        newGamePlayer.miss()
-        print(newGamePlayer.gamePoint)
-        newGamePlayer.hit()
-        print(newGamePlayer.gamePoint)
+        
     }
     
     func sec2Sample() {
@@ -268,5 +256,26 @@ class ViewController: UIViewController {
         player2.addPoint(value: 7)
         print("player1: レベル\(player1.level)") //読むことはできる
         print("player2: レベル\(player2.level)")
+    }
+    
+    func sec9Sample2() {
+        //標準の色
+        let color1 = UIColor.red
+        //拡張した色
+        let color2 = UIColor.wakakusa
+        let color3 = UIColor.beniaka
+        //画面の背景色を紅赤色にする
+        view.backgroundColor = color3
+        print(color1)
+        print(color2)
+        
+        //プロトコルを採用したクラスのインスタンスを作り、実行
+        let newGamePlayer = NewGame()
+        newGamePlayer.hit()
+        print(newGamePlayer.gamePoint)
+        newGamePlayer.miss()
+        print(newGamePlayer.gamePoint)
+        newGamePlayer.hit()
+        print(newGamePlayer.gamePoint)
     }
 }
