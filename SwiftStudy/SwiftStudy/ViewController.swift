@@ -34,7 +34,8 @@ class ViewController: UIViewController {
         let theStuff = enumC.packing(size: .M)
         print(theStuff)
         
-        
+        enumC.changeCourse()
+        enumC.shirtPattern()
     }
     
     func sec2Sample() {
