@@ -36,6 +36,8 @@ class ViewController: UIViewController {
         
         enumC.changeCourse()
         enumC.shirtPattern()
+        enumC.ticketType()
+        enumC.signalController()
     }
     
     func sec2Sample() {

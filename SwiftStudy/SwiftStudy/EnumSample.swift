@@ -48,6 +48,33 @@ class EnumSample {
             }
         }
     }
+    
+    //p240 プロパティを持つ列挙型
+    func ticketType() {
+        //チケット名の変更
+        Ticket.name = "超ライブ入場券"
+        //チケットを取得
+        let ticket1 = Ticket.A
+        let ticket2 = Ticket.Gold
+        //チケットの確認
+        print(Ticket.name, ticket1.area, ticket1.price)
+        print(Ticket.name, ticket2.area, ticket2.price)
+    }
+    
+    //p242 タイプメソッドとインスタンスメソッドを持つ列挙型
+    func signalController() {
+        let text = Signal.description()
+        print(text)
+        
+        //Greenで開始
+        var lamp = Signal.Green
+        print(lamp.color)
+        print(lamp.isRun())
+        print("----値を反転する----")
+        lamp.changeSignal()
+        print(lamp.color)
+        print(lamp.isRun())
+    }
 }
 
 enum WomenSize {
@@ -74,4 +101,70 @@ enum Pattern {
     }
 }
 
+enum Ticket {
+    //チケットの種類
+    case Gold, A, B
+    //タイププロパティ
+    static var name = "入場券"
+    
+    //席（リードオンリー）
+    var area: String {
+        get {
+            switch self {
+            case .Gold:
+                return "ゴールド席"
+            case .A:
+                return "A席"
+            case .B:
+                return "B席"
+            }
+        }
+    }
+    
+    //価格（リードオンリー）
+    var price: Int {
+        get {
+            switch self {
+            case .Gold:
+                return 24000
+            case .A:
+                return 5000
+            case .B:
+                return 2000
+            }
+        }
+    }
+}
 
+enum Signal: String {
+    case Green = "緑色"
+    case Red = "赤色"
+    
+    //値を色名(Raw value)で返す
+    var color: String {
+        return self.rawValue
+    }
+    
+    //説明文を返すタイプメソッド
+    static func description() -> String {
+        return "GreenまたはRedのシグナルです。"
+    }
+    
+    //Greenの時はtrue、それ以外の時はfalse
+    func isRun() -> Bool {
+        if self == .Green {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    //GreenとRedの値を切り替える
+    mutating func changeSignal() {
+        if self == .Green {
+            self = .Red
+        } else {
+            self = .Green
+        }
+    }
+}
