@@ -31,8 +31,13 @@ class ViewController: UIViewController {
         //sec10Sample1()
         
         //sec10-2
-        
-        
+        let structC = StructSample()
+        structC.makeColorBox()
+        structC.makeBox()
+        structC.makeGoods()
+        structC.moveLine()
+        structC.stockCheck()
+        structC.makeMonster()
     }
     
     func sec2Sample() {

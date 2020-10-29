@@ -38,6 +38,7 @@
 		C630E44A2547D5DC00444C22 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E4492547D5DC00444C22 /* Car.swift */; };
 		C630E44F2547DA4000444C22 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E44E2547DA4000444C22 /* Game.swift */; };
 		C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */; };
+		C6B1B59B254A9682008C6DC6 /* StructSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1B59A254A9682008C6DC6 /* StructSample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		C630E4492547D5DC00444C22 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		C630E44E2547DA4000444C22 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalSample.swift; sourceTree = "<group>"; };
+		C6B1B59A254A9682008C6DC6 /* StructSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				C61431202549059600642F07 /* NewGame.swift */,
 				C61431252549080900642F07 /* GameProtocol.swift */,
 				C61431302549303200642F07 /* EnumSample.swift */,
+				C6B1B59A254A9682008C6DC6 /* StructSample.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				C615B68E252AEFD5008D3F0C /* ViewController.swift in Sources */,
 				C62581DA252EED99009C884C /* IfSample.swift in Sources */,
 				C615A57E253E81640011B547 /* SetSample.swift in Sources */,
+				C6B1B59B254A9682008C6DC6 /* StructSample.swift in Sources */,
 				C62581E4252EF0EC009C884C /* ForSample.swift in Sources */,
 				C630E44F2547DA4000444C22 /* Game.swift in Sources */,
 				C608B9692546A55100098140 /* ClassSample.swift in Sources */,
