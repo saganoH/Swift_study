@@ -28,16 +28,16 @@ class ViewController: UIViewController {
         //sec8Sample()
         //sec9Sample1()
         //sec9Sample2()
+        //sec10Sample1()
         
-        //sec10
-        let enumC = EnumSample()
-        let theStuff = enumC.packing(size: .M)
-        print(theStuff)
-        
-        enumC.changeCourse()
-        enumC.shirtPattern()
-        enumC.ticketType()
-        enumC.signalController()
+        //sec10-2
+        let structC = StructSample()
+        structC.makeColorBox()
+        structC.makeBox()
+        structC.makeGoods()
+        structC.moveLine()
+        structC.stockCheck()
+        structC.makeMonster()
     }
     
     func sec2Sample() {
@@ -280,5 +280,16 @@ class ViewController: UIViewController {
         print(newGamePlayer.gamePoint)
         newGamePlayer.hit()
         print(newGamePlayer.gamePoint)
+    }
+    
+    func sec10Sample1() {
+        let enumC = EnumSample()
+        let theStuff = enumC.packing(size: .M)
+        print(theStuff)
+        
+        enumC.changeCourse()
+        enumC.shirtPattern()
+        enumC.ticketType()
+        enumC.signalController()
     }
 }
