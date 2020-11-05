@@ -38,6 +38,8 @@
 		C630E44A2547D5DC00444C22 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E4492547D5DC00444C22 /* Car.swift */; };
 		C630E44F2547DA4000444C22 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E44E2547DA4000444C22 /* Game.swift */; };
 		C63DC01A25528ABA009A624E /* Sec11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DC01925528ABA009A624E /* Sec11ViewController.swift */; };
+		C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */; };
+		C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */; };
 		C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */; };
 		C6B1B59B254A9682008C6DC6 /* StructSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1B59A254A9682008C6DC6 /* StructSample.swift */; };
 /* End PBXBuildFile section */
@@ -95,6 +97,8 @@
 		C630E4492547D5DC00444C22 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		C630E44E2547DA4000444C22 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		C63DC01925528ABA009A624E /* Sec11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec11ViewController.swift; sourceTree = "<group>"; };
+		C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController.swift; sourceTree = "<group>"; };
+		C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController2.swift; sourceTree = "<group>"; };
 		C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalSample.swift; sourceTree = "<group>"; };
 		C6B1B59A254A9682008C6DC6 /* StructSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +180,8 @@
 				C61431302549303200642F07 /* EnumSample.swift */,
 				C6B1B59A254A9682008C6DC6 /* StructSample.swift */,
 				C63DC01925528ABA009A624E /* Sec11ViewController.swift */,
+				C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */,
+				C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -342,6 +348,8 @@
 				C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */,
 				C61431262549080900642F07 /* GameProtocol.swift in Sources */,
 				C630E4422547C0A200444C22 /* Player.swift in Sources */,
+				C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */,
+				C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */,
 				C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */,
 				C6226A1A2535383600E2B794 /* StringSample.swift in Sources */,
 				C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */,
