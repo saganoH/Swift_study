@@ -15,6 +15,9 @@ extension UIColor {
 }
 
 class ViewController: UIViewController {
+    //このビューコントローラに戻ってくる
+    @IBAction func comeHome(segue: UIStoryboardSegue) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
