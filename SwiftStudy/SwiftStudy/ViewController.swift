@@ -29,15 +29,8 @@ class ViewController: UIViewController {
         //sec9Sample1()
         //sec9Sample2()
         //sec10Sample1()
+        //sec10Sample2()
         
-        //sec10-2
-        let structC = StructSample()
-        structC.makeColorBox()
-        structC.makeBox()
-        structC.makeGoods()
-        structC.moveLine()
-        structC.stockCheck()
-        structC.makeMonster()
     }
     
     func sec2Sample() {
@@ -291,5 +284,15 @@ class ViewController: UIViewController {
         enumC.shirtPattern()
         enumC.ticketType()
         enumC.signalController()
+    }
+    
+    func sec10Sample2() {
+        let structC = StructSample()
+        structC.makeColorBox()
+        structC.makeBox()
+        structC.makeGoods()
+        structC.moveLine()
+        structC.stockCheck()
+        structC.makeMonster()
     }
 }

@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeP-hr-dA7">
-                                <rect key="frame" x="109.5" y="433" width="195" height="30"/>
+                                <rect key="frame" x="109.5" y="406" width="195" height="30"/>
                                 <state key="normal" title="Chapter11 オートレイアウト"/>
                                 <connections>
                                     <segue destination="EDU-hV-irf" kind="presentation" id="lEg-i2-7fj"/>
@@ -51,20 +51,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ハローワールド" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsb-bj-OOl">
-                                <rect key="frame" x="146" y="410.5" width="122" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日の朝ごはんは" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsb-bj-OOl">
+                                <rect key="frame" x="137.5" y="410.5" width="139" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="こんにちは" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weK-Jq-OLQ">
-                                <rect key="frame" x="74" y="515" width="87" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="珈琲" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weK-Jq-OLQ">
+                                <rect key="frame" x="113" y="510.5" width="35" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsL-jl-qyn">
-                                <rect key="frame" x="281" y="515" width="39" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwV-Vn-V6V">
+                                <rect key="frame" x="40" y="50" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="scV-4k-FWB"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="50" placeholderIntrinsicHeight="49.999999999999943" image="IMG_1035" translatesAutoresizingMaskIntoConstraints="NO" id="gTm-Zo-sRU">
+                                <rect key="frame" x="167" y="60" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="JJ9-U1-fEs"/>
+                                    <constraint firstAttribute="height" constant="80" id="zyl-W3-poa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="南瓜プリン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsL-jl-qyn">
+                                <rect key="frame" x="240" y="510.5" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,20 +88,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rsb-bj-OOl" firstAttribute="centerY" secondItem="Zq7-1V-HkJ" secondAttribute="centerY" id="4GB-ek-mhe"/>
+                            <constraint firstItem="gTm-Zo-sRU" firstAttribute="centerX" secondItem="Zq7-1V-HkJ" secondAttribute="centerX" id="4Rb-uU-RFj"/>
                             <constraint firstItem="rsb-bj-OOl" firstAttribute="centerX" secondItem="Zq7-1V-HkJ" secondAttribute="centerX" id="Eqp-X6-Sbp"/>
+                            <constraint firstItem="gTm-Zo-sRU" firstAttribute="top" secondItem="3Y7-CC-NPX" secondAttribute="top" constant="60" id="HeS-bh-B9L"/>
                             <constraint firstItem="EsL-jl-qyn" firstAttribute="centerY" secondItem="Zq7-1V-HkJ" secondAttribute="centerY" constant="100" id="ahl-cs-ZDm"/>
                             <constraint firstItem="weK-Jq-OLQ" firstAttribute="centerY" secondItem="Zq7-1V-HkJ" secondAttribute="centerY" constant="100" id="ce5-SK-eOT"/>
-                            <constraint firstItem="EsL-jl-qyn" firstAttribute="centerX" secondItem="Zq7-1V-HkJ" secondAttribute="centerX" constant="100" id="i4t-K5-9NO"/>
-                            <constraint firstItem="weK-Jq-OLQ" firstAttribute="centerX" secondItem="Zq7-1V-HkJ" secondAttribute="centerX" constant="-100" id="tCf-Vy-YZK"/>
+                            <constraint firstItem="EsL-jl-qyn" firstAttribute="centerX" secondItem="Zq7-1V-HkJ" secondAttribute="centerX" constant="76.5" id="i4t-K5-9NO"/>
+                            <constraint firstItem="weK-Jq-OLQ" firstAttribute="centerX" secondItem="Zq7-1V-HkJ" secondAttribute="centerX" constant="-76.5" id="tCf-Vy-YZK"/>
+                            <constraint firstItem="WwV-Vn-V6V" firstAttribute="leading" secondItem="3Y7-CC-NPX" secondAttribute="leading" constant="40" id="tgv-jb-K0O"/>
+                            <constraint firstItem="WwV-Vn-V6V" firstAttribute="top" secondItem="3Y7-CC-NPX" secondAttribute="top" constant="50" id="xCt-D3-7D8"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVg-pC-b9u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493" y="-60"/>
+            <point key="canvasLocation" x="492.75362318840581" y="-60.267857142857139"/>
         </scene>
     </scenes>
     <resources>
+        <image name="IMG_1035" width="3024" height="3024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
