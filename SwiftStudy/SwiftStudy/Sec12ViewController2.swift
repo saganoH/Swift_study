@@ -22,7 +22,16 @@ class Sec12ViewController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
+        let myButton = UIButton(type: .custom)
+        myButton.frame = CGRect(x: 120, y: 200, width: 70, height: 70)
+        
+        let image1 = UIImage(named: "btnNormal")
+        let image2 = UIImage(named: "btnHighlighted")
+        myButton.setImage(image1, for: .normal)
+        myButton.setImage(image2, for: .highlighted)
+    
+        self.view.addSubview(myButton)
         
     }
 }
