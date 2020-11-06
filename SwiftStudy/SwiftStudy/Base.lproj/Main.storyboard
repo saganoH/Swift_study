@@ -205,7 +205,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awF-iS-T6u">
-                                <rect key="frame" x="37" y="200" width="340" height="512"/>
+                                <rect key="frame" x="38" y="200" width="338" height="512"/>
                                 <state key="normal" title="OK" backgroundImage="kaeru"/>
                                 <connections>
                                     <action selector="tapOK:" destination="Y90-Y6-bFy" eventType="touchUpInside" id="pNr-s3-BxK"/>
@@ -218,13 +218,22 @@
                                     <segue destination="90B-j3-L9D" kind="unwind" unwindAction="comeSec12TopWithSegue:" id="eU5-jp-fmv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cN-i8-1Vn">
+                                <rect key="frame" x="343" y="728" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="qRQ-Lc-boJ" kind="presentation" id="hqe-K9-N31"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VtN-SX-n4k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="12K-iX-t84" firstAttribute="leading" secondItem="VtN-SX-n4k" secondAttribute="leading" constant="40" id="1Kt-ia-r7E"/>
+                            <constraint firstItem="VtN-SX-n4k" firstAttribute="bottom" secondItem="3cN-i8-1Vn" secondAttribute="bottom" constant="50" id="57f-nf-2Ia"/>
                             <constraint firstItem="awF-iS-T6u" firstAttribute="centerX" secondItem="IT3-Gv-i6z" secondAttribute="centerX" id="94V-6a-js3"/>
                             <constraint firstItem="HEm-mf-o9S" firstAttribute="top" secondItem="VtN-SX-n4k" secondAttribute="top" constant="100" id="Gwv-9d-g2P"/>
+                            <constraint firstItem="VtN-SX-n4k" firstAttribute="trailing" secondItem="3cN-i8-1Vn" secondAttribute="trailing" constant="40" id="K4E-dO-pp6"/>
                             <constraint firstItem="VtN-SX-n4k" firstAttribute="trailing" secondItem="HEm-mf-o9S" secondAttribute="trailing" constant="80" id="PVb-yY-dCx"/>
                             <constraint firstItem="awF-iS-T6u" firstAttribute="top" secondItem="VtN-SX-n4k" secondAttribute="top" constant="200" id="PdN-35-dK5"/>
                             <constraint firstItem="B5U-sk-Pa7" firstAttribute="top" secondItem="VtN-SX-n4k" secondAttribute="top" constant="100" id="Tan-6T-GbA"/>
@@ -242,12 +251,114 @@
             </objects>
             <point key="canvasLocation" x="1298.5507246376812" y="412.5"/>
         </scene>
+        <!--Sec12 View Controller3-->
+        <scene sceneID="FgK-VJ-MbH">
+            <objects>
+                <viewController id="qRQ-Lc-boJ" customClass="Sec12ViewController3" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dUG-02-CeK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QsU-9z-reK">
+                                <rect key="frame" x="40" y="50" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="yxt-Cj-LCK" kind="unwind" unwindAction="comeSec12view2WithSegue:" id="0vy-uo-YNV"/>
+                                </connections>
+                            </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Xk1-Gp-jHS">
+                                <rect key="frame" x="160" y="111" width="94" height="32"/>
+                                <connections>
+                                    <action selector="changedStepperValue:" destination="qRQ-Lc-boJ" eventType="valueChanged" id="eOp-5V-GhD"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="num" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k2-3k-kZt">
+                                <rect key="frame" x="190" y="70" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ps-uG-zhV">
+                                <rect key="frame" x="182.5" y="173" width="51" height="31"/>
+                                <connections>
+                                    <action selector="showLabel:" destination="qRQ-Lc-boJ" eventType="valueChanged" id="sC4-IT-Xvu"/>
+                                </connections>
+                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QhR-tP-j9v">
+                                <rect key="frame" x="221" y="285" width="135" height="32"/>
+                                <segments>
+                                    <segment title="青色" width="43"/>
+                                    <segment title="黄色"/>
+                                    <segment title="緑色"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changedColor:" destination="qRQ-Lc-boJ" eventType="valueChanged" id="B0L-NC-6H5"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zkh-1B-30m">
+                                <rect key="frame" x="71" y="260" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="iiA-w2-rnV"/>
+                                    <constraint firstAttribute="width" constant="100" id="td7-T1-emm"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="humikiri" translatesAutoresizingMaskIntoConstraints="NO" id="aUb-jI-5Tw">
+                                <rect key="frame" x="71" y="396" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="rkb-r8-8yc"/>
+                                    <constraint firstAttribute="width" constant="100" id="uXQ-F1-415"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ITz-Oc-YGT">
+                                <rect key="frame" x="229" y="431" width="118" height="31"/>
+                                <connections>
+                                    <action selector="changeSlider:" destination="qRQ-Lc-boJ" eventType="valueChanged" id="5RE-4S-hwD"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Wd-OZ-edU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zkh-1B-30m" firstAttribute="top" secondItem="7Ps-uG-zhV" secondAttribute="bottom" constant="56" id="0Xh-NG-E6M"/>
+                            <constraint firstItem="6k2-3k-kZt" firstAttribute="centerX" secondItem="dUG-02-CeK" secondAttribute="centerX" id="1lK-Va-xBu"/>
+                            <constraint firstItem="ITz-Oc-YGT" firstAttribute="centerX" secondItem="dUG-02-CeK" secondAttribute="centerX" constant="81" id="53W-SK-x3d"/>
+                            <constraint firstItem="QhR-tP-j9v" firstAttribute="top" secondItem="zkh-1B-30m" secondAttribute="bottom" constant="-75" id="54N-Vw-mIY"/>
+                            <constraint firstItem="QsU-9z-reK" firstAttribute="leading" secondItem="8Wd-OZ-edU" secondAttribute="leading" constant="40" id="9sj-Zh-OkM"/>
+                            <constraint firstItem="6k2-3k-kZt" firstAttribute="top" secondItem="8Wd-OZ-edU" secondAttribute="top" constant="70" id="KGD-Yb-JUN"/>
+                            <constraint firstItem="aUb-jI-5Tw" firstAttribute="centerX" secondItem="dUG-02-CeK" secondAttribute="centerX" constant="-86" id="N1M-Uz-dci"/>
+                            <constraint firstItem="7Ps-uG-zhV" firstAttribute="centerX" secondItem="dUG-02-CeK" secondAttribute="centerX" id="cdH-pe-EyU"/>
+                            <constraint firstItem="QhR-tP-j9v" firstAttribute="centerX" secondItem="dUG-02-CeK" secondAttribute="centerX" constant="81.5" id="fwL-dx-RYj"/>
+                            <constraint firstItem="zkh-1B-30m" firstAttribute="centerX" secondItem="dUG-02-CeK" secondAttribute="centerX" constant="-86" id="iTD-gC-97A"/>
+                            <constraint firstItem="Xk1-Gp-jHS" firstAttribute="top" secondItem="6k2-3k-kZt" secondAttribute="bottom" constant="20" id="iUO-uG-t5R"/>
+                            <constraint firstItem="Xk1-Gp-jHS" firstAttribute="centerX" secondItem="dUG-02-CeK" secondAttribute="centerX" id="k9N-iM-nZY"/>
+                            <constraint firstItem="QsU-9z-reK" firstAttribute="top" secondItem="8Wd-OZ-edU" secondAttribute="top" constant="50" id="oMB-RI-blA"/>
+                            <constraint firstItem="ITz-Oc-YGT" firstAttribute="centerY" secondItem="dUG-02-CeK" secondAttribute="centerY" constant="25" id="ojs-Pm-JDp"/>
+                            <constraint firstItem="7Ps-uG-zhV" firstAttribute="top" secondItem="Xk1-Gp-jHS" secondAttribute="bottom" constant="30" id="sMr-iN-6yS"/>
+                            <constraint firstItem="aUb-jI-5Tw" firstAttribute="top" secondItem="zkh-1B-30m" secondAttribute="bottom" constant="36" id="sxv-K8-kv3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorChip" destination="zkh-1B-30m" id="Pfy-ab-eQj"/>
+                        <outlet property="humikiri" destination="aUb-jI-5Tw" id="e3x-c9-GhN"/>
+                        <outlet property="numLabel" destination="6k2-3k-kZt" id="XYJ-kD-d5Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgs-2m-CPm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="yxt-Cj-LCK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2053.6231884057975" y="412.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="IMG_1035" width="3024" height="3024"/>
-        <image name="kaeru" width="340" height="512"/>
+        <image name="humikiri" width="4608" height="3072"/>
+        <image name="kaeru" width="338" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

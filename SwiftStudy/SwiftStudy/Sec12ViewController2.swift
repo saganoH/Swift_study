@@ -2,6 +2,10 @@ import UIKit
 
 class Sec12ViewController2: UIViewController {
     
+    //このビューコントローラに戻ってくる
+    @IBAction func comeSec12view2(segue: UIStoryboardSegue) {
+    }
+    
     @IBOutlet weak var numLabel: UILabel!
     
     @IBOutlet weak var okButton: UIButton!
