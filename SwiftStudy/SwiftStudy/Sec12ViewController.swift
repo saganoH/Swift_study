@@ -6,17 +6,19 @@ class Sec12ViewController: UIViewController {
     @IBAction func comeSec12Top(segue: UIStoryboardSegue) {
     }
     
-    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var myLabel: UILabel! {
+        didSet {
+            myLabel.textAlignment = .center
+        }
+    }
     
     @IBAction func hello(_ sender: Any) {
         myLabel.text = "こんにちは"
-        myLabel.textAlignment = .center
         myLabel.backgroundColor = .green
     }
     
     @IBAction func thankYou(_ sender: Any) {
         myLabel.text = "ありがとう"
-        myLabel.textAlignment = .center
         myLabel.backgroundColor = .red
     }
     
