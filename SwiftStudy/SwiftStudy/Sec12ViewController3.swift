@@ -14,7 +14,6 @@ class Sec12ViewController3: UIViewController {
         numLabel.isHidden = !sender.isOn
     }
     
-    //これ実行したら表示されていない、なぜ？
     @IBOutlet weak var colorChip: UIView!
     
     @IBAction func changedColor(_ sender: UISegmentedControl) {
