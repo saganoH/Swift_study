@@ -1,6 +1,6 @@
 import UIKit
 
-class Sec12ViewController3: UIViewController {
+class Sec12ViewController3: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var numLabel: UILabel!
     
@@ -36,8 +36,21 @@ class Sec12ViewController3: UIViewController {
         humikiri.alpha = CGFloat(sender.value)
     }
     
+    @IBOutlet weak var numTextField: UITextField!
+    
+    @IBOutlet weak var numTextLabel: UILabel!
+    
+    
+    @IBAction func tapView(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //myTextFieldのデリゲートになる
+        numTextField.delegate = self
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,5 +65,35 @@ class Sec12ViewController3: UIViewController {
         //背景色を変更
         let myBackColor = RGBA(red: 90, green: 200, blue: 200, alpha: 1)
         self.view.backgroundColor = myBackColor
+    }
+    
+    //テキストフィールドが編集されると実行されるデリゲートメソッド
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        //変更後の内容を作成する
+        let tmpString = textField.text! as NSString
+        let replacedString = tmpString.replacingCharacters(in: range, with: string)
+        if replacedString == "" {
+            //変更後が空の場合
+            numTextLabel.text = "0"
+        } else {
+            //変更後の値を計算してラベルに表示する
+            if let num = Int(replacedString) {
+                numTextLabel.text = String(num * 25)
+            }
+        }
+        return true
+    }
+    
+    //クリアボタンで実行されるデリゲートメソッド
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        numTextLabel.text = "0"
+        return true
+    }
+    
+    //改行が入力された場合のデリゲートメソッド
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //キーボードを下げる
+        view.endEditing(true)
+        return false //改行は入力しない
     }
 }

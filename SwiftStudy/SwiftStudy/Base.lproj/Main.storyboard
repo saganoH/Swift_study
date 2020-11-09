@@ -316,17 +316,33 @@
                                     <action selector="changeSlider:" destination="qRQ-Lc-boJ" eventType="valueChanged" id="5RE-4S-hwD"/>
                                 </connections>
                             </slider>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="個数を入れる" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Xlu-tV-xdB">
+                                <rect key="frame" x="74" y="558" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67f-Ee-0BX">
+                                <rect key="frame" x="300" y="565" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Wd-OZ-edU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="zkh-1B-30m" firstAttribute="top" secondItem="7Ps-uG-zhV" secondAttribute="bottom" constant="56" id="0Xh-NG-E6M"/>
                             <constraint firstItem="6k2-3k-kZt" firstAttribute="centerX" secondItem="dUG-02-CeK" secondAttribute="centerX" id="1lK-Va-xBu"/>
                             <constraint firstItem="ITz-Oc-YGT" firstAttribute="centerX" secondItem="dUG-02-CeK" secondAttribute="centerX" constant="81" id="53W-SK-x3d"/>
                             <constraint firstItem="QhR-tP-j9v" firstAttribute="top" secondItem="zkh-1B-30m" secondAttribute="bottom" constant="-75" id="54N-Vw-mIY"/>
+                            <constraint firstItem="67f-Ee-0BX" firstAttribute="leading" secondItem="Xlu-tV-xdB" secondAttribute="trailing" constant="112" id="90A-c1-Jis"/>
                             <constraint firstItem="QsU-9z-reK" firstAttribute="leading" secondItem="8Wd-OZ-edU" secondAttribute="leading" constant="40" id="9sj-Zh-OkM"/>
+                            <constraint firstItem="Xlu-tV-xdB" firstAttribute="top" secondItem="aUb-jI-5Tw" secondAttribute="bottom" constant="62" id="A7t-1O-AZc"/>
+                            <constraint firstItem="Xlu-tV-xdB" firstAttribute="leading" secondItem="8Wd-OZ-edU" secondAttribute="leading" constant="74" id="DLS-VJ-PTX"/>
                             <constraint firstItem="6k2-3k-kZt" firstAttribute="leading" secondItem="QsU-9z-reK" secondAttribute="trailing" constant="119" id="GU6-L7-7w1"/>
                             <constraint firstItem="6k2-3k-kZt" firstAttribute="top" secondItem="8Wd-OZ-edU" secondAttribute="top" constant="70" id="KGD-Yb-JUN"/>
+                            <constraint firstItem="67f-Ee-0BX" firstAttribute="top" secondItem="ITz-Oc-YGT" secondAttribute="bottom" constant="104" id="KJs-UW-XJb"/>
                             <constraint firstItem="aUb-jI-5Tw" firstAttribute="centerX" secondItem="dUG-02-CeK" secondAttribute="centerX" constant="-86" id="N1M-Uz-dci"/>
                             <constraint firstItem="ITz-Oc-YGT" firstAttribute="top" secondItem="QhR-tP-j9v" secondAttribute="bottom" constant="115" id="aza-sD-VBc"/>
                             <constraint firstItem="7Ps-uG-zhV" firstAttribute="centerX" secondItem="dUG-02-CeK" secondAttribute="centerX" id="cdH-pe-EyU"/>
@@ -341,15 +357,25 @@
                             <constraint firstItem="aUb-jI-5Tw" firstAttribute="top" secondItem="zkh-1B-30m" secondAttribute="bottom" constant="36" id="sxv-K8-kv3"/>
                             <constraint firstItem="QhR-tP-j9v" firstAttribute="top" secondItem="7Ps-uG-zhV" secondAttribute="bottom" constant="81" id="yx8-uG-0tf"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5oG-l5-JjW" appends="YES" id="qYv-o2-mVy"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="colorChip" destination="zkh-1B-30m" id="Pfy-ab-eQj"/>
                         <outlet property="humikiri" destination="aUb-jI-5Tw" id="e3x-c9-GhN"/>
                         <outlet property="numLabel" destination="6k2-3k-kZt" id="XYJ-kD-d5Q"/>
+                        <outlet property="numTextField" destination="Xlu-tV-xdB" id="RiP-9L-Yum"/>
+                        <outlet property="numTextLabel" destination="67f-Ee-0BX" id="8QE-ms-N1a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgs-2m-CPm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="yxt-Cj-LCK" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="5oG-l5-JjW">
+                    <connections>
+                        <action selector="tapView:" destination="qRQ-Lc-boJ" id="wT3-BN-aC3"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2053.6231884057975" y="412.5"/>
         </scene>
