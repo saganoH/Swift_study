@@ -2,6 +2,10 @@ import UIKit
 
 class Sec12ViewController3: UIViewController, UITextFieldDelegate{
     
+    //このビューコントローラに戻ってくる
+    @IBAction func comeSec12view3(segue: UIStoryboardSegue) {
+    }
+    
     @IBOutlet weak var numLabel: UILabel!
     
     @IBAction func changedStepperValue(_ sender: UIStepper) {
@@ -45,28 +49,6 @@ class Sec12ViewController3: UIViewController, UITextFieldDelegate{
         view.endEditing(true)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        //myTextFieldのデリゲートになる
-        numTextField.delegate = self
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        //色を作る
-        func RGBA(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor {
-            let rgba = UIColor(red: red/255, green: green/255, blue: blue/255, alpha: alpha)
-            return rgba
-        }
-        
-        //背景色を変更
-        let myBackColor = RGBA(red: 90, green: 200, blue: 200, alpha: 1)
-        self.view.backgroundColor = myBackColor
-    }
-    
     //テキストフィールドが編集されると実行されるデリゲートメソッド
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         //変更後の内容を作成する
@@ -95,5 +77,26 @@ class Sec12ViewController3: UIViewController, UITextFieldDelegate{
         //キーボードを下げる
         view.endEditing(true)
         return false //改行は入力しない
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //myTextFieldのデリゲートになる
+        numTextField.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //色を作る
+        func RGBA(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor {
+            let rgba = UIColor(red: red/255, green: green/255, blue: blue/255, alpha: alpha)
+            return rgba
+        }
+        
+        //背景色を変更
+        let myBackColor = RGBA(red: 90, green: 200, blue: 200, alpha: 1)
+        self.view.backgroundColor = myBackColor
     }
 }
