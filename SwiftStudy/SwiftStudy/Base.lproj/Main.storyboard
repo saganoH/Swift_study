@@ -210,7 +210,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awF-iS-T6u">
-                                <rect key="frame" x="37" y="200" width="340" height="512"/>
+                                <rect key="frame" x="38" y="200" width="338" height="512"/>
                                 <state key="normal" title="OK" backgroundImage="kaeru"/>
                                 <connections>
                                     <action selector="tapOK:" destination="Y90-Y6-bFy" eventType="touchUpInside" id="pNr-s3-BxK"/>
@@ -223,14 +223,23 @@
                                     <segue destination="90B-j3-L9D" kind="unwind" unwindAction="comeSec12TopWithSegue:" id="eU5-jp-fmv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cN-i8-1Vn">
+                                <rect key="frame" x="343" y="728" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="qRQ-Lc-boJ" kind="presentation" id="hqe-K9-N31"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VtN-SX-n4k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="12K-iX-t84" firstAttribute="leading" secondItem="VtN-SX-n4k" secondAttribute="leading" constant="40" id="1Kt-ia-r7E"/>
+                            <constraint firstItem="VtN-SX-n4k" firstAttribute="bottom" secondItem="3cN-i8-1Vn" secondAttribute="bottom" constant="50" id="57f-nf-2Ia"/>
                             <constraint firstItem="awF-iS-T6u" firstAttribute="centerX" secondItem="IT3-Gv-i6z" secondAttribute="centerX" id="94V-6a-js3"/>
                             <constraint firstItem="VtN-SX-n4k" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="12K-iX-t84" secondAttribute="trailing" symbolic="YES" id="CJJ-OA-7eh"/>
                             <constraint firstItem="HEm-mf-o9S" firstAttribute="top" secondItem="VtN-SX-n4k" secondAttribute="top" constant="100" id="Gwv-9d-g2P"/>
+                            <constraint firstItem="VtN-SX-n4k" firstAttribute="trailing" secondItem="3cN-i8-1Vn" secondAttribute="trailing" constant="40" id="K4E-dO-pp6"/>
                             <constraint firstItem="VtN-SX-n4k" firstAttribute="trailing" secondItem="HEm-mf-o9S" secondAttribute="trailing" constant="80" id="PVb-yY-dCx"/>
                             <constraint firstItem="awF-iS-T6u" firstAttribute="top" secondItem="VtN-SX-n4k" secondAttribute="top" constant="200" id="PdN-35-dK5"/>
                             <constraint firstItem="B5U-sk-Pa7" firstAttribute="top" secondItem="VtN-SX-n4k" secondAttribute="top" constant="100" id="Tan-6T-GbA"/>
@@ -250,8 +259,6 @@
             </objects>
             <point key="canvasLocation" x="1298.5507246376812" y="412.5"/>
         </scene>
-<<<<<<< HEAD
-=======
         <!--Sec12 View Controller3-->
         <scene sceneID="FgK-VJ-MbH">
             <objects>
@@ -458,7 +465,6 @@
             </objects>
             <point key="canvasLocation" x="2830" y="413"/>
         </scene>
->>>>>>> sec12-2
     </scenes>
     <designables>
         <designable name="yRa-4B-bpW">
@@ -467,18 +473,13 @@
     </designables>
     <resources>
         <image name="IMG_1035" width="3024" height="3024"/>
-        <image name="kaeru" width="340" height="512"/>
+        <image name="humikiri" width="4608" height="3072"/>
+        <image name="kaeru" width="338" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-<<<<<<< HEAD
-=======
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
->>>>>>> sec12-2
     </resources>
 </document>
