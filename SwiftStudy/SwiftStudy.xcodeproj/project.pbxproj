@@ -38,10 +38,13 @@
 		C630E44A2547D5DC00444C22 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E4492547D5DC00444C22 /* Car.swift */; };
 		C630E44F2547DA4000444C22 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E44E2547DA4000444C22 /* Game.swift */; };
 		C63DC01A25528ABA009A624E /* Sec11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DC01925528ABA009A624E /* Sec11ViewController.swift */; };
+		C67833DC2554E3F000DE7E54 /* Sec12ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */; };
 		C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */; };
 		C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */; };
 		C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */; };
 		C6B1B59B254A9682008C6DC6 /* StructSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1B59A254A9682008C6DC6 /* StructSample.swift */; };
+		C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */; };
+		C6DD4D62255A385500714A56 /* customLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D61255A385500714A56 /* customLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,10 +100,13 @@
 		C630E4492547D5DC00444C22 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		C630E44E2547DA4000444C22 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		C63DC01925528ABA009A624E /* Sec11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec11ViewController.swift; sourceTree = "<group>"; };
+		C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController3.swift; sourceTree = "<group>"; };
 		C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController.swift; sourceTree = "<group>"; };
 		C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController2.swift; sourceTree = "<group>"; };
 		C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalSample.swift; sourceTree = "<group>"; };
 		C6B1B59A254A9682008C6DC6 /* StructSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructSample.swift; sourceTree = "<group>"; };
+		C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController4.swift; sourceTree = "<group>"; };
+		C6DD4D61255A385500714A56 /* customLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,7 @@
 		C615B688252AEFD5008D3F0C /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */,
 				C608B9682546A55100098140 /* ClassSample.swift */,
 				C603F368253023F70005F46F /* FunctionSample.swift */,
 				C615B689252AEFD5008D3F0C /* AppDelegate.swift */,
@@ -182,6 +189,8 @@
 				C63DC01925528ABA009A624E /* Sec11ViewController.swift */,
 				C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */,
 				C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */,
+				C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */,
+				C6DD4D61255A385500714A56 /* customLabel.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -348,6 +357,7 @@
 				C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */,
 				C61431262549080900642F07 /* GameProtocol.swift in Sources */,
 				C630E4422547C0A200444C22 /* Player.swift in Sources */,
+				C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */,
 				C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */,
 				C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */,
 				C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */,
@@ -359,7 +369,9 @@
 				C61431312549303200642F07 /* EnumSample.swift in Sources */,
 				C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */,
 				C6174A492537C30E00C1CF8F /* ArraySample.swift in Sources */,
+				C6DD4D62255A385500714A56 /* customLabel.swift in Sources */,
 				C630E44A2547D5DC00444C22 /* Car.swift in Sources */,
+				C67833DC2554E3F000DE7E54 /* Sec12ViewController3.swift in Sources */,
 				C62581DF252EEF00009C884C /* OperatorSample.swift in Sources */,
 				C62581E9252EF18A009C884C /* WhileSample.swift in Sources */,
 			);
