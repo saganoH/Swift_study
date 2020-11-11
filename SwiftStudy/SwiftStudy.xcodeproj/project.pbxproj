@@ -43,7 +43,7 @@
 		C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */; };
 		C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */; };
 		C6B1B59B254A9682008C6DC6 /* StructSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1B59A254A9682008C6DC6 /* StructSample.swift */; };
-		C6DD4D5A255A258000714A56 /* sec12ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D59255A258000714A56 /* sec12ViewController4.swift */; };
+		C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */; };
 		C6DD4D62255A385500714A56 /* customLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D61255A385500714A56 /* customLabel.swift */; };
 /* End PBXBuildFile section */
 
@@ -105,7 +105,7 @@
 		C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController2.swift; sourceTree = "<group>"; };
 		C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalSample.swift; sourceTree = "<group>"; };
 		C6B1B59A254A9682008C6DC6 /* StructSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructSample.swift; sourceTree = "<group>"; };
-		C6DD4D59255A258000714A56 /* sec12ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sec12ViewController4.swift; sourceTree = "<group>"; };
+		C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController4.swift; sourceTree = "<group>"; };
 		C6DD4D61255A385500714A56 /* customLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,7 +157,7 @@
 		C615B688252AEFD5008D3F0C /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
-				C6DD4D59255A258000714A56 /* sec12ViewController4.swift */,
+				C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */,
 				C608B9682546A55100098140 /* ClassSample.swift */,
 				C603F368253023F70005F46F /* FunctionSample.swift */,
 				C615B689252AEFD5008D3F0C /* AppDelegate.swift */,
@@ -357,7 +357,7 @@
 				C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */,
 				C61431262549080900642F07 /* GameProtocol.swift in Sources */,
 				C630E4422547C0A200444C22 /* Player.swift in Sources */,
-				C6DD4D5A255A258000714A56 /* sec12ViewController4.swift in Sources */,
+				C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */,
 				C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */,
 				C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */,
 				C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */,
