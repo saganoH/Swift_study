@@ -14,6 +14,7 @@
 		C61431212549059600642F07 /* NewGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61431202549059600642F07 /* NewGame.swift */; };
 		C61431262549080900642F07 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61431252549080900642F07 /* GameProtocol.swift */; };
 		C61431312549303200642F07 /* EnumSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61431302549303200642F07 /* EnumSample.swift */; };
+		C614EDBC255CFAD10047920D /* Sec13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C614EDBB255CFAD10047920D /* Sec13ViewController.swift */; };
 		C615A57E253E81640011B547 /* SetSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615A57D253E81640011B547 /* SetSample.swift */; };
 		C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B689252AEFD5008D3F0C /* AppDelegate.swift */; };
 		C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B68B252AEFD5008D3F0C /* SceneDelegate.swift */; };
@@ -71,6 +72,7 @@
 		C61431202549059600642F07 /* NewGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGame.swift; sourceTree = "<group>"; };
 		C61431252549080900642F07 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		C61431302549303200642F07 /* EnumSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumSample.swift; sourceTree = "<group>"; };
+		C614EDBB255CFAD10047920D /* Sec13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController.swift; sourceTree = "<group>"; };
 		C615A57D253E81640011B547 /* SetSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetSample.swift; sourceTree = "<group>"; };
 		C615B686252AEFD5008D3F0C /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C615B689252AEFD5008D3F0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */,
 				C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */,
 				C6DD4D61255A385500714A56 /* customLabel.swift */,
+				C614EDBB255CFAD10047920D /* Sec13ViewController.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				C62581E4252EF0EC009C884C /* ForSample.swift in Sources */,
 				C630E44F2547DA4000444C22 /* Game.swift in Sources */,
 				C608B9692546A55100098140 /* ClassSample.swift in Sources */,
+				C614EDBC255CFAD10047920D /* Sec13ViewController.swift in Sources */,
 				C62581D5252EEB65009C884C /* SwitchSample.swift in Sources */,
 				C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */,
 				C61431262549080900642F07 /* GameProtocol.swift in Sources */,

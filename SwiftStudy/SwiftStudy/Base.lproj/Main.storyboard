@@ -36,12 +36,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8p4-7u-etq">
+                                <rect key="frame" x="123.5" y="326.5" width="167" height="30"/>
+                                <state key="normal" title="Chapter13 ビューと画像"/>
+                                <connections>
+                                    <segue destination="F9U-ik-UTC" kind="presentation" id="gTN-Hr-IjV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="8p4-7u-etq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ZI-3x-jr6"/>
                             <constraint firstItem="oUH-k4-wsP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="CjQ-Sp-ssx"/>
                             <constraint firstItem="oUH-k4-wsP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ESL-cE-iap"/>
+                            <constraint firstItem="8p4-7u-etq" firstAttribute="top" secondItem="Mnh-Q7-8ZA" secondAttribute="bottom" constant="30" id="Kgz-lb-axF"/>
                             <constraint firstItem="Mnh-Q7-8ZA" firstAttribute="top" secondItem="jeP-hr-dA7" secondAttribute="bottom" constant="30" id="Pqu-RR-NYi"/>
                             <constraint firstItem="jeP-hr-dA7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ukd-cG-Y3M"/>
                             <constraint firstItem="Mnh-Q7-8ZA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p6A-Ln-oDt"/>
@@ -51,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-268.1159420289855" y="-59.598214285714285"/>
+            <point key="canvasLocation" x="-657" y="528"/>
         </scene>
         <!--Sec11 View Controller-->
         <scene sceneID="qaW-Bz-qe7">
@@ -439,10 +448,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBQ-cl-0KX">
+                                <rect key="frame" x="246" y="738" width="138" height="30"/>
+                                <state key="normal" title="メニュー選択画面へ"/>
+                                <connections>
+                                    <segue destination="xzM-Ur-JHk" kind="unwind" unwindAction="comeHomeWithSegue:" id="maw-Kx-BTb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Osb-eO-5Zf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Osb-eO-5Zf" firstAttribute="trailing" secondItem="nBQ-cl-0KX" secondAttribute="trailing" constant="30" id="1bt-Dw-gcz"/>
                             <constraint firstItem="Nau-MI-DYR" firstAttribute="top" secondItem="yRa-4B-bpW" secondAttribute="bottom" constant="124" id="3Wb-zS-T4F"/>
                             <constraint firstItem="lgi-rd-Hbd" firstAttribute="top" secondItem="Osb-eO-5Zf" secondAttribute="top" constant="50" id="4zD-YO-Ldf"/>
                             <constraint firstItem="yRa-4B-bpW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Osb-eO-5Zf" secondAttribute="leading" id="9aO-10-L9m"/>
@@ -450,8 +467,10 @@
                             <constraint firstItem="Nau-MI-DYR" firstAttribute="trailing" secondItem="Osb-eO-5Zf" secondAttribute="trailing" id="MJh-5k-iJF"/>
                             <constraint firstItem="Osb-eO-5Zf" firstAttribute="trailing" secondItem="lgi-rd-Hbd" secondAttribute="trailing" constant="343" id="NSm-Hw-L86"/>
                             <constraint firstItem="Nau-MI-DYR" firstAttribute="leading" secondItem="Osb-eO-5Zf" secondAttribute="leading" id="OJj-6R-2w0"/>
+                            <constraint firstItem="nBQ-cl-0KX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Osb-eO-5Zf" secondAttribute="leading" symbolic="YES" id="Tsz-8R-Rcl"/>
                             <constraint firstItem="Nau-MI-DYR" firstAttribute="top" secondItem="Osb-eO-5Zf" secondAttribute="top" constant="309" id="XPH-iv-bnn"/>
                             <constraint firstItem="Osb-eO-5Zf" firstAttribute="trailing" secondItem="yRa-4B-bpW" secondAttribute="trailing" constant="137" id="cwp-M8-v5S"/>
+                            <constraint firstItem="Osb-eO-5Zf" firstAttribute="bottom" secondItem="nBQ-cl-0KX" secondAttribute="bottom" constant="40" id="h4k-a6-aam"/>
                             <constraint firstItem="lgi-rd-Hbd" firstAttribute="leading" secondItem="Osb-eO-5Zf" secondAttribute="leading" constant="40" id="oI2-rD-yyr"/>
                             <constraint firstItem="Nau-MI-DYR" firstAttribute="top" secondItem="lgi-rd-Hbd" secondAttribute="bottom" constant="229" id="wPF-Nx-BjS"/>
                         </constraints>
@@ -465,6 +484,36 @@
             </objects>
             <point key="canvasLocation" x="2830" y="413"/>
         </scene>
+        <!--Sec13 View Controller-->
+        <scene sceneID="3jo-OP-AsH">
+            <objects>
+                <viewController id="F9U-ik-UTC" customClass="Sec13ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Exp-H4-D8t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbK-Ol-Gro">
+                                <rect key="frame" x="30" y="40" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="24x-gU-xI9" kind="unwind" unwindAction="comeHomeWithSegue:" id="gUR-GJ-AGg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mgy-eD-L0p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mgy-eD-L0p" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dbK-Ol-Gro" secondAttribute="trailing" symbolic="YES" id="I4B-kK-NdV"/>
+                            <constraint firstItem="dbK-Ol-Gro" firstAttribute="leading" secondItem="Mgy-eD-L0p" secondAttribute="leading" constant="30" id="Vp3-kG-Kd0"/>
+                            <constraint firstItem="dbK-Ol-Gro" firstAttribute="top" secondItem="Mgy-eD-L0p" secondAttribute="top" constant="40" id="YXK-Un-eV7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTh-yy-dFE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="24x-gU-xI9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="554" y="1072"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="yRa-4B-bpW">
@@ -477,6 +526,9 @@
         <image name="kaeru" width="338" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
