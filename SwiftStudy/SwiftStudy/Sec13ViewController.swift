@@ -2,6 +2,10 @@ import UIKit
 
 class Sec13ViewController: UIViewController {
 
+    //このビューコントローラに戻ってくる
+    @IBAction func comeSec13view(segue: UIStoryboardSegue) {
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

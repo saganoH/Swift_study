@@ -34,6 +34,7 @@
 		C62581E4252EF0EC009C884C /* ForSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581E3252EF0EC009C884C /* ForSample.swift */; };
 		C62581E9252EF18A009C884C /* WhileSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581E8252EF18A009C884C /* WhileSample.swift */; };
 		C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581ED252EF247009C884C /* LoopOptionSample.swift */; };
+		C6266922255E60A9003B6E28 /* Sec13ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6266921255E60A9003B6E28 /* Sec13ViewController2.swift */; };
 		C630E43D2547B2A300444C22 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E43C2547B2A300444C22 /* Circle.swift */; };
 		C630E4422547C0A200444C22 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E4412547C0A200444C22 /* Player.swift */; };
 		C630E44A2547D5DC00444C22 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E4492547D5DC00444C22 /* Car.swift */; };
@@ -97,6 +98,7 @@
 		C62581E3252EF0EC009C884C /* ForSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForSample.swift; sourceTree = "<group>"; };
 		C62581E8252EF18A009C884C /* WhileSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhileSample.swift; sourceTree = "<group>"; };
 		C62581ED252EF247009C884C /* LoopOptionSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopOptionSample.swift; sourceTree = "<group>"; };
+		C6266921255E60A9003B6E28 /* Sec13ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController2.swift; sourceTree = "<group>"; };
 		C630E43C2547B2A300444C22 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		C630E4412547C0A200444C22 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C630E4492547D5DC00444C22 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */,
 				C6DD4D61255A385500714A56 /* customLabel.swift */,
 				C614EDBB255CFAD10047920D /* Sec13ViewController.swift */,
+				C6266921255E60A9003B6E28 /* Sec13ViewController2.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				C615B68E252AEFD5008D3F0C /* ViewController.swift in Sources */,
 				C62581DA252EED99009C884C /* IfSample.swift in Sources */,
 				C615A57E253E81640011B547 /* SetSample.swift in Sources */,
+				C6266922255E60A9003B6E28 /* Sec13ViewController2.swift in Sources */,
 				C6B1B59B254A9682008C6DC6 /* StructSample.swift in Sources */,
 				C62581E4252EF0EC009C884C /* ForSample.swift in Sources */,
 				C630E44F2547DA4000444C22 /* Game.swift in Sources */,

@@ -499,20 +499,60 @@
                                     <segue destination="24x-gU-xI9" kind="unwind" unwindAction="comeHomeWithSegue:" id="gUR-GJ-AGg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liu-GS-4t8">
+                                <rect key="frame" x="343" y="728" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="iwN-Qe-Ump" kind="presentation" id="e2m-e0-ezr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mgy-eD-L0p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="liu-GS-4t8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Mgy-eD-L0p" secondAttribute="leading" symbolic="YES" id="2vh-6N-XA3"/>
                             <constraint firstItem="Mgy-eD-L0p" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dbK-Ol-Gro" secondAttribute="trailing" symbolic="YES" id="I4B-kK-NdV"/>
+                            <constraint firstItem="Mgy-eD-L0p" firstAttribute="bottom" secondItem="liu-GS-4t8" secondAttribute="bottom" constant="50" id="K0Y-cJ-Py2"/>
                             <constraint firstItem="dbK-Ol-Gro" firstAttribute="leading" secondItem="Mgy-eD-L0p" secondAttribute="leading" constant="30" id="Vp3-kG-Kd0"/>
                             <constraint firstItem="dbK-Ol-Gro" firstAttribute="top" secondItem="Mgy-eD-L0p" secondAttribute="top" constant="40" id="YXK-Un-eV7"/>
+                            <constraint firstItem="Mgy-eD-L0p" firstAttribute="trailing" secondItem="liu-GS-4t8" secondAttribute="trailing" constant="40" id="x5C-NF-DWw"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTh-yy-dFE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="24x-gU-xI9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="554" y="1072"/>
+            <point key="canvasLocation" x="553.62318840579712" y="1071.4285714285713"/>
+        </scene>
+        <!--Sec13 View Controller2-->
+        <scene sceneID="79n-Nm-Pvj">
+            <objects>
+                <viewController id="iwN-Qe-Ump" customClass="Sec13ViewController2" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EM7-SZ-3ke">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4g-aD-F5j">
+                                <rect key="frame" x="40" y="50" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="alU-Uc-0QQ" kind="unwind" unwindAction="comeSec13viewWithSegue:" id="ggj-LQ-3BV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="peU-AU-kYO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I4g-aD-F5j" firstAttribute="leading" secondItem="peU-AU-kYO" secondAttribute="leading" constant="40" id="1Fl-64-Zvt"/>
+                            <constraint firstItem="peU-AU-kYO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="I4g-aD-F5j" secondAttribute="trailing" symbolic="YES" id="Ws6-IU-eVg"/>
+                            <constraint firstItem="I4g-aD-F5j" firstAttribute="top" secondItem="peU-AU-kYO" secondAttribute="top" constant="50" id="tjO-NG-nU9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7GV-Xv-Zw5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="alU-Uc-0QQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1298.5507246376812" y="1070.7589285714284"/>
         </scene>
     </scenes>
     <designables>
