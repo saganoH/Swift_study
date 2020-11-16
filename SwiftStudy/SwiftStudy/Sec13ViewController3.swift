@@ -1,6 +1,10 @@
 import UIKit
 
 class Sec13ViewController3: UIViewController {
+    
+    //このビューコントローラに戻ってくる
+    @IBAction func comeSec13view3(segue: UIStoryboardSegue) {
+    }
 
     @IBOutlet weak var myCar: UIImageView!
     //車のホーム座標を決める

@@ -595,8 +595,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jp5-IF-nmA">
-                                <rect key="frame" x="184" y="406" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="184" y="406" width="62" height="30"/>
+                                <state key="normal" title="左へ進む"/>
                                 <connections>
                                     <action selector="move:" destination="tEx-5W-eXn" eventType="touchUpInside" id="CXl-w6-3vc"/>
                                 </connections>
@@ -724,22 +724,67 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tii-xs-u7s">
                                 <rect key="frame" x="40" y="50" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="uZr-pz-J3w" kind="unwind" unwindAction="comeSec13view3WithSegue:" id="v4v-ts-qTJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iy9-fN-M4b">
+                                <rect key="frame" x="343" y="728" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="HsL-7x-c2N" kind="presentation" id="g9v-Is-myM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CI5-15-Ikt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="CI5-15-Ikt" firstAttribute="trailing" secondItem="iy9-fN-M4b" secondAttribute="trailing" constant="40" id="1qE-Hv-4MV"/>
                             <constraint firstItem="Tii-xs-u7s" firstAttribute="leading" secondItem="CI5-15-Ikt" secondAttribute="leading" constant="40" id="AA5-5w-UjV"/>
                             <constraint firstItem="hUS-Mh-OSu" firstAttribute="top" secondItem="CI5-15-Ikt" secondAttribute="top" constant="121" id="DYk-jX-epz"/>
+                            <constraint firstItem="CI5-15-Ikt" firstAttribute="bottom" secondItem="iy9-fN-M4b" secondAttribute="bottom" constant="50" id="Fu7-6p-t0Z"/>
+                            <constraint firstItem="iy9-fN-M4b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CI5-15-Ikt" secondAttribute="leading" symbolic="YES" id="Psh-Ke-H8j"/>
                             <constraint firstItem="Tii-xs-u7s" firstAttribute="top" secondItem="CI5-15-Ikt" secondAttribute="top" constant="50" id="Wnh-ef-uvo"/>
                             <constraint firstItem="CI5-15-Ikt" firstAttribute="trailing" secondItem="Tii-xs-u7s" secondAttribute="trailing" constant="343" id="gMq-rn-SkV"/>
                             <constraint firstItem="hUS-Mh-OSu" firstAttribute="leading" secondItem="CI5-15-Ikt" secondAttribute="leading" constant="134" id="guv-Ju-0rh"/>
+                            <constraint firstItem="iy9-fN-M4b" firstAttribute="top" secondItem="CI5-15-Ikt" secondAttribute="top" constant="728" id="sDZ-Bb-Gfd"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mv9-uS-aLX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="uZr-pz-J3w" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2829" y="1069"/>
+        </scene>
+        <!--Sec13 View Controller5-->
+        <scene sceneID="ATj-T8-xbG">
+            <objects>
+                <viewController id="HsL-7x-c2N" customClass="Sec13ViewController5" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JUC-Cp-0JN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac1-rY-mfb">
+                                <rect key="frame" x="40" y="50" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="eHx-Zj-2zj" kind="unwind" unwindAction="comeSec13view4WithSegue:" id="hUE-YG-Xvl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hZo-L4-1ae"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ac1-rY-mfb" firstAttribute="leading" secondItem="hZo-L4-1ae" secondAttribute="leading" constant="40" id="Gqq-Si-wZM"/>
+                            <constraint firstItem="hZo-L4-1ae" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ac1-rY-mfb" secondAttribute="trailing" symbolic="YES" id="aTN-CH-Xgu"/>
+                            <constraint firstItem="Ac1-rY-mfb" firstAttribute="top" secondItem="hZo-L4-1ae" secondAttribute="top" constant="50" id="gYR-l4-MUI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0kc-cc-gOR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="eHx-Zj-2zj" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3542" y="1071"/>
         </scene>
     </scenes>
     <designables>
