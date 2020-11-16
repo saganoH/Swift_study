@@ -46,6 +46,7 @@
 		C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */; };
 		C6B1B59B254A9682008C6DC6 /* StructSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1B59A254A9682008C6DC6 /* StructSample.swift */; };
 		C6C0D05825621FC3006E2195 /* Sec13ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D05725621FC3006E2195 /* Sec13ViewController3.swift */; };
+		C6C0D05D25623B94006E2195 /* SecViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D05C25623B94006E2195 /* SecViewController4.swift */; };
 		C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */; };
 		C6DD4D62255A385500714A56 /* customLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D61255A385500714A56 /* customLabel.swift */; };
 /* End PBXBuildFile section */
@@ -111,6 +112,7 @@
 		C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalSample.swift; sourceTree = "<group>"; };
 		C6B1B59A254A9682008C6DC6 /* StructSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructSample.swift; sourceTree = "<group>"; };
 		C6C0D05725621FC3006E2195 /* Sec13ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController3.swift; sourceTree = "<group>"; };
+		C6C0D05C25623B94006E2195 /* SecViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecViewController4.swift; sourceTree = "<group>"; };
 		C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController4.swift; sourceTree = "<group>"; };
 		C6DD4D61255A385500714A56 /* customLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,7 +145,6 @@
 		C615B67D252AEFD4008D3F0C = {
 			isa = PBXGroup;
 			children = (
-				C6C0D05725621FC3006E2195 /* Sec13ViewController3.swift */,
 				C615B688252AEFD5008D3F0C /* SwiftStudy */,
 				C615B69F252AEFD5008D3F0C /* SwiftStudyTests */,
 				C615B6AA252AEFD5008D3F0C /* SwiftStudyUITests */,
@@ -165,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */,
+				C6C0D05725621FC3006E2195 /* Sec13ViewController3.swift */,
 				C608B9682546A55100098140 /* ClassSample.swift */,
 				C603F368253023F70005F46F /* FunctionSample.swift */,
 				C615B689252AEFD5008D3F0C /* AppDelegate.swift */,
@@ -200,6 +202,7 @@
 				C6DD4D61255A385500714A56 /* customLabel.swift */,
 				C614EDBB255CFAD10047920D /* Sec13ViewController.swift */,
 				C6266921255E60A9003B6E28 /* Sec13ViewController2.swift */,
+				C6C0D05C25623B94006E2195 /* SecViewController4.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				C6226A1A2535383600E2B794 /* StringSample.swift in Sources */,
 				C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */,
 				C603F369253023F70005F46F /* FunctionSample.swift in Sources */,
+				C6C0D05D25623B94006E2195 /* SecViewController4.swift in Sources */,
 				C6174A4E2539432E00C1CF8F /* DictionarySample.swift in Sources */,
 				C61431212549059600642F07 /* NewGame.swift in Sources */,
 				C61431312549303200642F07 /* EnumSample.swift in Sources */,
