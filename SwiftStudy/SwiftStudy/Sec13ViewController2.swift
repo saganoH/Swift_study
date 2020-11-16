@@ -1,13 +1,15 @@
 import UIKit
 
 class Sec13ViewController2: UIViewController {
+    
+    //このビューコントローラに戻ってくる
+    @IBAction func comeSec13view2(segue: UIStoryboardSegue) {
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        //画面の背景色をパターンにする
-        let camera = UIImage(named: "cameraMark")
-        self.view.backgroundColor = UIColor(patternImage: camera!)
+        self.view.backgroundColor = UIColor.green
         
         //イメージビューを作る
         let rect = CGRect(x: 0, y: 0, width: 300, height: 200)
