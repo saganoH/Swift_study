@@ -540,7 +540,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yp-6O-e99">
-                                <rect key="frame" x="341.5" y="766" width="31" height="30"/>
+                                <rect key="frame" x="343" y="728" width="31" height="30"/>
                                 <state key="normal" title="次へ"/>
                                 <connections>
                                     <segue destination="tEx-5W-eXn" kind="presentation" id="dDC-le-gQQ"/>
@@ -551,9 +551,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="I4g-aD-F5j" firstAttribute="leading" secondItem="peU-AU-kYO" secondAttribute="leading" constant="40" id="1Fl-64-Zvt"/>
-                            <constraint firstItem="0yp-6O-e99" firstAttribute="centerX" secondItem="EM7-SZ-3ke" secondAttribute="centerX" constant="150" id="Reb-2G-b3Q"/>
+                            <constraint firstItem="peU-AU-kYO" firstAttribute="trailing" secondItem="0yp-6O-e99" secondAttribute="trailing" constant="40" id="5s9-Ec-4yb"/>
+                            <constraint firstItem="peU-AU-kYO" firstAttribute="bottom" secondItem="0yp-6O-e99" secondAttribute="bottom" constant="50" id="7Vd-Lm-CpO"/>
                             <constraint firstItem="peU-AU-kYO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="I4g-aD-F5j" secondAttribute="trailing" symbolic="YES" id="Ws6-IU-eVg"/>
-                            <constraint firstItem="0yp-6O-e99" firstAttribute="centerY" secondItem="EM7-SZ-3ke" secondAttribute="centerY" constant="360" id="auD-gZ-zEq"/>
+                            <constraint firstItem="0yp-6O-e99" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="peU-AU-kYO" secondAttribute="leading" symbolic="YES" id="eOV-SX-kFi"/>
                             <constraint firstItem="I4g-aD-F5j" firstAttribute="top" secondItem="peU-AU-kYO" secondAttribute="top" constant="50" id="tjO-NG-nU9"/>
                         </constraints>
                     </view>
@@ -602,7 +603,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcu-6e-nmx">
-                                <rect key="frame" x="343" y="778" width="31" height="30"/>
+                                <rect key="frame" x="343" y="728" width="31" height="30"/>
                                 <state key="normal" title="次へ"/>
                                 <connections>
                                     <segue destination="qXy-KS-GEC" kind="presentation" id="PSI-gT-iH9"/>
@@ -614,7 +615,6 @@
                         <constraints>
                             <constraint firstItem="j6j-Mv-kTC" firstAttribute="leading" secondItem="OZn-tC-sxT" secondAttribute="trailing" constant="88.5" id="0IQ-An-wz4"/>
                             <constraint firstItem="KP3-KD-T4x" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jp5-IF-nmA" secondAttribute="trailing" id="8W6-uc-PMh"/>
-                            <constraint firstItem="vcu-6e-nmx" firstAttribute="bottom" secondItem="KP3-KD-T4x" secondAttribute="bottom" id="CYo-hO-4j3"/>
                             <constraint firstItem="KP3-KD-T4x" firstAttribute="trailing" secondItem="4KR-7i-zS8" secondAttribute="trailing" constant="40" id="GEh-r4-kwZ"/>
                             <constraint firstItem="OZn-tC-sxT" firstAttribute="leading" secondItem="KP3-KD-T4x" secondAttribute="leading" constant="41.5" id="Gj3-fo-oXB"/>
                             <constraint firstItem="OZn-tC-sxT" firstAttribute="top" secondItem="zGq-4h-o7S" secondAttribute="top" constant="-794" id="Kva-L6-YGW"/>
@@ -624,6 +624,7 @@
                             <constraint firstItem="Jp5-IF-nmA" firstAttribute="leading" secondItem="OZn-tC-sxT" secondAttribute="trailing" constant="111.5" id="cvN-7g-z94"/>
                             <constraint firstItem="KP3-KD-T4x" firstAttribute="bottom" secondItem="4KR-7i-zS8" secondAttribute="bottom" constant="602" id="d68-6a-hjW"/>
                             <constraint firstItem="KP3-KD-T4x" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="j6j-Mv-kTC" secondAttribute="trailing" id="e0i-mf-6Gj"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="vcu-6e-nmx" secondAttribute="bottom" constant="50" id="frs-UG-b1d"/>
                             <constraint firstItem="KP3-KD-T4x" firstAttribute="trailing" secondItem="vcu-6e-nmx" secondAttribute="trailing" constant="40" id="qG5-1e-WiQ"/>
                             <constraint firstItem="4KR-7i-zS8" firstAttribute="top" secondItem="KP3-KD-T4x" secondAttribute="top" constant="106" id="w5n-mJ-mML"/>
                             <constraint firstItem="4KR-7i-zS8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OZn-tC-sxT" secondAttribute="trailing" constant="8" symbolic="YES" id="w6P-Pm-JT5"/>
@@ -732,7 +733,7 @@
                                 <rect key="frame" x="343" y="728" width="31" height="30"/>
                                 <state key="normal" title="次へ"/>
                                 <connections>
-                                    <segue destination="HsL-7x-c2N" kind="presentation" id="g9v-Is-myM"/>
+                                    <segue destination="4IA-e3-fP1" kind="presentation" id="c6e-9n-uQt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -756,6 +757,46 @@
             </objects>
             <point key="canvasLocation" x="2829" y="1069"/>
         </scene>
+        <!--ナビゲーションコントローラー-->
+        <scene sceneID="Sqj-Te-577">
+            <objects>
+                <viewController id="hse-f2-eZd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PWT-ah-rvR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fq2-7e-SgT">
+                                <rect key="frame" x="153" y="238" width="108" height="30"/>
+                                <state key="normal" title="テーブルビュー"/>
+                                <connections>
+                                    <segue destination="HsL-7x-c2N" kind="show" id="wkS-RO-1Gt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPw-4I-3FE">
+                                <rect key="frame" x="40" y="106" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="aCr-Jx-DLy" kind="unwind" unwindAction="comeSec13view4WithSegue:" id="A1I-p1-oYp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FK1-LO-m5S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fq2-7e-SgT" firstAttribute="centerX" secondItem="PWT-ah-rvR" secondAttribute="centerX" id="2Qi-ge-Z6o"/>
+                            <constraint firstItem="FK1-LO-m5S" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dPw-4I-3FE" secondAttribute="trailing" symbolic="YES" id="EDS-8K-In3"/>
+                            <constraint firstItem="dPw-4I-3FE" firstAttribute="top" secondItem="FK1-LO-m5S" secondAttribute="top" constant="50" id="Mhq-Fy-y1P"/>
+                            <constraint firstItem="dPw-4I-3FE" firstAttribute="leading" secondItem="FK1-LO-m5S" secondAttribute="leading" constant="40" id="QbC-Ri-F7H"/>
+                            <constraint firstItem="Fq2-7e-SgT" firstAttribute="top" secondItem="FK1-LO-m5S" secondAttribute="top" constant="182" id="w4x-oh-LXf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ナビゲーションコントローラー" id="EY3-ub-G7W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kmh-4f-I7s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="aCr-Jx-DLy" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4397" y="1071"/>
+        </scene>
         <!--Sec13 View Controller5-->
         <scene sceneID="ATj-T8-xbG">
             <objects>
@@ -763,28 +804,32 @@
                     <view key="view" contentMode="scaleToFill" id="JUC-Cp-0JN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac1-rY-mfb">
-                                <rect key="frame" x="40" y="50" width="31" height="30"/>
-                                <state key="normal" title="戻る"/>
-                                <connections>
-                                    <segue destination="eHx-Zj-2zj" kind="unwind" unwindAction="comeSec13view4WithSegue:" id="hUE-YG-Xvl"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hZo-L4-1ae"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Ac1-rY-mfb" firstAttribute="leading" secondItem="hZo-L4-1ae" secondAttribute="leading" constant="40" id="Gqq-Si-wZM"/>
-                            <constraint firstItem="hZo-L4-1ae" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ac1-rY-mfb" secondAttribute="trailing" symbolic="YES" id="aTN-CH-Xgu"/>
-                            <constraint firstItem="Ac1-rY-mfb" firstAttribute="top" secondItem="hZo-L4-1ae" secondAttribute="top" constant="50" id="gYR-l4-MUI"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="USe-nM-WJ9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0kc-cc-gOR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="eHx-Zj-2zj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3542" y="1071"/>
+            <point key="canvasLocation" x="5180" y="1071"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kdq-dL-YB1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4IA-e3-fP1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N1u-rA-nTg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hse-f2-eZd" kind="relationship" relationship="rootViewController" id="ZYY-hM-VFm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nG0-a5-Eap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3608.6956521739135" y="1070.7589285714284"/>
         </scene>
     </scenes>
     <designables>

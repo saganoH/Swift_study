@@ -7,10 +7,6 @@ let section2 = [("ハンミョウ", "ハンミョウ科"), ("アオオサムシ"
 let tableData = [section0, section1, section2]
 
 class Sec13ViewController5: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    //このビューコントローラに戻ってくる
-    //@IBAction func comeSec13view5(segue: UIStoryboardSegue) {
-    //}
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
