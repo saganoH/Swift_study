@@ -814,14 +814,37 @@
                     <view key="view" contentMode="scaleToFill" id="d1x-Md-De8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O6q-8T-CCV">
+                                <rect key="frame" x="0.0" y="105" width="414" height="300"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="gn8-ZV-dAv"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Vfc-Ud-uae"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="6vg-ES-Gw3">
+                                <rect key="frame" x="146" y="438" width="122" height="28"/>
+                            </pageControl>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="47D-Q3-wnY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O6q-8T-CCV" firstAttribute="leading" secondItem="47D-Q3-wnY" secondAttribute="leading" id="2tn-Xm-ren"/>
+                            <constraint firstItem="6vg-ES-Gw3" firstAttribute="centerX" secondItem="d1x-Md-De8" secondAttribute="centerX" id="7aS-Ak-Tgc"/>
+                            <constraint firstItem="47D-Q3-wnY" firstAttribute="bottom" secondItem="6vg-ES-Gw3" secondAttribute="bottom" constant="342" id="931-oZ-1Av"/>
+                            <constraint firstItem="O6q-8T-CCV" firstAttribute="top" secondItem="47D-Q3-wnY" secondAttribute="top" constant="50" id="C0k-7Y-qIq"/>
+                            <constraint firstItem="6vg-ES-Gw3" firstAttribute="leading" secondItem="47D-Q3-wnY" secondAttribute="leading" constant="146" id="J7d-nh-xg6"/>
+                            <constraint firstItem="6vg-ES-Gw3" firstAttribute="top" secondItem="O6q-8T-CCV" secondAttribute="bottom" constant="33" id="Wbl-0u-3fN"/>
+                            <constraint firstItem="6vg-ES-Gw3" firstAttribute="centerX" secondItem="O6q-8T-CCV" secondAttribute="centerX" id="ejR-sl-nUr"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lyJ-pF-g8p"/>
+                    <connections>
+                        <outlet property="pageControl" destination="6vg-ES-Gw3" id="GeW-w1-cZ9"/>
+                        <outlet property="scrollView" destination="O6q-8T-CCV" id="4pu-sb-0L0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rva-pl-Cau" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5328" y="1552"/>
+            <point key="canvasLocation" x="5326.0869565217399" y="1551.5625"/>
         </scene>
         <!--Sec13 View Controller5-->
         <scene sceneID="ATj-T8-xbG">
