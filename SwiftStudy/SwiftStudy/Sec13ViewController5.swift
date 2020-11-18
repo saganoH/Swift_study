@@ -27,7 +27,8 @@ class Sec13ViewController5: UIViewController, UITableViewDelegate, UITableViewDa
         view.addSubview(myTableView)
     }
     
-    // UITableViewDataSourseプロトコル
+    // MARK: - UITableViewSource
+
     // セクションの個数を決める
     func numberOfSections(in tableView: UITableView) -> Int {
         return sectionTitle.count
@@ -53,8 +54,9 @@ class Sec13ViewController5: UIViewController, UITableViewDelegate, UITableViewDa
         cell.detailTextLabel?.text = cellData.1
         return cell
     }
-    
-    // UITableViewDelegateメソッド
+
+    // MARK: - UITableViewDelegate
+
     // 行がタップされると実行される
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let title = sectionTitle[indexPath.section]
