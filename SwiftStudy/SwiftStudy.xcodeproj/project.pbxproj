@@ -34,6 +34,7 @@
 		C62581E4252EF0EC009C884C /* ForSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581E3252EF0EC009C884C /* ForSample.swift */; };
 		C62581E9252EF18A009C884C /* WhileSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581E8252EF18A009C884C /* WhileSample.swift */; };
 		C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581ED252EF247009C884C /* LoopOptionSample.swift */; };
+		C6260CF62565006D00167D5F /* Sec13ViewController8.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6260CF52565006D00167D5F /* Sec13ViewController8.swift */; };
 		C6266922255E60A9003B6E28 /* Sec13ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6266921255E60A9003B6E28 /* Sec13ViewController2.swift */; };
 		C630E43D2547B2A300444C22 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E43C2547B2A300444C22 /* Circle.swift */; };
 		C630E4422547C0A200444C22 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E4412547C0A200444C22 /* Player.swift */; };
@@ -103,6 +104,7 @@
 		C62581E3252EF0EC009C884C /* ForSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForSample.swift; sourceTree = "<group>"; };
 		C62581E8252EF18A009C884C /* WhileSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhileSample.swift; sourceTree = "<group>"; };
 		C62581ED252EF247009C884C /* LoopOptionSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopOptionSample.swift; sourceTree = "<group>"; };
+		C6260CF52565006D00167D5F /* Sec13ViewController8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController8.swift; sourceTree = "<group>"; };
 		C6266921255E60A9003B6E28 /* Sec13ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController2.swift; sourceTree = "<group>"; };
 		C630E43C2547B2A300444C22 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		C630E4412547C0A200444C22 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				C6C0D05C25623B94006E2195 /* Sec13ViewController4.swift */,
 				C6978DD42563653300172DDA /* Sec13ViewController6.swift */,
 				C69BAC822563B6A100AABBBC /* Sec13ViewController7.swift */,
+				C6260CF52565006D00167D5F /* Sec13ViewController8.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */,
 				C61431262549080900642F07 /* GameProtocol.swift in Sources */,
 				C630E4422547C0A200444C22 /* Player.swift in Sources */,
+				C6260CF62565006D00167D5F /* Sec13ViewController8.swift in Sources */,
 				C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */,
 				C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */,
 				C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */,
