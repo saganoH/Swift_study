@@ -829,7 +829,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="gn8-ZV-dAv"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Vfc-Ud-uae"/>
                             </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="6vg-ES-Gw3">
+                            <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="6vg-ES-Gw3">
                                 <rect key="frame" x="146" y="438" width="122" height="28"/>
                             </pageControl>
                         </subviews>
@@ -838,11 +838,9 @@
                         <constraints>
                             <constraint firstItem="O6q-8T-CCV" firstAttribute="leading" secondItem="47D-Q3-wnY" secondAttribute="leading" id="2tn-Xm-ren"/>
                             <constraint firstItem="6vg-ES-Gw3" firstAttribute="centerX" secondItem="d1x-Md-De8" secondAttribute="centerX" id="7aS-Ak-Tgc"/>
-                            <constraint firstItem="47D-Q3-wnY" firstAttribute="bottom" secondItem="6vg-ES-Gw3" secondAttribute="bottom" constant="342" id="931-oZ-1Av"/>
                             <constraint firstItem="O6q-8T-CCV" firstAttribute="top" secondItem="47D-Q3-wnY" secondAttribute="top" constant="50" id="C0k-7Y-qIq"/>
-                            <constraint firstItem="6vg-ES-Gw3" firstAttribute="leading" secondItem="47D-Q3-wnY" secondAttribute="leading" constant="146" id="J7d-nh-xg6"/>
                             <constraint firstItem="6vg-ES-Gw3" firstAttribute="top" secondItem="O6q-8T-CCV" secondAttribute="bottom" constant="33" id="Wbl-0u-3fN"/>
-                            <constraint firstItem="6vg-ES-Gw3" firstAttribute="centerX" secondItem="O6q-8T-CCV" secondAttribute="centerX" id="ejR-sl-nUr"/>
+                            <constraint firstItem="O6q-8T-CCV" firstAttribute="trailing" secondItem="47D-Q3-wnY" secondAttribute="trailing" id="p2s-aV-XKy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lyJ-pF-g8p"/>
