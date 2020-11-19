@@ -502,7 +502,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXs-kd-bBJ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="912"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A39-nc-3KV">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
@@ -589,7 +589,7 @@
                             <constraint firstItem="dXs-kd-bBJ" firstAttribute="trailing" secondItem="DkE-JR-Gf4" secondAttribute="trailing" id="3Pn-Ss-ZWx"/>
                             <constraint firstItem="dXs-kd-bBJ" firstAttribute="top" secondItem="DkE-JR-Gf4" secondAttribute="top" id="MFN-cU-yKh"/>
                             <constraint firstItem="dXs-kd-bBJ" firstAttribute="leading" secondItem="DkE-JR-Gf4" secondAttribute="leading" id="eJ4-qC-oE5"/>
-                            <constraint firstAttribute="bottom" secondItem="dXs-kd-bBJ" secondAttribute="bottom" id="mu4-Kl-pRH"/>
+                            <constraint firstItem="dXs-kd-bBJ" firstAttribute="bottom" secondItem="DkE-JR-Gf4" secondAttribute="bottom" id="r70-Sw-s9w"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="1000"/>
