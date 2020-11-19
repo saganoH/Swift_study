@@ -74,13 +74,14 @@ class Sec13ViewController8: UIViewController, UITextFieldDelegate {
         guard let fld = editingField else {
             return
         }
+        
         // キーボードのframeを調べる
         let userInfo = (notification as NSNotification).userInfo!
         let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         // テキストフィールドのframeをキーボードと同じ座標系にする
         let fldFrame = view.convert(fld.frame, from: contentView)
         // 編集中のテキストフィールドがキーボードと重なっていないか調べる
-        overlap = fldFrame.maxY - keyboardFrame.minY + 5
+        overlap = fldFrame.maxY - keyboardFrame.minY
         if overlap > 0 {
             // キーボードで隠れている分だけスクロールする
             overlap += scrollView.contentOffset.y
