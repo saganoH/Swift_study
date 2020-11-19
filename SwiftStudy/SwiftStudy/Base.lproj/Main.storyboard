@@ -550,6 +550,11 @@
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="0J5-WO-Mfj" appends="YES" id="iWt-oA-6Zm"/>
+                                            <outletCollection property="gestureRecognizers" destination="0J5-WO-Mfj" appends="YES" id="BHs-AN-6GH"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="uCH-3Q-aqI"/>
@@ -569,6 +574,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8IG-hL-dTO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="0J5-WO-Mfj">
+                    <connections>
+                        <action selector="tapView:" destination="CW0-h9-7q6" id="RSn-nc-MqG"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-659.4202898550725" y="1275"/>
         </scene>
