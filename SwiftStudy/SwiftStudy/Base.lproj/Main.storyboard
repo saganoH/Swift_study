@@ -553,7 +553,6 @@
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="0J5-WO-Mfj" appends="YES" id="iWt-oA-6Zm"/>
-                                            <outletCollection property="gestureRecognizers" destination="0J5-WO-Mfj" appends="YES" id="BHs-AN-6GH"/>
                                         </connections>
                                     </view>
                                 </subviews>
