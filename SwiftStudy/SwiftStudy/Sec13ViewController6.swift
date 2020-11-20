@@ -38,7 +38,7 @@ class Sec13ViewController6: UIViewController, UIScrollViewDelegate {
         // ページコントロールの設定
         pageControl.numberOfPages = photoList.count // ページ総数
         pageControl.currentPage = 0 // スタート位置
-        //ページコントロールのドットの色
+        // ページコントロールのドットの色
         pageControl.pageIndicatorTintColor = UIColor.lightGray
         pageControl.currentPageIndicatorTintColor = UIColor.black
     }

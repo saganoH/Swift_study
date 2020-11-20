@@ -13,30 +13,6 @@ class Sec13ViewController8: UIViewController, UITextFieldDelegate {
     private var overlap: CGFloat = 0.0
     private var lastOffsetY: CGFloat = 0.0
     
-    // MARK: -デリゲートメソッド
-    
-    // 編集開始のデリゲートメソッド
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        editingField = textField
-    }
-    
-    // 編集終了のデリゲートメソッド
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        editingField = nil
-    }
-    
-    // 改行時のデリゲートメソッド
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        view.endEditing(true) // キーボードを下げる
-        return false // 改行コードは入力しない
-    }
-    
-    // MARK: -
-    
-    @IBAction func tapView(_ sender: Any) {
-        view.endEditing(true) // キーボードを下げる
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -66,6 +42,30 @@ class Sec13ViewController8: UIViewController, UITextFieldDelegate {
         
         // キーボードが退場した
         notification.addObserver(self, selector: #selector(Sec13ViewController8.keyboardDidHide(_:)), name: UIResponder.keyboardDidHideNotification, object: nil)
+    }
+    
+    // MARK: - IBAction
+    
+    @IBAction func tapView(_ sender: Any) {
+        view.endEditing(true) // キーボードを下げる
+    }
+    
+    // MARK: - UITextField Delegate
+    
+    // 編集開始のデリゲートメソッド
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        editingField = textField
+    }
+    
+    // 編集終了のデリゲートメソッド
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        editingField = nil
+    }
+    
+    // 改行時のデリゲートメソッド
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true) // キーボードを下げる
+        return false // 改行コードは入力しない
     }
     
     // MARK: - イベントハンドラの実装
