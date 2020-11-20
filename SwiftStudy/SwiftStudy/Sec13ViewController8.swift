@@ -8,10 +8,10 @@ class Sec13ViewController8: UIViewController, UITextFieldDelegate {
     @IBOutlet var myTextField: [UITextField]!
     
     // 編集中のテキストフィールド
-    var editingField: UITextField?
+    private var editingField: UITextField?
     // 重なっている高さ
-    var overlap: CGFloat = 0.0
-    var lastOffsetY: CGFloat = 0.0
+    private var overlap: CGFloat = 0.0
+    private var lastOffsetY: CGFloat = 0.0
     
     // MARK: -デリゲートメソッド
     
@@ -44,7 +44,8 @@ class Sec13ViewController8: UIViewController, UITextFieldDelegate {
         scrollView.keyboardDismissMode = .onDrag
         
         // スクロールビューの領域を指定する
-        let scrollFrame = CGRect(x: 0, y: 20, width: view.frame.width, height: view.frame.height-20)
+        let statusBarHeight: CGFloat = 20
+        let scrollFrame = CGRect(x: 0, y: statusBarHeight, width: view.frame.width, height: view.frame.height - statusBarHeight)
         scrollView.frame = scrollFrame
         // コンテンツのサイズを指定する
         let contentRect = contentView.bounds

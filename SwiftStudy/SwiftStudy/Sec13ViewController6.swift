@@ -47,7 +47,7 @@ class Sec13ViewController6: UIViewController, UIScrollViewDelegate {
         super.viewWillAppear(animated)
     }
     
-    func createPage(viewRect: CGRect, imageSize: CGSize, item: Photo) -> UIView {
+    private func createPage(viewRect: CGRect, imageSize: CGSize, item: Photo) -> UIView {
         let pageView = UIView(frame: viewRect)
         // 写真ビューを作ってイメージを設定する
         let photoView = UIImageView()
@@ -66,7 +66,7 @@ class Sec13ViewController6: UIViewController, UIScrollViewDelegate {
         return pageView
     }
     
-    func createContentsView(contentList: Array<Photo>) -> UIView {
+    private func createContentsView(contentList: Array<Photo>) -> UIView {
         // ページを追加するコンテンツビューを作る
         let contentView = UIView()
         // 1ページの幅と高さ
