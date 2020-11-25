@@ -8,6 +8,105 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Sec14 View Controller2-->
+        <scene sceneID="vW8-hg-88C">
+            <objects>
+                <viewController id="ri9-I5-f5d" customClass="Sec14ViewController2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zme-YN-HLT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxU-b7-DIl">
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pmo-UM-7vS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cxU-b7-DIl" firstAttribute="top" secondItem="pmo-UM-7vS" secondAttribute="top" id="Epe-Lv-SBi"/>
+                            <constraint firstItem="cxU-b7-DIl" firstAttribute="bottom" secondItem="pmo-UM-7vS" secondAttribute="bottom" id="Z0G-RR-33J"/>
+                            <constraint firstItem="cxU-b7-DIl" firstAttribute="trailing" secondItem="pmo-UM-7vS" secondAttribute="trailing" id="lgu-fL-r7t"/>
+                            <constraint firstItem="cxU-b7-DIl" firstAttribute="leading" secondItem="pmo-UM-7vS" secondAttribute="leading" id="stt-hv-gPa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fzq-by-bte"/>
+                    <connections>
+                        <outlet property="webView" destination="cxU-b7-DIl" id="QTU-mz-Om1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aas-FI-gQW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2672.4637681159425" y="1982.8125"/>
+        </scene>
+        <!--Webリスト-->
+        <scene sceneID="ZZq-Mw-FUr">
+            <objects>
+                <tableViewController id="6GE-8v-Gdh" customClass="WebListTableViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="txa-fR-A6U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="k01-MX-TN2" detailTextLabel="KvA-vj-s5u" style="IBUITableViewCellStyleSubtitle" id="9eC-RH-G9Y">
+                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9eC-RH-G9Y" id="L4K-bi-QFK">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k01-MX-TN2">
+                                            <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KvA-vj-s5u">
+                                            <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ri9-I5-f5d" kind="show" identifier="showWebPage" id="8lu-an-qIs"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6GE-8v-Gdh" id="BSi-Mv-zqS"/>
+                            <outlet property="delegate" destination="6GE-8v-Gdh" id="FdO-Dp-VJf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Webリスト" id="anD-Cu-m1l"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cox-F1-Yr6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1961" y="1983"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jD0-ih-zgm">
+            <objects>
+                <navigationController id="tzK-tf-F2W" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P1Q-ZS-Xbx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6GE-8v-Gdh" kind="relationship" relationship="rootViewController" id="bJe-vh-Hwb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nDL-m7-fxR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1155" y="1983"/>
+        </scene>
         <!--Sec14 View Controller-->
         <scene sceneID="0iV-N6-Oht">
             <objects>
@@ -20,7 +119,14 @@
                                 <rect key="frame" x="161" y="136" width="92" height="30"/>
                                 <state key="normal" title="ホームへ戻る"/>
                                 <connections>
-                                    <action selector="backToHome:" destination="TTU-J4-ae2" eventType="touchUpInside" id="hd1-fW-0Zf"/>
+                                    <action selector="backToHome:" destination="TTU-J4-ae2" eventType="touchUpInside" id="kLC-xu-nJp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXl-WC-B0R">
+                                <rect key="frame" x="191.5" y="216" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="tzK-tf-F2W" kind="presentation" id="A0W-gD-ATw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -28,7 +134,9 @@
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="FC1-uc-JWp" firstAttribute="top" secondItem="9WX-yE-3on" secondAttribute="top" constant="92" id="Djy-Qv-K4s"/>
+                            <constraint firstItem="nXl-WC-B0R" firstAttribute="centerX" secondItem="Bbk-QU-7XR" secondAttribute="centerX" id="Fan-gX-OlX"/>
                             <constraint firstItem="FC1-uc-JWp" firstAttribute="centerX" secondItem="Bbk-QU-7XR" secondAttribute="centerX" id="m8R-6h-6aG"/>
+                            <constraint firstItem="nXl-WC-B0R" firstAttribute="top" secondItem="FC1-uc-JWp" secondAttribute="bottom" constant="50" id="tke-Bz-A7u"/>
                         </constraints>
                     </view>
                 </viewController>
