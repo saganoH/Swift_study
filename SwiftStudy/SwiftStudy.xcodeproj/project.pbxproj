@@ -47,6 +47,7 @@
 		C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */; };
 		C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */; };
 		C6B1B59B254A9682008C6DC6 /* StructSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1B59A254A9682008C6DC6 /* StructSample.swift */; };
+		C6B9A306256DF889001C4AF6 /* Sec14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B9A305256DF889001C4AF6 /* Sec14ViewController.swift */; };
 		C6C0D05825621FC3006E2195 /* Sec13ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D05725621FC3006E2195 /* Sec13ViewController3.swift */; };
 		C6C0D05D25623B94006E2195 /* Sec13ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D05C25623B94006E2195 /* Sec13ViewController4.swift */; };
 		C6C0D065256249D6006E2195 /* Sec13ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D064256249D6006E2195 /* Sec13ViewController5.swift */; };
@@ -116,6 +117,7 @@
 		C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController2.swift; sourceTree = "<group>"; };
 		C69BFA6A253FF8DD003DBF87 /* OptionalSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalSample.swift; sourceTree = "<group>"; };
 		C6B1B59A254A9682008C6DC6 /* StructSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructSample.swift; sourceTree = "<group>"; };
+		C6B9A305256DF889001C4AF6 /* Sec14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec14ViewController.swift; sourceTree = "<group>"; };
 		C6C0D05725621FC3006E2195 /* Sec13ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController3.swift; sourceTree = "<group>"; };
 		C6C0D05C25623B94006E2195 /* Sec13ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController4.swift; sourceTree = "<group>"; };
 		C6C0D064256249D6006E2195 /* Sec13ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController5.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				C6C0D05C25623B94006E2195 /* Sec13ViewController4.swift */,
 				C6978DD42563653300172DDA /* Sec13ViewController6.swift */,
 				C6260CF52565006D00167D5F /* Sec13ViewController8.swift */,
+				C6B9A305256DF889001C4AF6 /* Sec14ViewController.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				C615B68E252AEFD5008D3F0C /* ViewController.swift in Sources */,
 				C6C0D05825621FC3006E2195 /* Sec13ViewController3.swift in Sources */,
 				C62581DA252EED99009C884C /* IfSample.swift in Sources */,
+				C6B9A306256DF889001C4AF6 /* Sec14ViewController.swift in Sources */,
 				C6978DD52563653300172DDA /* Sec13ViewController6.swift in Sources */,
 				C615A57E253E81640011B547 /* SetSample.swift in Sources */,
 				C6266922255E60A9003B6E28 /* Sec13ViewController2.swift in Sources */,

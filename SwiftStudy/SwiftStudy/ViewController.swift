@@ -1,13 +1,13 @@
 import UIKit
 
-//p221 クラス拡張
+// p221 クラス拡張
 extension UIColor {
-    //若草色
+    // 若草色
     class var wakakusa: UIColor {
-        //#ABC900
+        // #ABC900
         return UIColor(red: 0.6706, green: 0.7882, blue: 0.0, alpha: 1)
     }
-    //紅赤色
+    // 紅赤色
     class var beniaka: UIColor {
         //#E5004F
         return UIColor(red: 0.898, green: 0.0, blue: 0.3098, alpha: 1)
@@ -15,24 +15,34 @@ extension UIColor {
 }
 
 class ViewController: UIViewController {
-    //このビューコントローラに戻ってくる
+    
+    @IBAction func gotoTreePage(_ sender: Any) {
+        // 移動先のViewControllerを参照
+        let jumpVC14 = self.storyboard?.instantiateViewController(withIdentifier: "treePage")
+        // トランジションの映像効果を指定
+        jumpVC14?.modalTransitionStyle = .flipHorizontal
+        // シーンを移動する
+        present(jumpVC14!, animated: true, completion: nil)
+    }
+    
+    // このビューコントローラに戻ってくる
     @IBAction func comeHome(segue: UIStoryboardSegue) {
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //sec2Sample()
-        //sec3Sample()
-        //sec4Sample()
-        //sec5Sample()
-        //sec6Sample()
-        //sec7Sample()
-        //sec8Sample()
-        //sec9Sample1()
-        //sec9Sample2()
-        //sec10Sample1()
-        //sec10Sample2()
+        // sec2Sample()
+        // sec3Sample()
+        // sec4Sample()
+        // sec5Sample()
+        // sec6Sample()
+        // sec7Sample()
+        // sec8Sample()
+        // sec9Sample1()
+        // sec9Sample2()
+        // sec10Sample1()
+        // sec10Sample2()
         
     }
     
