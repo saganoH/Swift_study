@@ -6,6 +6,8 @@ class Sec13ViewController6: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var pageControl: UIPageControl!
     
+    @IBOutlet weak var contentView: UIView!
+    
     // 写真のファイル名とタイトルの構造体(Photoタイプ）
     struct Photo {
         var imageName: String
@@ -67,8 +69,8 @@ class Sec13ViewController6: UIViewController, UIScrollViewDelegate {
     }
     
     private func createContentsView(contentList: Array<Photo>) -> UIView {
-        // ページを追加するコンテンツビューを作る
-        let contentView = UIView()
+        // コードで生成するとconstraintsの設定が不可能なため変更
+        // let contentView = UIView()
         // 1ページの幅と高さ
         let pageWidth = self.view.frame.width
         let pageHeight = scrollView.frame.height
