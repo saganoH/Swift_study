@@ -1,6 +1,6 @@
 import UIKit
 
-class Sec14ViewController: UIViewController {
+class Sec14ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func backToHome(_ sender: Any) {
         // 現在のシーンを閉じて元のシーンに戻る
@@ -12,6 +12,11 @@ class Sec14ViewController: UIViewController {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
         alert.title = "タイトル"
         alert.message = "メッセージ"
+        
+        alert.addTextField{(textField) -> Void in
+            // テキストフィールドのデリゲートになる
+            textField.delegate = self
+        }
         
         // ボタン１
         alert.addAction(
@@ -57,6 +62,10 @@ class Sec14ViewController: UIViewController {
                 print("アラートが表示された")
             }
         )
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print(textField.text!)
     }
     
     func hello(_ message: String) {
