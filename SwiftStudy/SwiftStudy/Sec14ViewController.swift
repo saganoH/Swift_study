@@ -64,6 +64,41 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
         )
     }
     
+    @IBAction func showActionSheet(_ sender: Any) {
+        // アクションシートを作る
+        let actionSheet = UIAlertController(
+            title: "タイトル",
+            message: "メッセージ文",
+            preferredStyle: .actionSheet)
+        
+        // ボタン１
+        actionSheet.addAction(
+            UIAlertAction(title: "ボタン１です",
+                          style: .default,
+                          handler: {(action) -> Void in self.hello(action.title!)}
+            )
+        )
+        
+        // キャンセル
+        actionSheet.addAction(
+            UIAlertAction(
+                title: "キャンセル",
+                style: .cancel,
+                handler: nil)
+        )
+        
+        //アクションシートを表示する
+        self.present(
+            actionSheet,
+            animated: true,
+            completion: {
+            // 表示完了後に実行
+                print("アクションシートが表示された")
+            }
+        )
+    }
+    
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         print(textField.text!)
     }
