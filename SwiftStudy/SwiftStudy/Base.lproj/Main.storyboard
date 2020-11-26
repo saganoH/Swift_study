@@ -236,12 +236,21 @@
                                     <segue destination="tzK-tf-F2W" kind="presentation" id="A0W-gD-ATw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUO-7X-Tjg">
+                                <rect key="frame" x="161" y="296" width="92" height="30"/>
+                                <state key="normal" title="アラート表示"/>
+                                <connections>
+                                    <action selector="showAlert:" destination="TTU-J4-ae2" eventType="touchUpInside" id="iII-ut-Ocx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9WX-yE-3on"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
+                            <constraint firstItem="BUO-7X-Tjg" firstAttribute="centerX" secondItem="Bbk-QU-7XR" secondAttribute="centerX" id="8K9-8Y-BHx"/>
                             <constraint firstItem="FC1-uc-JWp" firstAttribute="top" secondItem="9WX-yE-3on" secondAttribute="top" constant="92" id="Djy-Qv-K4s"/>
                             <constraint firstItem="nXl-WC-B0R" firstAttribute="centerX" secondItem="Bbk-QU-7XR" secondAttribute="centerX" id="Fan-gX-OlX"/>
+                            <constraint firstItem="BUO-7X-Tjg" firstAttribute="top" secondItem="nXl-WC-B0R" secondAttribute="bottom" constant="50" id="Pa1-Mj-nHG"/>
                             <constraint firstItem="FC1-uc-JWp" firstAttribute="centerX" secondItem="Bbk-QU-7XR" secondAttribute="centerX" id="m8R-6h-6aG"/>
                             <constraint firstItem="nXl-WC-B0R" firstAttribute="top" secondItem="FC1-uc-JWp" secondAttribute="bottom" constant="50" id="tke-Bz-A7u"/>
                         </constraints>
@@ -250,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBO-V9-dBV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1154" y="1313"/>
+            <point key="canvasLocation" x="-1155.072463768116" y="1312.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
