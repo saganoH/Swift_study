@@ -11,7 +11,7 @@
         <!--Sec14 View Controller2-->
         <scene sceneID="vW8-hg-88C">
             <objects>
-                <viewController id="ri9-I5-f5d" customClass="Sec14ViewController2" sceneMemberID="viewController">
+                <viewController id="ri9-I5-f5d" customClass="Sec14ViewController2" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zme-YN-HLT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="fzq-by-bte"/>
                     <connections>
-                        <outlet property="webView" destination="cxU-b7-DIl" id="QTU-mz-Om1"/>
+                        <outlet property="webView" destination="cxU-b7-DIl" id="oTH-iR-3No"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aas-FI-gQW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -76,7 +76,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ri9-I5-f5d" kind="show" identifier="showWebPage" id="8lu-an-qIs"/>
+                                    <segue destination="ri9-I5-f5d" kind="show" identifier="showWebPage" id="jFk-Z1-z7t"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
