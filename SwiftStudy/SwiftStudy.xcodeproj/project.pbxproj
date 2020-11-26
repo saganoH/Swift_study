@@ -55,6 +55,7 @@
 		C6C0D065256249D6006E2195 /* Sec13ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D064256249D6006E2195 /* Sec13ViewController5.swift */; };
 		C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */; };
 		C6DD4D62255A385500714A56 /* customLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D61255A385500714A56 /* customLabel.swift */; };
+		C6E27425256F6ABB00C35660 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E27424256F6ABB00C35660 /* MyTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		C6C0D064256249D6006E2195 /* Sec13ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController5.swift; sourceTree = "<group>"; };
 		C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController4.swift; sourceTree = "<group>"; };
 		C6DD4D61255A385500714A56 /* customLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customLabel.swift; sourceTree = "<group>"; };
+		C6E27424256F6ABB00C35660 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 				C6B9A305256DF889001C4AF6 /* Sec14ViewController.swift */,
 				C6B9A30A256E1293001C4AF6 /* Sec14ViewController2.swift */,
 				C6B9A312256E13B4001C4AF6 /* WebListTableViewController.swift */,
+				C6E27424256F6ABB00C35660 /* MyTabBarController.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				C608B9692546A55100098140 /* ClassSample.swift in Sources */,
 				C614EDBC255CFAD10047920D /* Sec13ViewController.swift in Sources */,
 				C62581D5252EEB65009C884C /* SwitchSample.swift in Sources */,
+				C6E27425256F6ABB00C35660 /* MyTabBarController.swift in Sources */,
 				C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */,
 				C61431262549080900642F07 /* GameProtocol.swift in Sources */,
 				C630E4422547C0A200444C22 /* Player.swift in Sources */,

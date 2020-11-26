@@ -8,6 +8,98 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="gEL-00-k2w">
+            <objects>
+                <viewController id="K8q-Y1-HAA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f5l-aR-RVo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1c-fX-ahi">
+                                <rect key="frame" x="157" y="407" width="100" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="EM3-io-2rV"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="タブ２">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name=".HiraKakuInterface-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v6G-k1-leA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F1c-fX-ahi" firstAttribute="centerX" secondItem="f5l-aR-RVo" secondAttribute="centerX" id="2iE-vj-55C"/>
+                            <constraint firstItem="F1c-fX-ahi" firstAttribute="centerY" secondItem="f5l-aR-RVo" secondAttribute="centerY" id="5kf-g0-fkT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="gSy-o0-Lzk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWk-rx-R3S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1477" y="3618"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RY5-i8-877">
+            <objects>
+                <viewController id="y8Z-JI-Qo4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FeT-E4-aDE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTr-Qj-DQo">
+                                <rect key="frame" x="157" y="406.5" width="100" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="5wX-Tz-3H4"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="タブ１">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name=".HiraKakuInterface-W3"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oeD-QJ-73r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gTr-Qj-DQo" firstAttribute="centerX" secondItem="FeT-E4-aDE" secondAttribute="centerX" id="9gS-KG-zRJ"/>
+                            <constraint firstItem="gTr-Qj-DQo" firstAttribute="centerY" secondItem="FeT-E4-aDE" secondAttribute="centerY" id="Uur-cD-LBS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="xG1-Hn-drI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1e-4e-yV3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2516" y="3618"/>
+        </scene>
+        <!--My Tab Bar Controller-->
+        <scene sceneID="5dc-qU-hbB">
+            <objects>
+                <tabBarController id="aWw-Ir-3mb" customClass="MyTabBarController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1M1-iQ-hQx"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VjF-bg-zLK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="y8Z-JI-Qo4" kind="relationship" relationship="viewControllers" id="swr-1l-rtE"/>
+                        <segue destination="K8q-Y1-HAA" kind="relationship" relationship="viewControllers" id="kgt-Vb-40y"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPn-0S-xVL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1996" y="2775"/>
+        </scene>
         <!--Sec14 View Controller2-->
         <scene sceneID="vW8-hg-88C">
             <objects>
@@ -24,6 +116,10 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBo-uK-VIL">
+                                <rect key="frame" x="0.0" y="764" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pmo-UM-7vS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,7 +181,18 @@
                             <outlet property="delegate" destination="6GE-8v-Gdh" id="FdO-Dp-VJf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Webリスト" id="anD-Cu-m1l"/>
+                    <navigationItem key="navigationItem" title="Webリスト" id="anD-Cu-m1l">
+                        <barButtonItem key="leftBarButtonItem" title="戻る" id="t9F-c6-PhL">
+                            <connections>
+                                <action selector="backToHome:" destination="6GE-8v-Gdh" id="Z5X-YN-ggr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="次へ" id="sJT-6d-59U">
+                            <connections>
+                                <segue destination="aWw-Ir-3mb" kind="show" id="AkS-4p-Qrh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cox-F1-Yr6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,6 +246,7 @@
                             <constraint firstItem="nXl-WC-B0R" firstAttribute="top" secondItem="FC1-uc-JWp" secondAttribute="bottom" constant="50" id="tke-Bz-A7u"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="p0g-DF-1pY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBO-V9-dBV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

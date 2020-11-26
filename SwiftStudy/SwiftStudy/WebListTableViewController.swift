@@ -13,6 +13,11 @@ class WebListTableViewController: UITableViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func backToHome(_ sender: Any) {
+        // 現在のシーンを閉じて元のシーンに戻る
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

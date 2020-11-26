@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "alignment-insets" : {
+        "bottom" : 30,
+        "left" : 30,
+        "right" : 30,
+        "top" : 30
+      },
+      "filename" : "IMG_5143.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
+  }
+}
