@@ -49,7 +49,10 @@ class WebListTableViewController: UITableViewController {
                 // 行のデータを取り出す
                 let webData = webList[(indexPath as NSIndexPath).row]
                 // 移動先のビューコントローラのdataプロパティに値を設定する
-                (segue.destination as! Sec14ViewController2).data = webData
+                // 強制アンラップの回避：元のコード(segue.destination as! Sec14ViewController2).data = webData
+                if let vc14 = segue.destination as? Sec14ViewController2 {
+                    vc14.data = webData
+                }
             }
         }
     }
