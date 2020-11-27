@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2LK-5P-bn5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sec11 View Controller-->
+        <scene sceneID="i0c-Pn-lmY">
+            <objects>
+                <viewController id="2LK-5P-bn5" customClass="Sec11ViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xxf-iE-LBM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日の朝ごはんは" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOn-KV-3t9">
+                                <rect key="frame" x="137.5" y="437.5" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="珈琲" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVH-8I-XqF">
+                                <rect key="frame" x="113" y="537.5" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juH-ho-jwX">
+                                <rect key="frame" x="40" y="94" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="1ba-Pa-DcW" kind="unwind" unwindAction="comeHomeWithSegue:" id="IZC-Rt-4AG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="南瓜プリン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVq-Za-UOH">
+                                <rect key="frame" x="240" y="537.5" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="50" placeholderIntrinsicHeight="49.999999999999943" image="IMG_1035" translatesAutoresizingMaskIntoConstraints="NO" id="Re8-Yz-ICX">
+                                <rect key="frame" x="162" y="211" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="4iI-lm-zLa"/>
+                                    <constraint firstAttribute="width" constant="90" id="XDN-q8-V8k"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0OT-Bn-0d4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="juH-ho-jwX" firstAttribute="top" secondItem="0OT-Bn-0d4" secondAttribute="top" constant="50" id="1S4-sG-QDs"/>
+                            <constraint firstItem="juH-ho-jwX" firstAttribute="leading" secondItem="0OT-Bn-0d4" secondAttribute="leading" constant="40" id="JHN-8y-iXe"/>
+                            <constraint firstItem="aOn-KV-3t9" firstAttribute="centerY" secondItem="xxf-iE-LBM" secondAttribute="centerY" id="NPF-xg-pHr"/>
+                            <constraint firstItem="LVq-Za-UOH" firstAttribute="centerX" secondItem="xxf-iE-LBM" secondAttribute="centerX" constant="76.5" id="cp8-M8-Ct2"/>
+                            <constraint firstItem="Re8-Yz-ICX" firstAttribute="centerX" secondItem="xxf-iE-LBM" secondAttribute="centerX" id="gDJ-rz-rJT"/>
+                            <constraint firstItem="LVq-Za-UOH" firstAttribute="centerY" secondItem="xxf-iE-LBM" secondAttribute="centerY" constant="100" id="gam-Ou-GCV"/>
+                            <constraint firstItem="Re8-Yz-ICX" firstAttribute="top" secondItem="0OT-Bn-0d4" secondAttribute="top" constant="167" id="mtw-tN-vfG"/>
+                            <constraint firstItem="Re8-Yz-ICX" firstAttribute="leading" secondItem="juH-ho-jwX" secondAttribute="trailing" constant="91" id="tDC-Lt-tni"/>
+                            <constraint firstItem="gVH-8I-XqF" firstAttribute="centerX" secondItem="xxf-iE-LBM" secondAttribute="centerX" constant="-76.5" id="v4e-qN-oCH"/>
+                            <constraint firstItem="aOn-KV-3t9" firstAttribute="centerX" secondItem="xxf-iE-LBM" secondAttribute="centerX" id="ycY-te-bhE"/>
+                            <constraint firstItem="gVH-8I-XqF" firstAttribute="centerY" secondItem="xxf-iE-LBM" secondAttribute="centerY" constant="100" id="zOZ-i6-U6j"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DYk-56-xmE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="1ba-Pa-DcW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="554" y="-236"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_1035" width="3024" height="3024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
