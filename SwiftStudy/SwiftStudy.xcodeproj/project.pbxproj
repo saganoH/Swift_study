@@ -45,6 +45,8 @@
 		C64251D425709BBA0088DB09 /* Chapter12.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64251D325709BBA0088DB09 /* Chapter12.storyboard */; };
 		C64251D925709BF60088DB09 /* Chapter13.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64251D825709BF60088DB09 /* Chapter13.storyboard */; };
 		C64251DE25709C110088DB09 /* Chapter14.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64251DD25709C110088DB09 /* Chapter14.storyboard */; };
+		C64251EF2570B2D30088DB09 /* Chapter15.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64251EE2570B2D30088DB09 /* Chapter15.storyboard */; };
+		C64251F42570B3B70088DB09 /* Sec15ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64251F32570B3B70088DB09 /* Sec15ViewController.swift */; };
 		C67833DC2554E3F000DE7E54 /* Sec12ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */; };
 		C6978DD52563653300172DDA /* Sec13ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6978DD42563653300172DDA /* Sec13ViewController6.swift */; };
 		C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */; };
@@ -122,6 +124,8 @@
 		C64251D325709BBA0088DB09 /* Chapter12.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter12.storyboard; sourceTree = "<group>"; };
 		C64251D825709BF60088DB09 /* Chapter13.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter13.storyboard; sourceTree = "<group>"; };
 		C64251DD25709C110088DB09 /* Chapter14.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter14.storyboard; sourceTree = "<group>"; };
+		C64251EE2570B2D30088DB09 /* Chapter15.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter15.storyboard; sourceTree = "<group>"; };
+		C64251F32570B3B70088DB09 /* Sec15ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec15ViewController.swift; sourceTree = "<group>"; };
 		C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController3.swift; sourceTree = "<group>"; };
 		C6978DD42563653300172DDA /* Sec13ViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController6.swift; sourceTree = "<group>"; };
 		C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 				C6B9A30A256E1293001C4AF6 /* Sec14ViewController2.swift */,
 				C6B9A312256E13B4001C4AF6 /* WebListTableViewController.swift */,
 				C6E27424256F6ABB00C35660 /* MyTabBarController.swift */,
+				C64251F32570B3B70088DB09 /* Sec15ViewController.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 				C64251D325709BBA0088DB09 /* Chapter12.storyboard */,
 				C64251D825709BF60088DB09 /* Chapter13.storyboard */,
 				C64251DD25709C110088DB09 /* Chapter14.storyboard */,
+				C64251EE2570B2D30088DB09 /* Chapter15.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -370,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C64251EF2570B2D30088DB09 /* Chapter15.storyboard in Resources */,
 				C615B696252AEFD5008D3F0C /* LaunchScreen.storyboard in Resources */,
 				C64251CC25709B370088DB09 /* Chapter11.storyboard in Resources */,
 				C64251D425709BBA0088DB09 /* Chapter12.storyboard in Resources */,
@@ -423,6 +430,7 @@
 				C630E4422547C0A200444C22 /* Player.swift in Sources */,
 				C6260CF62565006D00167D5F /* Sec13ViewController8.swift in Sources */,
 				C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */,
+				C64251F42570B3B70088DB09 /* Sec15ViewController.swift in Sources */,
 				C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */,
 				C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */,
 				C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */,
