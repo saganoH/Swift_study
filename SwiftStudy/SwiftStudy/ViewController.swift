@@ -16,19 +16,6 @@ extension UIColor {
 
 class ViewController: UIViewController {
     
-    @IBAction func gotoTreePage(_ sender: Any) {
-        // 移動先のViewControllerを参照
-        let jumpVC14 = self.storyboard?.instantiateViewController(withIdentifier: "treePage")
-        // トランジションの映像効果を指定
-        jumpVC14?.modalTransitionStyle = .flipHorizontal
-        // シーンを移動する
-        present(jumpVC14!, animated: true, completion: nil)
-    }
-    
-    // このビューコントローラに戻ってくる
-    @IBAction func comeHome(segue: UIStoryboardSegue) {
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,7 +30,19 @@ class ViewController: UIViewController {
         // sec9Sample2()
         // sec10Sample1()
         // sec10Sample2()
-        
+    }
+    
+    @IBAction func gotoTreePage(_ sender: Any) {
+        // 移動先のViewControllerを参照
+        let jumpVC14 = self.storyboard?.instantiateViewController(withIdentifier: "treePage")
+        // トランジションの映像効果を指定
+        jumpVC14?.modalTransitionStyle = .flipHorizontal
+        // シーンを移動する
+        present(jumpVC14!, animated: true, completion: nil)
+    }
+    
+    // このビューコントローラに戻ってくる
+    @IBAction func comeHome(segue: UIStoryboardSegue) {
     }
     
     func sec2Sample() {

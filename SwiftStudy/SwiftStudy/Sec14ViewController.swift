@@ -26,7 +26,6 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
                 handler: {(action) -> Void in self.hello(action.title!)}
             )
         )
-        
         // ボタン２
         alert.addAction(
             UIAlertAction(
@@ -35,7 +34,6 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
                 handler: {(action) -> Void in self.hello(action.title!)}
             )
         )
-        
         // キャンセル
         alert.addAction(
             UIAlertAction(
@@ -43,7 +41,6 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
                 style: .cancel,
                 handler: nil)
         )
-        
         // 赤色のボタン
         alert.addAction(
             UIAlertAction(
@@ -52,7 +49,6 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
                 handler: {(action) -> Void in self.hello(action.title!)}
             )
         )
-        
         // アラートを表示する
         self.present(
             alert,
@@ -78,7 +74,6 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
                           handler: {(action) -> Void in self.hello(action.title!)}
             )
         )
-        
         // キャンセル
         actionSheet.addAction(
             UIAlertAction(
@@ -86,7 +81,6 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
                 style: .cancel,
                 handler: nil)
         )
-        
         //アクションシートを表示する
         self.present(
             actionSheet,
@@ -98,7 +92,6 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
         )
     }
     
-    
     func textFieldDidEndEditing(_ textField: UITextField) {
         print(textField.text!)
     }
@@ -106,5 +99,4 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
     func hello(_ message: String) {
         print(message)
     }
-    
 }

@@ -17,5 +17,4 @@ class MyTabBarController: UITabBarController {
             item.badgeValue = nil
         }
     }
-    
 }

@@ -54,7 +54,7 @@
 		C6C0D05D25623B94006E2195 /* Sec13ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D05C25623B94006E2195 /* Sec13ViewController4.swift */; };
 		C6C0D065256249D6006E2195 /* Sec13ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D064256249D6006E2195 /* Sec13ViewController5.swift */; };
 		C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */; };
-		C6DD4D62255A385500714A56 /* customLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D61255A385500714A56 /* customLabel.swift */; };
+		C6DD4D62255A385500714A56 /* BorderedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D61255A385500714A56 /* BorderedLabel.swift */; };
 		C6E27425256F6ABB00C35660 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E27424256F6ABB00C35660 /* MyTabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -127,7 +127,7 @@
 		C6C0D05C25623B94006E2195 /* Sec13ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController4.swift; sourceTree = "<group>"; };
 		C6C0D064256249D6006E2195 /* Sec13ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController5.swift; sourceTree = "<group>"; };
 		C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController4.swift; sourceTree = "<group>"; };
-		C6DD4D61255A385500714A56 /* customLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customLabel.swift; sourceTree = "<group>"; };
+		C6DD4D61255A385500714A56 /* BorderedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedLabel.swift; sourceTree = "<group>"; };
 		C6E27424256F6ABB00C35660 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,7 +214,7 @@
 				C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */,
 				C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */,
 				C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */,
-				C6DD4D61255A385500714A56 /* customLabel.swift */,
+				C6DD4D61255A385500714A56 /* BorderedLabel.swift */,
 				C614EDBB255CFAD10047920D /* Sec13ViewController.swift */,
 				C6266921255E60A9003B6E28 /* Sec13ViewController2.swift */,
 				C6C0D05C25623B94006E2195 /* Sec13ViewController4.swift */,
@@ -412,7 +412,7 @@
 				C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */,
 				C6B9A313256E13B4001C4AF6 /* WebListTableViewController.swift in Sources */,
 				C6174A492537C30E00C1CF8F /* ArraySample.swift in Sources */,
-				C6DD4D62255A385500714A56 /* customLabel.swift in Sources */,
+				C6DD4D62255A385500714A56 /* BorderedLabel.swift in Sources */,
 				C630E44A2547D5DC00444C22 /* Car.swift in Sources */,
 				C67833DC2554E3F000DE7E54 /* Sec12ViewController3.swift in Sources */,
 				C6C0D065256249D6006E2195 /* Sec13ViewController5.swift in Sources */,
