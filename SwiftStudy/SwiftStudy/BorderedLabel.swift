@@ -2,6 +2,7 @@ import UIKit
 
 @IBDesignable class BorderedLabel: UILabel {
     
+    // Storyboardの真っ黒エラー対策
     override init(frame: CGRect) {
         super.init(frame: frame)
     }

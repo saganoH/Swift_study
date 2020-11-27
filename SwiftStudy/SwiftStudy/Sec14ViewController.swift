@@ -13,25 +13,25 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
         alert.title = "タイトル"
         alert.message = "メッセージ"
         
-        alert.addTextField{(textField) -> Void in
+        alert.addTextField{ (textField) -> Void in
             // テキストフィールドのデリゲートになる
             textField.delegate = self
         }
         
-        // ボタン１
+        // ボタン1
         alert.addAction(
             UIAlertAction(
-                title: "ボタン１",
+                title: "ボタン1",
                 style: .default,
-                handler: {(action) -> Void in self.hello(action.title!)}
+                handler: { (action) -> Void in self.hello(action.title!) }
             )
         )
-        // ボタン２
+        // ボタン2
         alert.addAction(
             UIAlertAction(
-                title: "ボタン２",
+                title: "ボタン2",
                 style: .default,
-                handler: {(action) -> Void in self.hello(action.title!)}
+                handler: { (action) -> Void in self.hello(action.title!) }
             )
         )
         // キャンセル
@@ -46,7 +46,7 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
             UIAlertAction(
                 title: "削除します",
                 style: .destructive,
-                handler: {(action) -> Void in self.hello(action.title!)}
+                handler: { (action) -> Void in self.hello(action.title!) }
             )
         )
         // アラートを表示する
@@ -67,11 +67,11 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
             message: "メッセージ文",
             preferredStyle: .actionSheet)
         
-        // ボタン１
+        // ボタン1
         actionSheet.addAction(
-            UIAlertAction(title: "ボタン１です",
+            UIAlertAction(title: "ボタン1です",
                           style: .default,
-                          handler: {(action) -> Void in self.hello(action.title!)}
+                          handler: { (action) -> Void in self.hello(action.title!) }
             )
         )
         // キャンセル
@@ -86,7 +86,7 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
             actionSheet,
             animated: true,
             completion: {
-            // 表示完了後に実行
+                // 表示完了後に実行
                 print("アクションシートが表示された")
             }
         )
