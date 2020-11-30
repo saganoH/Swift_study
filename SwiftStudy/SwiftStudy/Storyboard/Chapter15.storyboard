@@ -76,10 +76,32 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1Q-PN-Hwp">
+                                <rect key="frame" x="343" y="728" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="lk2-yJ-OIX" kind="show" id="oEB-f4-u60"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I85-bh-i93">
+                                <rect key="frame" x="40" y="50" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="JD7-CK-4UA" kind="unwind" unwindAction="comeHome15_2WithSegue:" id="Qeh-zh-fpA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dVp-EQ-ojq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="I85-bh-i93" firstAttribute="top" secondItem="dVp-EQ-ojq" secondAttribute="top" constant="50" id="5PD-wF-9jp"/>
+                            <constraint firstItem="I85-bh-i93" firstAttribute="leading" secondItem="dVp-EQ-ojq" secondAttribute="leading" constant="40" id="ORQ-7z-hd8"/>
+                            <constraint firstItem="dVp-EQ-ojq" firstAttribute="bottom" secondItem="I85-bh-i93" secondAttribute="bottom" constant="728" id="S7y-0j-FMa"/>
+                            <constraint firstItem="dVp-EQ-ojq" firstAttribute="trailing" secondItem="Q1Q-PN-Hwp" secondAttribute="trailing" constant="40" id="nn9-gv-eUY"/>
+                            <constraint firstItem="Q1Q-PN-Hwp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dVp-EQ-ojq" secondAttribute="top" constant="700" id="rBp-uH-OZ9"/>
+                            <constraint firstItem="dVp-EQ-ojq" firstAttribute="bottom" secondItem="Q1Q-PN-Hwp" secondAttribute="bottom" constant="50" id="vl1-PD-Axz"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="vOp-4E-SbT" appends="YES" id="u5o-TK-0cy"/>
                         </connections>
@@ -90,6 +112,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMv-Jj-HUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="JD7-CK-4UA" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="vOp-4E-SbT">
                     <connections>
                         <action selector="tapView:" destination="bqV-vr-KPR" id="EAb-F2-VM8"/>
@@ -97,6 +120,31 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="931.88405797101461" y="136.60714285714286"/>
+        </scene>
+        <!--Sec15 View Controller3-->
+        <scene sceneID="BST-pk-6EA">
+            <objects>
+                <viewController id="lk2-yJ-OIX" customClass="Sec15ViewController3" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HUs-pW-MUo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8mJ-eW-IYD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="B5l-sE-lAn" appends="YES" id="jRl-9k-8d2"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="M25-jM-P88"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1f-rc-bqd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="B5l-sE-lAn">
+                    <connections>
+                        <action selector="tapView:" destination="lk2-yJ-OIX" id="Fvr-n4-S4r"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1709" y="137"/>
         </scene>
     </scenes>
     <resources>
