@@ -25,6 +25,7 @@ class Sec15ViewController2: UIViewController {
             animations: {
                 self.azarashi.center = tapPoint
             },
-            completion: nil)
+            completion: nil
+        )
     }
 }

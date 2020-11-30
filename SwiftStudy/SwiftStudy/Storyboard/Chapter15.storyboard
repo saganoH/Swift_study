@@ -87,7 +87,7 @@
                                 <rect key="frame" x="40" y="50" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <segue destination="JD7-CK-4UA" kind="unwind" unwindAction="comeHome15_2WithSegue:" id="Qeh-zh-fpA"/>
+                                    <segue destination="JD7-CK-4UA" kind="unwind" unwindAction="comeHome15WithSegue:" id="OXB-Q9-WIB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,9 +128,31 @@
                     <view key="view" contentMode="scaleToFill" id="HUs-pW-MUo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5W-gC-bKq">
+                                <rect key="frame" x="40" y="50" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="az6-wB-2C7" kind="unwind" unwindAction="comeHome15_2WithSegue:" id="hZO-QJ-4aw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGW-vv-Sdb">
+                                <rect key="frame" x="343" y="728" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="Juc-Ua-m5P" kind="show" id="3sO-CV-D2x"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8mJ-eW-IYD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="8mJ-eW-IYD" firstAttribute="trailing" secondItem="iGW-vv-Sdb" secondAttribute="trailing" constant="40" id="RVQ-h9-Pu1"/>
+                            <constraint firstItem="8mJ-eW-IYD" firstAttribute="bottom" secondItem="iGW-vv-Sdb" secondAttribute="bottom" constant="50" id="oCl-K7-7Ry"/>
+                            <constraint firstItem="h5W-gC-bKq" firstAttribute="top" secondItem="8mJ-eW-IYD" secondAttribute="top" constant="50" id="pI5-OU-tmU"/>
+                            <constraint firstItem="h5W-gC-bKq" firstAttribute="leading" secondItem="8mJ-eW-IYD" secondAttribute="leading" constant="40" id="r2K-Ht-536"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="B5l-sE-lAn" appends="YES" id="jRl-9k-8d2"/>
                         </connections>
@@ -138,6 +160,7 @@
                     <navigationItem key="navigationItem" id="M25-jM-P88"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1f-rc-bqd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="az6-wB-2C7" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="B5l-sE-lAn">
                     <connections>
                         <action selector="tapView:" destination="lk2-yJ-OIX" id="Fvr-n4-S4r"/>
@@ -145,6 +168,58 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1709" y="137"/>
+        </scene>
+        <!--Sec15 View Controller4-->
+        <scene sceneID="j9y-8c-AkP">
+            <objects>
+                <viewController id="Juc-Ua-m5P" customClass="Sec15ViewController4" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wZe-yA-uQf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zu-4M-b6h">
+                                <rect key="frame" x="40" y="50" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="zJj-sL-MqT" kind="unwind" unwindAction="comeHome15_3WithSegue:" id="O6G-nV-zXE"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lGf-3f-FJQ">
+                                <rect key="frame" x="87" y="357" width="240" height="128"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZrC-x8-DcW">
+                                <rect key="frame" x="148" y="515" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="GaO-tV-u1X"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="runSpeed:" destination="Juc-Ua-m5P" eventType="valueChanged" id="TKl-V3-Y6i"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QNT-GJ-Zpf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZrC-x8-DcW" firstAttribute="centerX" secondItem="wZe-yA-uQf" secondAttribute="centerX" id="5cL-m2-gc9"/>
+                            <constraint firstItem="0zu-4M-b6h" firstAttribute="top" secondItem="QNT-GJ-Zpf" secondAttribute="top" constant="50" id="5u6-zd-hgA"/>
+                            <constraint firstItem="lGf-3f-FJQ" firstAttribute="top" secondItem="QNT-GJ-Zpf" secondAttribute="top" constant="357" id="E2Y-Av-ZNR"/>
+                            <constraint firstItem="ZrC-x8-DcW" firstAttribute="top" secondItem="lGf-3f-FJQ" secondAttribute="bottom" constant="30" id="Ee0-kf-Ldh"/>
+                            <constraint firstItem="ZrC-x8-DcW" firstAttribute="centerX" secondItem="lGf-3f-FJQ" secondAttribute="centerX" id="ncD-dg-QN0"/>
+                            <constraint firstItem="lGf-3f-FJQ" firstAttribute="leading" secondItem="QNT-GJ-Zpf" secondAttribute="leading" constant="87" id="q4W-GE-Q7h"/>
+                            <constraint firstItem="lGf-3f-FJQ" firstAttribute="centerY" secondItem="wZe-yA-uQf" secondAttribute="centerY" id="xJ7-Yh-IK0"/>
+                            <constraint firstItem="0zu-4M-b6h" firstAttribute="leading" secondItem="QNT-GJ-Zpf" secondAttribute="leading" constant="40" id="yKV-Zu-0mn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LvN-r6-2kh"/>
+                    <connections>
+                        <outlet property="mySlider" destination="ZrC-x8-DcW" id="dDt-58-ct0"/>
+                        <outlet property="usagiView" destination="lGf-3f-FJQ" id="GMd-v7-0aX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T1h-RP-NzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zJj-sL-MqT" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2461" y="137"/>
         </scene>
     </scenes>
     <resources>

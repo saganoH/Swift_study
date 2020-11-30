@@ -2,6 +2,10 @@ import UIKit
 
 class Sec15ViewController3: UIViewController {
     
+    // このビューコントローラに戻ってくる
+    @IBAction func comeHome15_3(segue: UIStoryboardSegue) {
+    }
+    
     @IBAction func tapView(_ sender: UITapGestureRecognizer) {
         // flowerを作る
         let flower = UIImageView(image: UIImage(named: "flower"))
@@ -35,7 +39,8 @@ class Sec15ViewController3: UIViewController {
             completion: { (finished: Bool) in
                 //フェードインが完了したら続けて実行する
                 self.fadeoutAndRemove(flower)
-            })
+            }
+        )
     }
     
     // フェードアウトが完了したら取り除く
@@ -52,6 +57,7 @@ class Sec15ViewController3: UIViewController {
             completion: { (finished: Bool) in
                 // ビューから取り除く
                 view.removeFromSuperview()
-            })
+            }
+        )
     }
 }

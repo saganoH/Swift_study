@@ -16,6 +16,10 @@ class Sec15ViewController: UIViewController {
         )
     }
     
+    // このビューコントローラに戻ってくる
+    @IBAction func comeHome15(segue: UIStoryboardSegue) {
+    }
+    
     // タイマーから定期的に呼び出されるメソッド
     @objc func step() {
         // 水平方向へ移動
