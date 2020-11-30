@@ -13,7 +13,7 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
         alert.title = "タイトル"
         alert.message = "メッセージ"
         
-        alert.addTextField{ (textField) -> Void in
+        alert.addTextField { (textField) -> Void in
             // テキストフィールドのデリゲートになる
             textField.delegate = self
         }
