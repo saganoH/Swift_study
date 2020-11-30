@@ -23,7 +23,7 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
             UIAlertAction(
                 title: "ボタン1",
                 style: .default,
-                handler: { (action) -> Void in self.hello(action.title!) }
+                handler: { (action) -> Void in self.hello(action.title) }
             )
         )
         // ボタン2
@@ -31,7 +31,7 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
             UIAlertAction(
                 title: "ボタン2",
                 style: .default,
-                handler: { (action) -> Void in self.hello(action.title!) }
+                handler: { (action) -> Void in self.hello(action.title) }
             )
         )
         // キャンセル
@@ -46,7 +46,7 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
             UIAlertAction(
                 title: "削除します",
                 style: .destructive,
-                handler: { (action) -> Void in self.hello(action.title!) }
+                handler: { (action) -> Void in self.hello(action.title) }
             )
         )
         // アラートを表示する
@@ -71,7 +71,7 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
         actionSheet.addAction(
             UIAlertAction(title: "ボタン1です",
                           style: .default,
-                          handler: { (action) -> Void in self.hello(action.title!) }
+                          handler: { (action) -> Void in self.hello(action.title) }
             )
         )
         // キャンセル
@@ -93,10 +93,14 @@ class Sec14ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        print(textField.text!)
+        if let text = textField.text {
+            print(text)
+        }
     }
     
-    func hello(_ message: String) {
-        print(message)
+    func hello(_ message: String?) {
+        if let message = message {
+            print(message)
+        }
     }
 }
