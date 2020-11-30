@@ -2,6 +2,15 @@ import UIKit
 
 @IBDesignable class BorderedLabel: UILabel {
     
+    // Storyboardの真っ黒エラー対策
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
     //枠線の色設定
     @IBInspectable var borderColor: UIColor? {
         get { return UIColor(cgColor: layer.borderColor!) }
