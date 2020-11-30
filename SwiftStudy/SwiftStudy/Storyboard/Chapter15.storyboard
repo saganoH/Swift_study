@@ -26,12 +26,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpI-MY-H9o">
+                                <rect key="frame" x="40" y="94" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="umL-tW-88s" kind="unwind" unwindAction="comeHomeWithSegue:" id="FLG-9S-r8t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbb-aI-Ylc">
+                                <rect key="frame" x="343" y="782" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="bqV-vr-KPR" kind="show" id="GB8-co-h2U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xeU-3u-Sa3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UdL-g4-4yW" firstAttribute="top" secondItem="xeU-3u-Sa3" secondAttribute="top" constant="30" id="3fk-fQ-xrg"/>
+                            <constraint firstItem="rpI-MY-H9o" firstAttribute="top" secondItem="xeU-3u-Sa3" secondAttribute="top" constant="50" id="6QS-Cg-i6H"/>
+                            <constraint firstItem="nbb-aI-Ylc" firstAttribute="top" secondItem="xeU-3u-Sa3" secondAttribute="top" constant="738" id="81C-Kd-twG"/>
+                            <constraint firstItem="xeU-3u-Sa3" firstAttribute="trailing" secondItem="nbb-aI-Ylc" secondAttribute="trailing" constant="40" id="APG-9m-6Vc"/>
+                            <constraint firstItem="xeU-3u-Sa3" firstAttribute="bottom" secondItem="nbb-aI-Ylc" secondAttribute="bottom" constant="50" id="O60-Ia-ITy"/>
                             <constraint firstItem="UdL-g4-4yW" firstAttribute="centerX" secondItem="mgO-vz-9NG" secondAttribute="centerX" id="aKh-Ln-haR"/>
+                            <constraint firstItem="xeU-3u-Sa3" firstAttribute="bottom" secondItem="rpI-MY-H9o" secondAttribute="bottom" constant="738" id="qdW-jy-9ES"/>
+                            <constraint firstItem="rpI-MY-H9o" firstAttribute="leading" secondItem="xeU-3u-Sa3" secondAttribute="leading" constant="40" id="wI9-ZE-9ii"/>
                         </constraints>
                     </view>
                     <connections>
@@ -39,11 +59,48 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEF-Za-Fkz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="umL-tW-88s" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="154" y="137"/>
+            <point key="canvasLocation" x="153.62318840579712" y="136.60714285714286"/>
+        </scene>
+        <!--Sec15 View Controller2-->
+        <scene sceneID="xze-RG-Pd5">
+            <objects>
+                <viewController id="bqV-vr-KPR" customClass="Sec15ViewController2" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G6u-Ze-sF2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="azarashi" translatesAutoresizingMaskIntoConstraints="NO" id="yAZ-Ii-Gsx">
+                                <rect key="frame" x="57" y="270" width="300" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dVp-EQ-ojq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vOp-4E-SbT" appends="YES" id="u5o-TK-0cy"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="LB7-7W-ahd"/>
+                    <connections>
+                        <outlet property="azarashi" destination="yAZ-Ii-Gsx" id="OSZ-cq-Av3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMv-Jj-HUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vOp-4E-SbT">
+                    <connections>
+                        <action selector="tapView:" destination="bqV-vr-KPR" id="EAb-F2-VM8"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="931.88405797101461" y="136.60714285714286"/>
         </scene>
     </scenes>
     <resources>
+        <image name="azarashi" width="1024" height="795"/>
         <image name="car" width="960" height="960"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
