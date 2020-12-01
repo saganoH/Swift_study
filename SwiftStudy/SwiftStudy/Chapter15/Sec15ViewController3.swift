@@ -23,6 +23,8 @@ class Sec15ViewController3: UIViewController {
         // タップした座標にflowerを表示させる
         flower.center = sender.location(in: view)
         view.addSubview(flower)
+        // 次へ・戻るボタンを隠さないよう最背面に配置
+        view.sendSubviewToBack(flower)
         
         // 表示したflowerのアニメーション
         UIView.animate(
