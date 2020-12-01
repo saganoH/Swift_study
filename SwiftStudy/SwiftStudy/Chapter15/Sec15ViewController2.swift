@@ -8,11 +8,9 @@ class Sec15ViewController2: UIViewController {
         super.viewDidLoad()
     }
     
-    // このビューコントローラに戻ってくる
     @IBAction func comeHome15_2(segue: UIStoryboardSegue) {
     }
     
-    // ビューがタップされたら実行
     @IBAction func tapView(_ sender: UITapGestureRecognizer) {
         // タップされた座標を調べる
         let tapPoint = sender.location(in: view)

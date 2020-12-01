@@ -50,7 +50,6 @@
                                     <segue destination="C0v-Dv-wZB" kind="show" id="PRa-e0-42e"/>
                                 </connections>
                             </button>
-<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jzc-13-PFD">
                                 <rect key="frame" x="77.5" y="446.5" width="259" height="30"/>
                                 <state key="normal" title="Chapter15 アニメーションと映像効果"/>
@@ -58,8 +57,6 @@
                                     <segue destination="ZYe-oZ-FOg" kind="show" id="IKK-sH-YcJ"/>
                                 </connections>
                             </button>
-=======
->>>>>>> develop
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -67,18 +64,12 @@
                             <constraint firstItem="8p4-7u-etq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ZI-3x-jr6"/>
                             <constraint firstItem="oUH-k4-wsP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="CjQ-Sp-ssx"/>
                             <constraint firstItem="oUH-k4-wsP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ESL-cE-iap"/>
-<<<<<<< HEAD
                             <constraint firstItem="Jzc-13-PFD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ir2-Jv-jt2"/>
-=======
->>>>>>> develop
                             <constraint firstItem="8p4-7u-etq" firstAttribute="top" secondItem="Mnh-Q7-8ZA" secondAttribute="bottom" constant="30" id="Kgz-lb-axF"/>
                             <constraint firstItem="Mnh-Q7-8ZA" firstAttribute="top" secondItem="jeP-hr-dA7" secondAttribute="bottom" constant="30" id="Pqu-RR-NYi"/>
                             <constraint firstItem="BXd-IT-NCP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T3g-aT-6fa"/>
                             <constraint firstItem="jeP-hr-dA7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ukd-cG-Y3M"/>
-<<<<<<< HEAD
                             <constraint firstItem="Jzc-13-PFD" firstAttribute="top" secondItem="BXd-IT-NCP" secondAttribute="bottom" constant="30" id="mV2-Wp-00c"/>
-=======
->>>>>>> develop
                             <constraint firstItem="Mnh-Q7-8ZA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p6A-Ln-oDt"/>
                             <constraint firstItem="BXd-IT-NCP" firstAttribute="top" secondItem="8p4-7u-etq" secondAttribute="bottom" constant="30" id="t7Q-ZI-crY"/>
                             <constraint firstItem="jeP-hr-dA7" firstAttribute="top" secondItem="oUH-k4-wsP" secondAttribute="bottom" constant="100" id="tuq-tL-M4C"/>
@@ -107,11 +98,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K9R-cR-Ce9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="241" y="394"/>
-=======
-            <point key="canvasLocation" x="89" y="361"/>
->>>>>>> develop
         </scene>
         <!--Chapter13-->
         <scene sceneID="nsS-vP-FX6">
@@ -121,11 +108,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zX-dK-ZqV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="269" y="563"/>
-=======
-            <point key="canvasLocation" x="73" y="571"/>
->>>>>>> develop
         </scene>
         <!--Chapter14-->
         <scene sceneID="UXI-je-bxa">
@@ -135,7 +118,6 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jgt-nz-QIq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="319" y="679"/>
         </scene>
         <!--Chapter15-->
@@ -147,9 +129,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qc-Q8-3BA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="420" y="830"/>
-=======
-            <point key="canvasLocation" x="53" y="724"/>
->>>>>>> develop
         </scene>
     </scenes>
     <resources>

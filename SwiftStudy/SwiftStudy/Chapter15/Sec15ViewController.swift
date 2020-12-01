@@ -6,6 +6,10 @@ class Sec15ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         Timer.scheduledTimer(
             timeInterval: 0.1, // 繰り返す時間(s)
@@ -16,7 +20,6 @@ class Sec15ViewController: UIViewController {
         )
     }
     
-    // このビューコントローラに戻ってくる
     @IBAction func comeHome15(segue: UIStoryboardSegue) {
     }
     

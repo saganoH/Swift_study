@@ -2,7 +2,6 @@ import UIKit
 
 class Sec15ViewController3: UIViewController {
     
-    // このビューコントローラに戻ってくる
     @IBAction func comeHome15_3(segue: UIStoryboardSegue) {
     }
     

@@ -8,6 +8,11 @@ class Sec15ViewController4: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         // スライダの範囲を決める
         mySlider.minimumValue = 0.0
         mySlider.maximumValue = 5.0
