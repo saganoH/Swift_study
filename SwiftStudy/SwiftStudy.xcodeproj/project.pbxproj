@@ -15,6 +15,7 @@
 		C61431262549080900642F07 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61431252549080900642F07 /* GameProtocol.swift */; };
 		C61431312549303200642F07 /* EnumSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61431302549303200642F07 /* EnumSample.swift */; };
 		C614EDBC255CFAD10047920D /* Sec13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C614EDBB255CFAD10047920D /* Sec13ViewController.swift */; };
+		C61520002574BDE800DEAB0D /* Sec15ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6151FFF2574BDE800DEAB0D /* Sec15ViewController4.swift */; };
 		C615A57E253E81640011B547 /* SetSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615A57D253E81640011B547 /* SetSample.swift */; };
 		C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B689252AEFD5008D3F0C /* AppDelegate.swift */; };
 		C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B68B252AEFD5008D3F0C /* SceneDelegate.swift */; };
@@ -45,6 +46,10 @@
 		C64251D425709BBA0088DB09 /* Chapter12.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64251D325709BBA0088DB09 /* Chapter12.storyboard */; };
 		C64251D925709BF60088DB09 /* Chapter13.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64251D825709BF60088DB09 /* Chapter13.storyboard */; };
 		C64251DE25709C110088DB09 /* Chapter14.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64251DD25709C110088DB09 /* Chapter14.storyboard */; };
+		C64251EF2570B2D30088DB09 /* Chapter15.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64251EE2570B2D30088DB09 /* Chapter15.storyboard */; };
+		C64251F42570B3B70088DB09 /* Sec15ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64251F32570B3B70088DB09 /* Sec15ViewController.swift */; };
+		C661D0D82574976E000AFD85 /* Sec15ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661D0D72574976E000AFD85 /* Sec15ViewController2.swift */; };
+		C661D0E92574ADF9000AFD85 /* Sec15ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661D0E82574ADF9000AFD85 /* Sec15ViewController3.swift */; };
 		C67833DC2554E3F000DE7E54 /* Sec12ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */; };
 		C6978DD52563653300172DDA /* Sec13ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6978DD42563653300172DDA /* Sec13ViewController6.swift */; };
 		C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */; };
@@ -87,6 +92,7 @@
 		C61431252549080900642F07 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		C61431302549303200642F07 /* EnumSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumSample.swift; sourceTree = "<group>"; };
 		C614EDBB255CFAD10047920D /* Sec13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController.swift; sourceTree = "<group>"; };
+		C6151FFF2574BDE800DEAB0D /* Sec15ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec15ViewController4.swift; sourceTree = "<group>"; };
 		C615A57D253E81640011B547 /* SetSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetSample.swift; sourceTree = "<group>"; };
 		C615B686252AEFD5008D3F0C /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C615B689252AEFD5008D3F0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +128,10 @@
 		C64251D325709BBA0088DB09 /* Chapter12.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter12.storyboard; sourceTree = "<group>"; };
 		C64251D825709BF60088DB09 /* Chapter13.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter13.storyboard; sourceTree = "<group>"; };
 		C64251DD25709C110088DB09 /* Chapter14.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter14.storyboard; sourceTree = "<group>"; };
+		C64251EE2570B2D30088DB09 /* Chapter15.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter15.storyboard; sourceTree = "<group>"; };
+		C64251F32570B3B70088DB09 /* Sec15ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec15ViewController.swift; sourceTree = "<group>"; };
+		C661D0D72574976E000AFD85 /* Sec15ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec15ViewController2.swift; sourceTree = "<group>"; };
+		C661D0E82574ADF9000AFD85 /* Sec15ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec15ViewController3.swift; sourceTree = "<group>"; };
 		C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController3.swift; sourceTree = "<group>"; };
 		C6978DD42563653300172DDA /* Sec13ViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController6.swift; sourceTree = "<group>"; };
 		C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +207,7 @@
 				C661D0BB25748CB5000AFD85 /* Chapter12 */,
 				C661D0BC25748D00000AFD85 /* Chapter13 */,
 				C661D0BF25748E42000AFD85 /* Chapter14 */,
+				C661D0D32574966E000AFD85 /* Chapter15 */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -228,6 +239,7 @@
 				C64251D325709BBA0088DB09 /* Chapter12.storyboard */,
 				C64251D825709BF60088DB09 /* Chapter13.storyboard */,
 				C64251DD25709C110088DB09 /* Chapter14.storyboard */,
+				C64251EE2570B2D30088DB09 /* Chapter15.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -306,6 +318,17 @@
 				C6E27424256F6ABB00C35660 /* MyTabBarController.swift */,
 			);
 			path = Chapter14;
+			sourceTree = "<group>";
+		};
+		C661D0D32574966E000AFD85 /* Chapter15 */ = {
+			isa = PBXGroup;
+			children = (
+				C64251F32570B3B70088DB09 /* Sec15ViewController.swift */,
+				C661D0D72574976E000AFD85 /* Sec15ViewController2.swift */,
+				C661D0E82574ADF9000AFD85 /* Sec15ViewController3.swift */,
+				C6151FFF2574BDE800DEAB0D /* Sec15ViewController4.swift */,
+			);
+			path = Chapter15;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C64251EF2570B2D30088DB09 /* Chapter15.storyboard in Resources */,
 				C615B696252AEFD5008D3F0C /* LaunchScreen.storyboard in Resources */,
 				C64251CC25709B370088DB09 /* Chapter11.storyboard in Resources */,
 				C64251D425709BBA0088DB09 /* Chapter12.storyboard in Resources */,
@@ -450,11 +474,13 @@
 				C6B9A306256DF889001C4AF6 /* Sec14ViewController.swift in Sources */,
 				C6B9A30B256E1293001C4AF6 /* Sec14ViewController2.swift in Sources */,
 				C6978DD52563653300172DDA /* Sec13ViewController6.swift in Sources */,
+				C661D0E92574ADF9000AFD85 /* Sec15ViewController3.swift in Sources */,
 				C615A57E253E81640011B547 /* SetSample.swift in Sources */,
 				C6266922255E60A9003B6E28 /* Sec13ViewController2.swift in Sources */,
 				C6B1B59B254A9682008C6DC6 /* StructSample.swift in Sources */,
 				C62581E4252EF0EC009C884C /* ForSample.swift in Sources */,
 				C630E44F2547DA4000444C22 /* Game.swift in Sources */,
+				C61520002574BDE800DEAB0D /* Sec15ViewController4.swift in Sources */,
 				C608B9692546A55100098140 /* ClassSample.swift in Sources */,
 				C614EDBC255CFAD10047920D /* Sec13ViewController.swift in Sources */,
 				C62581D5252EEB65009C884C /* SwitchSample.swift in Sources */,
@@ -464,6 +490,7 @@
 				C630E4422547C0A200444C22 /* Player.swift in Sources */,
 				C6260CF62565006D00167D5F /* Sec13ViewController8.swift in Sources */,
 				C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */,
+				C64251F42570B3B70088DB09 /* Sec15ViewController.swift in Sources */,
 				C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */,
 				C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */,
 				C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */,
@@ -477,6 +504,7 @@
 				C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */,
 				C6B9A313256E13B4001C4AF6 /* WebListTableViewController.swift in Sources */,
 				C6174A492537C30E00C1CF8F /* ArraySample.swift in Sources */,
+				C661D0D82574976E000AFD85 /* Sec15ViewController2.swift in Sources */,
 				C6DD4D62255A385500714A56 /* BorderedLabel.swift in Sources */,
 				C630E44A2547D5DC00444C22 /* Car.swift in Sources */,
 				C67833DC2554E3F000DE7E54 /* Sec12ViewController3.swift in Sources */,

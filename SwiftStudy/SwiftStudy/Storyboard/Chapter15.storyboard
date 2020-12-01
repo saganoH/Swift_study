@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2A1-LE-Ob2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sec15 View Controller-->
+        <scene sceneID="lLe-Im-efb">
+            <objects>
+                <viewController id="2A1-LE-Ob2" customClass="Sec15ViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mgO-vz-9NG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="6ei-V9-d6c">
+                                <rect key="frame" x="87" y="223" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="バックし続ける車" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdL-g4-4yW">
+                                <rect key="frame" x="137.5" y="74" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpI-MY-H9o">
+                                <rect key="frame" x="40" y="94" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="umL-tW-88s" kind="unwind" unwindAction="comeHomeWithSegue:" id="FLG-9S-r8t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbb-aI-Ylc">
+                                <rect key="frame" x="343" y="782" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="bqV-vr-KPR" kind="show" id="GB8-co-h2U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xeU-3u-Sa3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UdL-g4-4yW" firstAttribute="top" secondItem="xeU-3u-Sa3" secondAttribute="top" constant="30" id="3fk-fQ-xrg"/>
+                            <constraint firstItem="rpI-MY-H9o" firstAttribute="top" secondItem="xeU-3u-Sa3" secondAttribute="top" constant="50" id="6QS-Cg-i6H"/>
+                            <constraint firstItem="nbb-aI-Ylc" firstAttribute="top" secondItem="xeU-3u-Sa3" secondAttribute="top" constant="738" id="81C-Kd-twG"/>
+                            <constraint firstItem="xeU-3u-Sa3" firstAttribute="trailing" secondItem="nbb-aI-Ylc" secondAttribute="trailing" constant="40" id="APG-9m-6Vc"/>
+                            <constraint firstItem="xeU-3u-Sa3" firstAttribute="bottom" secondItem="nbb-aI-Ylc" secondAttribute="bottom" constant="50" id="O60-Ia-ITy"/>
+                            <constraint firstItem="UdL-g4-4yW" firstAttribute="centerX" secondItem="mgO-vz-9NG" secondAttribute="centerX" id="aKh-Ln-haR"/>
+                            <constraint firstItem="xeU-3u-Sa3" firstAttribute="bottom" secondItem="rpI-MY-H9o" secondAttribute="bottom" constant="738" id="qdW-jy-9ES"/>
+                            <constraint firstItem="rpI-MY-H9o" firstAttribute="leading" secondItem="xeU-3u-Sa3" secondAttribute="leading" constant="40" id="wI9-ZE-9ii"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="car" destination="6ei-V9-d6c" id="ukw-VH-J5A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEF-Za-Fkz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="umL-tW-88s" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="153.62318840579712" y="136.60714285714286"/>
+        </scene>
+        <!--Sec15 View Controller2-->
+        <scene sceneID="xze-RG-Pd5">
+            <objects>
+                <viewController id="bqV-vr-KPR" customClass="Sec15ViewController2" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G6u-Ze-sF2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="azarashi" translatesAutoresizingMaskIntoConstraints="NO" id="yAZ-Ii-Gsx">
+                                <rect key="frame" x="57" y="270" width="300" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1Q-PN-Hwp">
+                                <rect key="frame" x="343" y="728" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="lk2-yJ-OIX" kind="show" id="oEB-f4-u60"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I85-bh-i93">
+                                <rect key="frame" x="40" y="50" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="JD7-CK-4UA" kind="unwind" unwindAction="comeHome15WithSegue:" id="OXB-Q9-WIB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dVp-EQ-ojq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="I85-bh-i93" firstAttribute="top" secondItem="dVp-EQ-ojq" secondAttribute="top" constant="50" id="5PD-wF-9jp"/>
+                            <constraint firstItem="I85-bh-i93" firstAttribute="leading" secondItem="dVp-EQ-ojq" secondAttribute="leading" constant="40" id="ORQ-7z-hd8"/>
+                            <constraint firstItem="dVp-EQ-ojq" firstAttribute="bottom" secondItem="I85-bh-i93" secondAttribute="bottom" constant="728" id="S7y-0j-FMa"/>
+                            <constraint firstItem="dVp-EQ-ojq" firstAttribute="trailing" secondItem="Q1Q-PN-Hwp" secondAttribute="trailing" constant="40" id="nn9-gv-eUY"/>
+                            <constraint firstItem="Q1Q-PN-Hwp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dVp-EQ-ojq" secondAttribute="top" constant="700" id="rBp-uH-OZ9"/>
+                            <constraint firstItem="dVp-EQ-ojq" firstAttribute="bottom" secondItem="Q1Q-PN-Hwp" secondAttribute="bottom" constant="50" id="vl1-PD-Axz"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vOp-4E-SbT" appends="YES" id="u5o-TK-0cy"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="LB7-7W-ahd"/>
+                    <connections>
+                        <outlet property="azarashi" destination="yAZ-Ii-Gsx" id="OSZ-cq-Av3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMv-Jj-HUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="JD7-CK-4UA" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="vOp-4E-SbT">
+                    <connections>
+                        <action selector="tapView:" destination="bqV-vr-KPR" id="EAb-F2-VM8"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="931.88405797101461" y="136.60714285714286"/>
+        </scene>
+        <!--Sec15 View Controller3-->
+        <scene sceneID="BST-pk-6EA">
+            <objects>
+                <viewController id="lk2-yJ-OIX" customClass="Sec15ViewController3" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HUs-pW-MUo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5W-gC-bKq">
+                                <rect key="frame" x="40" y="50" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="az6-wB-2C7" kind="unwind" unwindAction="comeHome15_2WithSegue:" id="hZO-QJ-4aw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGW-vv-Sdb">
+                                <rect key="frame" x="343" y="728" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="Juc-Ua-m5P" kind="show" id="3sO-CV-D2x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8mJ-eW-IYD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="8mJ-eW-IYD" firstAttribute="trailing" secondItem="iGW-vv-Sdb" secondAttribute="trailing" constant="40" id="RVQ-h9-Pu1"/>
+                            <constraint firstItem="8mJ-eW-IYD" firstAttribute="bottom" secondItem="iGW-vv-Sdb" secondAttribute="bottom" constant="50" id="oCl-K7-7Ry"/>
+                            <constraint firstItem="h5W-gC-bKq" firstAttribute="top" secondItem="8mJ-eW-IYD" secondAttribute="top" constant="50" id="pI5-OU-tmU"/>
+                            <constraint firstItem="h5W-gC-bKq" firstAttribute="leading" secondItem="8mJ-eW-IYD" secondAttribute="leading" constant="40" id="r2K-Ht-536"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="B5l-sE-lAn" appends="YES" id="jRl-9k-8d2"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="M25-jM-P88"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1f-rc-bqd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="az6-wB-2C7" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="B5l-sE-lAn">
+                    <connections>
+                        <action selector="tapView:" destination="lk2-yJ-OIX" id="Fvr-n4-S4r"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1709" y="137"/>
+        </scene>
+        <!--Sec15 View Controller4-->
+        <scene sceneID="j9y-8c-AkP">
+            <objects>
+                <viewController id="Juc-Ua-m5P" customClass="Sec15ViewController4" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wZe-yA-uQf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zu-4M-b6h">
+                                <rect key="frame" x="40" y="50" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="zJj-sL-MqT" kind="unwind" unwindAction="comeHome15_3WithSegue:" id="O6G-nV-zXE"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lGf-3f-FJQ">
+                                <rect key="frame" x="87" y="357" width="240" height="128"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZrC-x8-DcW">
+                                <rect key="frame" x="148" y="515" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="GaO-tV-u1X"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="runSpeed:" destination="Juc-Ua-m5P" eventType="valueChanged" id="TKl-V3-Y6i"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QNT-GJ-Zpf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZrC-x8-DcW" firstAttribute="centerX" secondItem="wZe-yA-uQf" secondAttribute="centerX" id="5cL-m2-gc9"/>
+                            <constraint firstItem="0zu-4M-b6h" firstAttribute="top" secondItem="QNT-GJ-Zpf" secondAttribute="top" constant="50" id="5u6-zd-hgA"/>
+                            <constraint firstItem="lGf-3f-FJQ" firstAttribute="top" secondItem="QNT-GJ-Zpf" secondAttribute="top" constant="357" id="E2Y-Av-ZNR"/>
+                            <constraint firstItem="ZrC-x8-DcW" firstAttribute="top" secondItem="lGf-3f-FJQ" secondAttribute="bottom" constant="30" id="Ee0-kf-Ldh"/>
+                            <constraint firstItem="ZrC-x8-DcW" firstAttribute="centerX" secondItem="lGf-3f-FJQ" secondAttribute="centerX" id="ncD-dg-QN0"/>
+                            <constraint firstItem="lGf-3f-FJQ" firstAttribute="leading" secondItem="QNT-GJ-Zpf" secondAttribute="leading" constant="87" id="q4W-GE-Q7h"/>
+                            <constraint firstItem="lGf-3f-FJQ" firstAttribute="centerY" secondItem="wZe-yA-uQf" secondAttribute="centerY" id="xJ7-Yh-IK0"/>
+                            <constraint firstItem="0zu-4M-b6h" firstAttribute="leading" secondItem="QNT-GJ-Zpf" secondAttribute="leading" constant="40" id="yKV-Zu-0mn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LvN-r6-2kh"/>
+                    <connections>
+                        <outlet property="mySlider" destination="ZrC-x8-DcW" id="dDt-58-ct0"/>
+                        <outlet property="usagiView" destination="lGf-3f-FJQ" id="GMd-v7-0aX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T1h-RP-NzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zJj-sL-MqT" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2461" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="azarashi" width="1024" height="795"/>
+        <image name="car" width="960" height="960"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
