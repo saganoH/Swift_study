@@ -4,6 +4,10 @@ class Sec16ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.hello(_:)))
         let myView = UIView(frame: CGRect(x: 100, y: 100, width: 80, height: 80))

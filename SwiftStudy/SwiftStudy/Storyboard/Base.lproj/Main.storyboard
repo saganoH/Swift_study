@@ -61,7 +61,7 @@
                                 <rect key="frame" x="93" y="506.5" width="228" height="30"/>
                                 <state key="normal" title="Chapter16 フィンガーアクション"/>
                                 <connections>
-                                    <segue destination="KO0-Ig-JTf" kind="show" id="iCp-t4-ddX"/>
+                                    <segue destination="KO0-Ig-JTf" kind="presentation" modalPresentationStyle="fullScreen" id="iCp-t4-ddX"/>
                                 </connections>
                             </button>
                         </subviews>
