@@ -15,6 +15,8 @@ extension UIColor {
 }
 
 class ViewController: UIViewController {
+
+    var delegate: MyDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,14 @@ class ViewController: UIViewController {
         // sec9Sample2()
         // sec10Sample1()
         // sec10Sample2()
+
+        delegate = self
+        methodA()
+        methodB() { char in
+            self.methodC()
+            print(char)
+        }
+//        methodC()
     }
     
     // このビューコントローラに戻ってくる
@@ -298,4 +308,27 @@ class ViewController: UIViewController {
         structC.stockCheck()
         structC.makeMonster()
     }
+
+    func methodA() {
+        print("A")
+    }
+
+    func methodB(handle: @escaping (String) -> ()) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + .seconds(5)) {
+            print("B")
+//            self.delegate?.methodC()
+            handle("D")
+        }
+    }
+
+    func methodC() {
+        print("C")
+    }
+
 }
+
+protocol MyDelegate {
+    func methodC()
+}
+
+extension ViewController: MyDelegate {}
