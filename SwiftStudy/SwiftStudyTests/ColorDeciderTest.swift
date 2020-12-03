@@ -4,16 +4,16 @@ import UIKit
 
 class ColorDeciderTest: XCTestCase {
     
-    func testDecideFirstColor() {
+    func testCurrentColor() {
         let colorC = ColorDecider()
-        let color = colorC.decideFirstColor()
+        let color = colorC.currentColor()
         let testColor = UIColor(hue: 180/360, saturation: 1.0, brightness: 1.0, alpha: 1.0)
         XCTAssertEqual(color, testColor)
     }
 
-    func testDecideColor() {
+    func testUpdateColor() {
         let colorC = ColorDecider()
-        let color = colorC.decideColor(translation: CGPoint(x: -7, y: 0))
+        let color = colorC.updateColor(translation: CGPoint(x: -7, y: 0))
         let testColor = UIColor(hue: 181/360, saturation: 1.0, brightness: 1.0, alpha: 1.0)
         XCTAssertEqual(color, testColor)
     }

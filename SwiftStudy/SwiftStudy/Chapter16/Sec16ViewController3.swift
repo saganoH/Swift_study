@@ -12,14 +12,14 @@ class Sec16ViewController3: UIViewController {
         super.viewWillAppear(animated)
         
         // 最初の色を設定する
-        view.backgroundColor = colorC.decideFirstColor()
+        view.backgroundColor = colorC.currentColor()
     }
     
     @IBAction func dragColor(_ sender: UIPanGestureRecognizer) {
         // ドラッグした量を取得
         let translation = sender.translation(in: view)
 
-        let color = colorC.decideColor(translation: translation)
+        let color = colorC.updateColor(translation: translation)
         view.backgroundColor = color
     }
     
