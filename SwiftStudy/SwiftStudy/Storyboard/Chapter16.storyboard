@@ -54,13 +54,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23y-VT-GKh">
-                                <rect key="frame" x="40" y="94" width="31" height="30"/>
-                                <state key="normal" title="戻る"/>
-                                <connections>
-                                    <segue destination="EHo-YQ-cXR" kind="unwind" unwindAction="comeHome16WithSegue:" id="XoY-sd-wWn"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="Xk1-ed-Ubr">
                                 <rect key="frame" x="87" y="241" width="200" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -74,6 +67,13 @@
                                 <state key="normal" title="次へ"/>
                                 <connections>
                                     <segue destination="IWn-W5-quT" kind="presentation" modalPresentationStyle="fullScreen" id="V0h-RJ-PzI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23y-VT-GKh">
+                                <rect key="frame" x="40" y="94" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="EHo-YQ-cXR" kind="unwind" unwindAction="comeHome16WithSegue:" id="XoY-sd-wWn"/>
                                 </connections>
                             </button>
                         </subviews>
