@@ -58,6 +58,8 @@
 		C673BBC125776341004C2EE0 /* Sec16ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C673BBC025776341004C2EE0 /* Sec16ViewController3.swift */; };
 		C673BBC625776394004C2EE0 /* Sec16ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C673BBC525776394004C2EE0 /* Sec16ViewController4.swift */; };
 		C67833DC2554E3F000DE7E54 /* Sec12ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */; };
+		C683A6B725788C0A00EF8EDE /* Chapter18.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C683A6B625788C0A00EF8EDE /* Chapter18.storyboard */; };
+		C683A6BD25788C6A00EF8EDE /* Sec18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683A6BC25788C6A00EF8EDE /* Sec18ViewController.swift */; };
 		C6978DD52563653300172DDA /* Sec13ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6978DD42563653300172DDA /* Sec13ViewController6.swift */; };
 		C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */; };
 		C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */; };
@@ -147,6 +149,8 @@
 		C673BBC025776341004C2EE0 /* Sec16ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec16ViewController3.swift; sourceTree = "<group>"; };
 		C673BBC525776394004C2EE0 /* Sec16ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec16ViewController4.swift; sourceTree = "<group>"; };
 		C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController3.swift; sourceTree = "<group>"; };
+		C683A6B625788C0A00EF8EDE /* Chapter18.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter18.storyboard; sourceTree = "<group>"; };
+		C683A6BC25788C6A00EF8EDE /* Sec18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec18ViewController.swift; sourceTree = "<group>"; };
 		C6978DD42563653300172DDA /* Sec13ViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController6.swift; sourceTree = "<group>"; };
 		C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController.swift; sourceTree = "<group>"; };
 		C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController2.swift; sourceTree = "<group>"; };
@@ -225,6 +229,7 @@
 				C661D0BF25748E42000AFD85 /* Chapter14 */,
 				C661D0D32574966E000AFD85 /* Chapter15 */,
 				C6EDFCED2577256600BE3623 /* Chapter16 */,
+				C683A6BB25788C4000EF8EDE /* Chapter18 */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 				C64251DD25709C110088DB09 /* Chapter14.storyboard */,
 				C64251EE2570B2D30088DB09 /* Chapter15.storyboard */,
 				C6EDFCE32577247700BE3623 /* Chapter16.storyboard */,
+				C683A6B625788C0A00EF8EDE /* Chapter18.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -348,6 +354,14 @@
 				C6151FFF2574BDE800DEAB0D /* Sec15ViewController4.swift */,
 			);
 			path = Chapter15;
+			sourceTree = "<group>";
+		};
+		C683A6BB25788C4000EF8EDE /* Chapter18 */ = {
+			isa = PBXGroup;
+			children = (
+				C683A6BC25788C6A00EF8EDE /* Sec18ViewController.swift */,
+			);
+			path = Chapter18;
 			sourceTree = "<group>";
 		};
 		C6EDFCED2577256600BE3623 /* Chapter16 */ = {
@@ -468,6 +482,7 @@
 				C64251EF2570B2D30088DB09 /* Chapter15.storyboard in Resources */,
 				C6EDFCE42577247700BE3623 /* Chapter16.storyboard in Resources */,
 				C615B696252AEFD5008D3F0C /* LaunchScreen.storyboard in Resources */,
+				C683A6B725788C0A00EF8EDE /* Chapter18.storyboard in Resources */,
 				C64251CC25709B370088DB09 /* Chapter11.storyboard in Resources */,
 				C64251D425709BBA0088DB09 /* Chapter12.storyboard in Resources */,
 				C615B693252AEFD5008D3F0C /* Assets.xcassets in Resources */,
@@ -546,6 +561,7 @@
 				C630E44A2547D5DC00444C22 /* Car.swift in Sources */,
 				C67833DC2554E3F000DE7E54 /* Sec12ViewController3.swift in Sources */,
 				C6C0D065256249D6006E2195 /* Sec13ViewController5.swift in Sources */,
+				C683A6BD25788C6A00EF8EDE /* Sec18ViewController.swift in Sources */,
 				C62581DF252EEF00009C884C /* OperatorSample.swift in Sources */,
 				C62581E9252EF18A009C884C /* WhileSample.swift in Sources */,
 			);
