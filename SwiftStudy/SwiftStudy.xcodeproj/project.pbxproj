@@ -60,6 +60,7 @@
 		C67833DC2554E3F000DE7E54 /* Sec12ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */; };
 		C683A6B725788C0A00EF8EDE /* Chapter18.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C683A6B625788C0A00EF8EDE /* Chapter18.storyboard */; };
 		C683A6BD25788C6A00EF8EDE /* Sec18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683A6BC25788C6A00EF8EDE /* Sec18ViewController.swift */; };
+		C683A6C52578CA4500EF8EDE /* Sec18ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683A6C42578CA4500EF8EDE /* Sec18ViewController2.swift */; };
 		C6978DD52563653300172DDA /* Sec13ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6978DD42563653300172DDA /* Sec13ViewController6.swift */; };
 		C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */; };
 		C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */; };
@@ -151,6 +152,7 @@
 		C67833DB2554E3F000DE7E54 /* Sec12ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController3.swift; sourceTree = "<group>"; };
 		C683A6B625788C0A00EF8EDE /* Chapter18.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter18.storyboard; sourceTree = "<group>"; };
 		C683A6BC25788C6A00EF8EDE /* Sec18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec18ViewController.swift; sourceTree = "<group>"; };
+		C683A6C42578CA4500EF8EDE /* Sec18ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec18ViewController2.swift; sourceTree = "<group>"; };
 		C6978DD42563653300172DDA /* Sec13ViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController6.swift; sourceTree = "<group>"; };
 		C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController.swift; sourceTree = "<group>"; };
 		C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController2.swift; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				C683A6BC25788C6A00EF8EDE /* Sec18ViewController.swift */,
+				C683A6C42578CA4500EF8EDE /* Sec18ViewController2.swift */,
 			);
 			path = Chapter18;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				C630E44F2547DA4000444C22 /* Game.swift in Sources */,
 				C61520002574BDE800DEAB0D /* Sec15ViewController4.swift in Sources */,
 				C608B9692546A55100098140 /* ClassSample.swift in Sources */,
+				C683A6C52578CA4500EF8EDE /* Sec18ViewController2.swift in Sources */,
 				C614EDBC255CFAD10047920D /* Sec13ViewController.swift in Sources */,
 				C62581D5252EEB65009C884C /* SwitchSample.swift in Sources */,
 				C6E27425256F6ABB00C35660 /* MyTabBarController.swift in Sources */,
