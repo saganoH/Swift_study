@@ -27,6 +27,10 @@
 		C615B6AC252AEFD5008D3F0C /* SwiftStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615B6AB252AEFD5008D3F0C /* SwiftStudyUITests.swift */; };
 		C6174A492537C30E00C1CF8F /* ArraySample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6174A482537C30E00C1CF8F /* ArraySample.swift */; };
 		C6174A4E2539432E00C1CF8F /* DictionarySample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6174A4D2539432E00C1CF8F /* DictionarySample.swift */; };
+		C61B51D225786E920043A974 /* Sec16ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C673BBC025776341004C2EE0 /* Sec16ViewController3.swift */; };
+		C61B51D825786EEA0043A974 /* ColorDeciderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61B51D625786EEA0043A974 /* ColorDeciderTest.swift */; };
+		C61B51E3257877FB0043A974 /* ColorDecider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61B51E2257877FB0043A974 /* ColorDecider.swift */; };
+		C61B51E4257877FB0043A974 /* ColorDecider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61B51E2257877FB0043A974 /* ColorDecider.swift */; };
 		C6226A1A2535383600E2B794 /* StringSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6226A192535383600E2B794 /* StringSample.swift */; };
 		C6226A1F253541D400E2B794 /* FunctionSampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6226A1E253541D400E2B794 /* FunctionSampleTest.swift */; };
 		C6226A2625354AE400E2B794 /* FunctionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603F368253023F70005F46F /* FunctionSample.swift */; };
@@ -115,6 +119,8 @@
 		C615B6AD252AEFD5008D3F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6174A482537C30E00C1CF8F /* ArraySample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySample.swift; sourceTree = "<group>"; };
 		C6174A4D2539432E00C1CF8F /* DictionarySample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionarySample.swift; sourceTree = "<group>"; };
+		C61B51D625786EEA0043A974 /* ColorDeciderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDeciderTest.swift; sourceTree = "<group>"; };
+		C61B51E2257877FB0043A974 /* ColorDecider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDecider.swift; sourceTree = "<group>"; };
 		C6226A192535383600E2B794 /* StringSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSample.swift; sourceTree = "<group>"; };
 		C6226A1E253541D400E2B794 /* FunctionSampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionSampleTest.swift; sourceTree = "<group>"; };
 		C62581D4252EEB65009C884C /* SwitchSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSample.swift; sourceTree = "<group>"; };
@@ -229,6 +235,7 @@
 				C615B6A2252AEFD5008D3F0C /* Info.plist */,
 				C6226A1E253541D400E2B794 /* FunctionSampleTest.swift */,
 				105D4D93253539480062B0E3 /* OperatorSampleTests.swift */,
+				C61B51D625786EEA0043A974 /* ColorDeciderTest.swift */,
 			);
 			path = SwiftStudyTests;
 			sourceTree = "<group>";
@@ -349,6 +356,7 @@
 				C6EDFCF1257725D700BE3623 /* Sec16ViewController.swift */,
 				C60380262577321700466238 /* Sec16ViewController2.swift */,
 				C673BBC025776341004C2EE0 /* Sec16ViewController3.swift */,
+				C61B51E2257877FB0043A974 /* ColorDecider.swift */,
 				C673BBC525776394004C2EE0 /* Sec16ViewController4.swift */,
 			);
 			path = Chapter16;
@@ -512,6 +520,7 @@
 				C62581D5252EEB65009C884C /* SwitchSample.swift in Sources */,
 				C6E27425256F6ABB00C35660 /* MyTabBarController.swift in Sources */,
 				C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */,
+				C61B51E3257877FB0043A974 /* ColorDecider.swift in Sources */,
 				C61431262549080900642F07 /* GameProtocol.swift in Sources */,
 				C630E4422547C0A200444C22 /* Player.swift in Sources */,
 				C6260CF62565006D00167D5F /* Sec13ViewController8.swift in Sources */,
@@ -550,6 +559,9 @@
 				C6226A2625354AE400E2B794 /* FunctionSample.swift in Sources */,
 				105D4D94253539480062B0E3 /* OperatorSampleTests.swift in Sources */,
 				105D4D982535394F0062B0E3 /* OperatorSample.swift in Sources */,
+				C61B51D825786EEA0043A974 /* ColorDeciderTest.swift in Sources */,
+				C61B51E4257877FB0043A974 /* ColorDecider.swift in Sources */,
+				C61B51D225786E920043A974 /* Sec16ViewController3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
