@@ -16,6 +16,10 @@ class Sec18ViewController2: UIViewController {
     }
     private let defaults = UserDefaults.standard
     
+    @IBAction func changeValue(_ sender: Any) {
+        sliderLabel.text = String(mySlider.value)
+    }
+    
     @IBAction func saveValue(_ sender: Any) {
         let value = mySlider.value
         sliderLabel.text = String(value)

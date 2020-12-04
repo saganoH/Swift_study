@@ -47,14 +47,14 @@ class Sec18ViewController4: UIViewController {
         super.viewDidLoad()
     }
  
-    // MARK: - @IBAction
+    // MARK: - @objc
     
-    @IBAction func cancel(_ sender: Any) {
+    @objc func cancel(_ sender: Any) {
         view.endEditing(true)
         readFromFile()
     }
     
-    @IBAction func save(_ sender: Any) {
+    @objc func save(_ sender: Any) {
         view.endEditing(true)
         
         let textData = myTextView.text
@@ -65,8 +65,6 @@ class Sec18ViewController4: UIViewController {
             print("保存に失敗。\n \(error)")
         }
     }
-    
-    // MARK: - @objc
     
     // キーボードが表示された時実行
     @objc func keyboardDidShow(_ notification: Notification) {

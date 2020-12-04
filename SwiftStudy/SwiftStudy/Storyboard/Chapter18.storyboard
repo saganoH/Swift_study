@@ -91,6 +91,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="Lha-tP-ThK"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="changeValue:" destination="EKJ-Vy-srO" eventType="valueChanged" id="vak-Un-2wz"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FA2-Os-EcH">
                                 <rect key="frame" x="65" y="184" width="32" height="30"/>
