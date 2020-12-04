@@ -27,4 +27,7 @@ class Sec18ViewController2: UIViewController {
         progressLabel.text = String(value)
         myProgress.progress = value
     }
+    
+    @IBAction func comeHome18_2(segue: UIStoryboardSegue) {
+    }
 }

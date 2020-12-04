@@ -134,6 +134,13 @@
                                     <segue destination="ayQ-EQ-xTW" kind="unwind" unwindAction="comeHome18WithSegue:" id="odv-dy-StN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRE-68-FZi">
+                                <rect key="frame" x="343" y="782" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="4TY-80-fLS" kind="presentation" id="HUF-89-Jy7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qwi-OZ-sxv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -146,6 +153,8 @@
                             <constraint firstItem="yeo-Rv-Pca" firstAttribute="centerX" secondItem="VZf-qX-Efc" secondAttribute="centerX" id="BTc-Vb-xHN"/>
                             <constraint firstItem="8Ef-zS-Mfz" firstAttribute="top" secondItem="qwi-OZ-sxv" secondAttribute="top" constant="50" id="Cf9-8F-fz7"/>
                             <constraint firstItem="CR0-36-LiB" firstAttribute="centerX" secondItem="OSv-Vr-Cav" secondAttribute="centerX" id="Jjx-ec-wR4"/>
+                            <constraint firstItem="qwi-OZ-sxv" firstAttribute="trailing" secondItem="xRE-68-FZi" secondAttribute="trailing" constant="40" id="Mlt-LH-OR7"/>
+                            <constraint firstItem="qwi-OZ-sxv" firstAttribute="bottom" secondItem="xRE-68-FZi" secondAttribute="bottom" constant="50" id="T7c-3Z-GoM"/>
                             <constraint firstItem="PcJ-aG-KUU" firstAttribute="trailing" secondItem="yeo-Rv-Pca" secondAttribute="trailing" id="Udk-3E-DLk"/>
                             <constraint firstItem="CR0-36-LiB" firstAttribute="centerY" secondItem="FA2-Os-EcH" secondAttribute="centerY" id="Ych-VU-mqg"/>
                             <constraint firstItem="CR0-36-LiB" firstAttribute="top" secondItem="qwi-OZ-sxv" secondAttribute="top" constant="140" id="ex2-AZ-np6"/>
@@ -168,8 +177,88 @@
             </objects>
             <point key="canvasLocation" x="879.71014492753625" y="127.90178571428571"/>
         </scene>
+        <!--Sec18 View Controller3-->
+        <scene sceneID="uU8-nD-NSs">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="4TY-80-fLS" customClass="Sec18ViewController3" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ua-Ux-EvM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uib-YL-oo5">
+                                <rect key="frame" x="40" y="94" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="xcL-85-7lf" kind="unwind" unwindAction="comeHome18_2WithSegue:" id="X3A-JK-IYc"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ety-f1-9Wc">
+                                <rect key="frame" x="87" y="450" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="8lD-pn-GW3"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWl-65-ciU">
+                                <rect key="frame" x="296" y="315" width="31" height="30"/>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="saveToFile:" destination="4TY-80-fLS" eventType="touchUpInside" id="xgH-RP-395"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5EZ-bA-2OG">
+                                <rect key="frame" x="87" y="410" width="62" height="30"/>
+                                <state key="normal" title="読み込む"/>
+                                <connections>
+                                    <action selector="readFromFile:" destination="4TY-80-fLS" eventType="touchUpInside" id="BWj-46-LPf"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nVn-HL-7gF">
+                                <rect key="frame" x="87" y="177" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CK5-PP-qk3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tWl-65-ciU" firstAttribute="top" secondItem="nVn-HL-7gF" secondAttribute="bottom" constant="10" id="15R-ZV-0wL"/>
+                            <constraint firstItem="CK5-PP-qk3" firstAttribute="bottom" secondItem="ety-f1-9Wc" secondAttribute="bottom" constant="284" id="5rJ-SO-LBl"/>
+                            <constraint firstItem="uib-YL-oo5" firstAttribute="top" secondItem="CK5-PP-qk3" secondAttribute="top" constant="50" id="E2E-c6-XRl"/>
+                            <constraint firstItem="nVn-HL-7gF" firstAttribute="centerX" secondItem="5ua-Ux-EvM" secondAttribute="centerX" id="FF4-UF-HXE"/>
+                            <constraint firstItem="ety-f1-9Wc" firstAttribute="top" secondItem="5EZ-bA-2OG" secondAttribute="bottom" constant="10" id="H8b-JL-QdB"/>
+                            <constraint firstItem="uib-YL-oo5" firstAttribute="leading" secondItem="CK5-PP-qk3" secondAttribute="leading" constant="40" id="KIy-1G-c1V"/>
+                            <constraint firstItem="ety-f1-9Wc" firstAttribute="leading" secondItem="nVn-HL-7gF" secondAttribute="leading" id="Ofa-Qg-Mvv"/>
+                            <constraint firstItem="nVn-HL-7gF" firstAttribute="top" secondItem="CK5-PP-qk3" secondAttribute="top" constant="133" id="PEn-qK-C2h"/>
+                            <constraint firstItem="tWl-65-ciU" firstAttribute="trailing" secondItem="nVn-HL-7gF" secondAttribute="trailing" id="Yej-GR-6fb"/>
+                            <constraint firstItem="ety-f1-9Wc" firstAttribute="leading" secondItem="CK5-PP-qk3" secondAttribute="leading" constant="87" id="jSj-4V-uCK"/>
+                            <constraint firstItem="ety-f1-9Wc" firstAttribute="leading" secondItem="5EZ-bA-2OG" secondAttribute="leading" id="pyW-6b-ryn"/>
+                            <constraint firstItem="ety-f1-9Wc" firstAttribute="centerX" secondItem="nVn-HL-7gF" secondAttribute="centerX" id="rvv-H5-3mX"/>
+                            <constraint firstItem="ety-f1-9Wc" firstAttribute="top" secondItem="nVn-HL-7gF" secondAttribute="bottom" constant="145" id="vgB-2o-xaU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView1" destination="nVn-HL-7gF" id="j7M-fB-CtP"/>
+                        <outlet property="textView2" destination="ety-f1-9Wc" id="txo-UC-Z68"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgW-xG-nLw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="xcL-85-7lf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1602.8985507246377" y="127.90178571428571"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

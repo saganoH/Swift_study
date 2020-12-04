@@ -72,6 +72,7 @@
 		C6C0D05825621FC3006E2195 /* Sec13ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D05725621FC3006E2195 /* Sec13ViewController3.swift */; };
 		C6C0D05D25623B94006E2195 /* Sec13ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D05C25623B94006E2195 /* Sec13ViewController4.swift */; };
 		C6C0D065256249D6006E2195 /* Sec13ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D064256249D6006E2195 /* Sec13ViewController5.swift */; };
+		C6D8417C2579CD2700DC7AA9 /* Sec18ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8417B2579CD2700DC7AA9 /* Sec18ViewController3.swift */; };
 		C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */; };
 		C6DD4D62255A385500714A56 /* BorderedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D61255A385500714A56 /* BorderedLabel.swift */; };
 		C6E27425256F6ABB00C35660 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E27424256F6ABB00C35660 /* MyTabBarController.swift */; };
@@ -164,6 +165,7 @@
 		C6C0D05725621FC3006E2195 /* Sec13ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController3.swift; sourceTree = "<group>"; };
 		C6C0D05C25623B94006E2195 /* Sec13ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController4.swift; sourceTree = "<group>"; };
 		C6C0D064256249D6006E2195 /* Sec13ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController5.swift; sourceTree = "<group>"; };
+		C6D8417B2579CD2700DC7AA9 /* Sec18ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec18ViewController3.swift; sourceTree = "<group>"; };
 		C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController4.swift; sourceTree = "<group>"; };
 		C6DD4D61255A385500714A56 /* BorderedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedLabel.swift; sourceTree = "<group>"; };
 		C6E27424256F6ABB00C35660 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 			children = (
 				C683A6BC25788C6A00EF8EDE /* Sec18ViewController.swift */,
 				C683A6C42578CA4500EF8EDE /* Sec18ViewController2.swift */,
+				C6D8417B2579CD2700DC7AA9 /* Sec18ViewController3.swift */,
 			);
 			path = Chapter18;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				C61431212549059600642F07 /* NewGame.swift in Sources */,
 				C61431312549303200642F07 /* EnumSample.swift in Sources */,
 				C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */,
+				C6D8417C2579CD2700DC7AA9 /* Sec18ViewController3.swift in Sources */,
 				C6B9A313256E13B4001C4AF6 /* WebListTableViewController.swift in Sources */,
 				C6174A492537C30E00C1CF8F /* ArraySample.swift in Sources */,
 				C661D0D82574976E000AFD85 /* Sec15ViewController2.swift in Sources */,
