@@ -2,55 +2,21 @@ import UIKit
 
 class Sec18ViewController4: UIViewController {
     
-    @IBOutlet weak var textToolBar: UIToolbar!
     @IBOutlet weak var myTextView: UITextView! {
         didSet {
             myTextView.text = ""
-            myTextView.layer.borderColor = UIColor.black.cgColor
-            myTextView.layer.borderWidth = 1.0
         }
     }
     // テキストファイルのパス
     private let thePath = NSHomeDirectory() + "/Documents/myTextfile.txt"
     private var originalFrame: CGRect?
-    
-    @IBAction func cancel(_ sender: Any) {
-        // キーボードを下げる
-        view.endEditing(true)
-        readFromFile()
-    }
-    
-    @IBAction func save(_ sender: Any) {
-        // キーボードを下げる
-        view.endEditing(true)
-        
-        let textData = myTextView.text
-        // テキストデータの保存をトライする
-        do {
-            try textData?.write(toFile: thePath, atomically: true, encoding: String.Encoding.utf8)
-        } catch let error as NSError {
-            print("保存に失敗。\n \(error)")
-        }
-    }
-    
-    // ファイルからの読み込み
-    func readFromFile() {
-        // テキストデータの読み込みをトライする
-        do {
-            let textData = try String(contentsOfFile: thePath, encoding: String.Encoding.utf8)
-            // 成功したら表示する
-            myTextView.text = textData
-        } catch let error as NSError {
-            print("読み込みに失敗。\n \(error)")
-        }
-    }
+
+    // MARK: - Life Cycle
     
     override func viewDidAppear(_ animated: Bool) {
         // テキストビューの元のframeを保存する
         originalFrame = myTextView.frame
-    }
-    
-    override func viewDidLoad() {
+        
         // ファイルから読み込む
         readFromFile()
         
@@ -77,6 +43,31 @@ class Sec18ViewController4: UIViewController {
         myTextView.inputAccessoryView = toolBar
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+ 
+    // MARK: - @IBAction
+    
+    @IBAction func cancel(_ sender: Any) {
+        view.endEditing(true)
+        readFromFile()
+    }
+    
+    @IBAction func save(_ sender: Any) {
+        view.endEditing(true)
+        
+        let textData = myTextView.text
+        // テキストデータの保存をトライする
+        do {
+            try textData?.write(toFile: thePath, atomically: true, encoding: String.Encoding.utf8)
+        } catch let error as NSError {
+            print("保存に失敗。\n \(error)")
+        }
+    }
+    
+    // MARK: - @objc
+    
     // キーボードが表示された時実行
     @objc func keyboardDidShow(_ notification: Notification) {
         // keyboardChangeFrameで処理する
@@ -97,5 +88,19 @@ class Sec18ViewController4: UIViewController {
     @objc func keyboardDidHide(_ notification: Notification) {
         // テキストビューのサイズを戻す
         myTextView.frame = originalFrame!
+    }
+    
+    // MARK: - private
+
+    // ファイルからの読み込み
+    private func readFromFile() {
+        // テキストデータの読み込みをトライする
+        do {
+            let textData = try String(contentsOfFile: thePath, encoding: String.Encoding.utf8)
+            // 成功したら表示する
+            myTextView.text = textData
+        } catch let error as NSError {
+            print("読み込みに失敗。\n \(error)")
+        }
     }
 }
