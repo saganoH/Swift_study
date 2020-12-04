@@ -41,4 +41,7 @@ class Sec18ViewController3: UIViewController {
             textView2.text = "読み込みに失敗。\n \(error)"
         }
     }
+    
+    @IBAction func comeHome18_3(segue: UIStoryboardSegue) {
+    }
 }

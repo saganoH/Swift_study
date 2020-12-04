@@ -225,14 +225,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XO5-cS-8Ko">
+                                <rect key="frame" x="343" y="782" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="Ju4-JL-IN8" kind="presentation" modalPresentationStyle="fullScreen" id="R6A-Ln-gOx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CK5-PP-qk3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tWl-65-ciU" firstAttribute="top" secondItem="nVn-HL-7gF" secondAttribute="bottom" constant="10" id="15R-ZV-0wL"/>
                             <constraint firstItem="CK5-PP-qk3" firstAttribute="bottom" secondItem="ety-f1-9Wc" secondAttribute="bottom" constant="284" id="5rJ-SO-LBl"/>
+                            <constraint firstItem="CK5-PP-qk3" firstAttribute="trailing" secondItem="XO5-cS-8Ko" secondAttribute="trailing" constant="40" id="8kt-pR-vdm"/>
                             <constraint firstItem="uib-YL-oo5" firstAttribute="top" secondItem="CK5-PP-qk3" secondAttribute="top" constant="50" id="E2E-c6-XRl"/>
                             <constraint firstItem="nVn-HL-7gF" firstAttribute="centerX" secondItem="5ua-Ux-EvM" secondAttribute="centerX" id="FF4-UF-HXE"/>
+                            <constraint firstItem="CK5-PP-qk3" firstAttribute="bottom" secondItem="XO5-cS-8Ko" secondAttribute="bottom" constant="50" id="GkM-iW-weG"/>
                             <constraint firstItem="ety-f1-9Wc" firstAttribute="top" secondItem="5EZ-bA-2OG" secondAttribute="bottom" constant="10" id="H8b-JL-QdB"/>
                             <constraint firstItem="uib-YL-oo5" firstAttribute="leading" secondItem="CK5-PP-qk3" secondAttribute="leading" constant="40" id="KIy-1G-c1V"/>
                             <constraint firstItem="ety-f1-9Wc" firstAttribute="leading" secondItem="nVn-HL-7gF" secondAttribute="leading" id="Ofa-Qg-Mvv"/>
@@ -253,6 +262,47 @@
                 <exit id="xcL-85-7lf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1602.8985507246377" y="127.90178571428571"/>
+        </scene>
+        <!--Sec18 View Controller4-->
+        <scene sceneID="I65-jX-k40">
+            <objects>
+                <viewController id="Ju4-JL-IN8" customClass="Sec18ViewController4" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mtk-UO-1R7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nh-y9-IAW">
+                                <rect key="frame" x="40" y="94" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="J1d-vQ-Vq5" kind="unwind" unwindAction="comeHome18_3WithSegue:" id="1GM-9D-1vR"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a3i-5d-4Qa">
+                                <rect key="frame" x="87" y="208" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M2S-8e-GZr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4nh-y9-IAW" firstAttribute="leading" secondItem="M2S-8e-GZr" secondAttribute="leading" constant="40" id="hJt-0R-haD"/>
+                            <constraint firstItem="4nh-y9-IAW" firstAttribute="top" secondItem="M2S-8e-GZr" secondAttribute="top" constant="50" id="yO1-AW-GmM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTextView" destination="a3i-5d-4Qa" id="d77-zV-wja"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jf1-d1-k9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="J1d-vQ-Vq5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2391" y="128"/>
         </scene>
     </scenes>
     <resources>
