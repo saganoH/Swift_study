@@ -16,4 +16,7 @@ class Sec18ViewController: UIViewController {
         // キー"switchOn"の値をBoolとして読んでmySwitchに設定する
         mySwitch2.isOn = defaults.bool(forKey: "switchOn")
     }
+    
+    @IBAction func comeHome18(segue: UIStoryboardSegue) {
+    }
 }
