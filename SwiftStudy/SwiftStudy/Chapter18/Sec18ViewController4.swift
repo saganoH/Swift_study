@@ -5,6 +5,8 @@ class Sec18ViewController4: UIViewController {
     @IBOutlet weak var myTextView: UITextView! {
         didSet {
             myTextView.text = ""
+            myTextView.layer.borderColor = UIColor.black.cgColor
+            myTextView.layer.borderWidth = 1.0
         }
     }
     // テキストファイルのパス
@@ -47,6 +49,12 @@ class Sec18ViewController4: UIViewController {
         super.viewDidLoad()
     }
  
+    // MARK: - @IBAction
+    
+    @IBAction func tapAction(_ sender: Any) {
+        view.endEditing(true)
+    }
+    
     // MARK: - @objc
     
     @objc func cancel(_ sender: Any) {
@@ -68,14 +76,18 @@ class Sec18ViewController4: UIViewController {
     
     // キーボードが表示された時実行
     @objc func keyboardDidShow(_ notification: Notification) {
-        // keyboardChangeFrameで処理する
     }
     
     // キーボードのサイズが変化した
     @objc func keyboardChangeFrame(_ notification: Notification) {
         // キーボードのframeを調べる
-        let userInfo = (notification as NSNotification).userInfo!
-        let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        guard let userInfo = (notification as NSNotification).userInfo else {
+            return
+        }
+        guard let nsClass = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue) else {
+           return
+        }
+        let keyboardFrame = nsClass.cgRectValue
         
         // キーボードで隠れないようにテキストビューの高さを変更する
         var textViewFrame = myTextView.frame
@@ -85,7 +97,9 @@ class Sec18ViewController4: UIViewController {
     
     @objc func keyboardDidHide(_ notification: Notification) {
         // テキストビューのサイズを戻す
-        myTextView.frame = originalFrame!
+        if let originalFrame = originalFrame {
+            myTextView.frame = originalFrame
+        }
     }
     
     // MARK: - private

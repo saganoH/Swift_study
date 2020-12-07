@@ -292,11 +292,15 @@
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="M2S-8e-GZr"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="4nh-y9-IAW" firstAttribute="leading" secondItem="M2S-8e-GZr" secondAttribute="leading" constant="40" id="hJt-0R-haD"/>
                             <constraint firstItem="4nh-y9-IAW" firstAttribute="top" secondItem="M2S-8e-GZr" secondAttribute="top" constant="50" id="yO1-AW-GmM"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="euL-ka-wEw" appends="YES" id="bJD-c7-Mxk"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="myTextView" destination="a3i-5d-4Qa" id="d77-zV-wja"/>
@@ -304,6 +308,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jf1-d1-k9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="J1d-vQ-Vq5" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="euL-ka-wEw">
+                    <connections>
+                        <action selector="tapAction:" destination="Ju4-JL-IN8" id="TDZ-1c-zY8"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2389.8550724637685" y="127.90178571428571"/>
         </scene>
@@ -311,9 +320,6 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

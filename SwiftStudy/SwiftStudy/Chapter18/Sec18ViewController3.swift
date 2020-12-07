@@ -9,6 +9,7 @@ class Sec18ViewController3: UIViewController {
             textView1.layer.borderWidth = 1.0
         }
     }
+    
     @IBOutlet weak var textView2: UITextView! {
         didSet {
             textView2.text = ""
@@ -20,6 +21,11 @@ class Sec18ViewController3: UIViewController {
     // テキストファイルのパスを指定
     let thePath = NSHomeDirectory() + "/Documents/myTextfile.txt"
 
+    override func viewDidAppear(_ animated: Bool) {
+        let notification = NotificationCenter.default
+        notification.addObserver(self, selector: #selector(Sec18ViewController3.keyboardDidShow(_:)), name: UIResponder.keyboardDidShowNotification, object: nil)
+    }
+    
     @IBAction func saveToFile(_ sender: Any) {
         // 保存するテキストデータ
         let textData = textView1.text
@@ -29,6 +35,7 @@ class Sec18ViewController3: UIViewController {
         } catch let error as NSError {
             print("保存に失敗。\n \(error)")
         }
+        view.endEditing(true)
     }
     
     @IBAction func readFromFile(_ sender: Any) {
@@ -43,5 +50,11 @@ class Sec18ViewController3: UIViewController {
     }
     
     @IBAction func comeHome18_3(segue: UIStoryboardSegue) {
+    }
+    
+    // キーボードが表示された時実行
+    @objc func keyboardDidShow(_ notification: Notification) {
+        // 初期値の文字を消す
+        textView1.text = ""
     }
 }
