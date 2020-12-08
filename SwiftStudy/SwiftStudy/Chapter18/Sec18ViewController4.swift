@@ -81,12 +81,11 @@ class Sec18ViewController4: UIViewController {
     // キーボードのサイズが変化した
     @objc func keyboardChangeFrame(_ notification: Notification) {
         // キーボードのframeを調べる
-        guard let userInfo = (notification as NSNotification).userInfo else {
-            return
-        }
-        guard let nsClass = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue) else {
-           return
-        }
+        guard let userInfo = (notification as NSNotification).userInfo,
+                      let nsClass = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue) else {
+                   return
+                }
+    
         let keyboardFrame = nsClass.cgRectValue
         
         // キーボードで隠れないようにテキストビューの高さを変更する
