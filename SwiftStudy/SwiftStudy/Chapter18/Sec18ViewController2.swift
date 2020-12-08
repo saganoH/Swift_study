@@ -14,7 +14,6 @@ class Sec18ViewController2: UIViewController {
             progressLabel.text = String(myProgress.progress)
         }
     }
-    private let defaults = UserDefaults.standard
     
     @IBAction func changeValue(_ sender: Any) {
         sliderLabel.text = String(mySlider.value)
@@ -23,11 +22,11 @@ class Sec18ViewController2: UIViewController {
     @IBAction func saveValue(_ sender: Any) {
         let value = mySlider.value
         sliderLabel.text = String(value)
-        defaults.set(value, forKey: "sliderValue")
+        UserDefaults.standard.set(value, forKey: "sliderValue")
     }
     
     @IBAction func readValue(_ sender: Any) {
-        let value = defaults.float(forKey: "sliderValue")
+        let value = UserDefaults.standard.float(forKey: "sliderValue")
         progressLabel.text = String(value)
         myProgress.progress = value
     }

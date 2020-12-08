@@ -3,7 +3,7 @@ import UIKit
 class Sec18ViewController3: UIViewController {
     
     private let firstText = "文字を入力してください"
-    let fileOperator = FileOperator()
+    private let fileOperator = FileOperator(filePath: "/Documents/myTextfile.txt")
     
     @IBOutlet weak var textView1: UITextView! {
         didSet {
@@ -50,7 +50,10 @@ class Sec18ViewController3: UIViewController {
 class FileOperator {
     
     // テキストファイルのパスを指定
-    let thePath = NSHomeDirectory() + "/Documents/myTextfile.txt"
+    private let thePath: String
+    init(filePath: String) {
+        thePath = NSHomeDirectory() + filePath
+    }
     
     func save(text: String) {
         // テキストデータの保存をトライする

@@ -9,8 +9,8 @@ class Sec18ViewController4: UIViewController {
             myTextView.layer.borderWidth = 1.0
         }
     }
-    // テキストファイルのパス
-    private let thePath = NSHomeDirectory() + "/Documents/myTextfile.txt"
+   
+    private let fileOperator = FileOperator(filePath: "/Documents/myTextfile.txt")
     private var originalFrame: CGRect?
 
     // MARK: - Life Cycle
@@ -19,14 +19,8 @@ class Sec18ViewController4: UIViewController {
         // テキストビューの元のframeを保存する
         originalFrame = myTextView.frame
         
-        // ファイルから読み込む
         readFromFile()
-        
-        // 通知センターのオプションを作る
-        let notification = NotificationCenter.default
-        notification.addObserver(self, selector: #selector(Sec18ViewController4.keyboardDidShow(_:)), name: UIResponder.keyboardDidShowNotification, object: nil)
-        notification.addObserver(self, selector: #selector(Sec18ViewController4.keyboardChangeFrame(_:)), name: UIResponder.keyboardDidChangeFrameNotification, object: nil)
-        notification.addObserver(self, selector: #selector(Sec18ViewController4.keyboardDidHide(_:)), name: UIResponder.keyboardDidHideNotification, object: nil)
+        setNotification()
         
         // ツールバー生成 サイズはsizeToFitメソッドで自動で調整される。
         let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
@@ -44,10 +38,6 @@ class Sec18ViewController4: UIViewController {
         // textViewのキーボードにツールバーを設定
         myTextView.inputAccessoryView = toolBar
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
  
     // MARK: - @IBAction
     
@@ -64,7 +54,6 @@ class Sec18ViewController4: UIViewController {
     
     @objc func save(_ sender: Any) {
         view.endEditing(true)
-        let fileOperator = FileOperator()
         fileOperator.save(text: myTextView.text)
     }
     
@@ -99,7 +88,23 @@ class Sec18ViewController4: UIViewController {
 
     // ファイルからの読み込み
     private func readFromFile() {
-        let fileOperator = FileOperator()
         myTextView.text = fileOperator.read()
+    }
+    
+    // 通知センターのオプションを作る
+    private func setNotification() {
+        let notification = NotificationCenter.default
+        notification.addObserver(self,
+                                 selector: #selector(Sec18ViewController4.keyboardDidShow(_:)),
+                                 name: UIResponder.keyboardDidShowNotification,
+                                 object: nil)
+        notification.addObserver(self,
+                                 selector: #selector(Sec18ViewController4.keyboardChangeFrame(_:)),
+                                 name: UIResponder.keyboardDidChangeFrameNotification,
+                                 object: nil)
+        notification.addObserver(self,
+                                 selector: #selector(Sec18ViewController4.keyboardDidHide(_:)),
+                                 name: UIResponder.keyboardDidHideNotification,
+                                 object: nil)
     }
 }
