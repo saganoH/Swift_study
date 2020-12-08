@@ -54,6 +54,7 @@
 		C64251DE25709C110088DB09 /* Chapter14.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64251DD25709C110088DB09 /* Chapter14.storyboard */; };
 		C64251EF2570B2D30088DB09 /* Chapter15.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64251EE2570B2D30088DB09 /* Chapter15.storyboard */; };
 		C64251F42570B3B70088DB09 /* Sec15ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64251F32570B3B70088DB09 /* Sec15ViewController.swift */; };
+		C644387F257F3F8700A6B7FB /* FileOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644387E257F3F8700A6B7FB /* FileOperator.swift */; };
 		C661D0D82574976E000AFD85 /* Sec15ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661D0D72574976E000AFD85 /* Sec15ViewController2.swift */; };
 		C661D0E92574ADF9000AFD85 /* Sec15ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C661D0E82574ADF9000AFD85 /* Sec15ViewController3.swift */; };
 		C673BBC125776341004C2EE0 /* Sec16ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C673BBC025776341004C2EE0 /* Sec16ViewController3.swift */; };
@@ -148,6 +149,7 @@
 		C64251DD25709C110088DB09 /* Chapter14.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter14.storyboard; sourceTree = "<group>"; };
 		C64251EE2570B2D30088DB09 /* Chapter15.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter15.storyboard; sourceTree = "<group>"; };
 		C64251F32570B3B70088DB09 /* Sec15ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec15ViewController.swift; sourceTree = "<group>"; };
+		C644387E257F3F8700A6B7FB /* FileOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOperator.swift; sourceTree = "<group>"; };
 		C661D0D72574976E000AFD85 /* Sec15ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec15ViewController2.swift; sourceTree = "<group>"; };
 		C661D0E82574ADF9000AFD85 /* Sec15ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec15ViewController3.swift; sourceTree = "<group>"; };
 		C673BBC025776341004C2EE0 /* Sec16ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec16ViewController3.swift; sourceTree = "<group>"; };
@@ -369,6 +371,7 @@
 				C683A6C42578CA4500EF8EDE /* Sec18ViewController2.swift */,
 				C6D8417B2579CD2700DC7AA9 /* Sec18ViewController3.swift */,
 				C63084AC2579DB4E006B9F80 /* Sec18ViewController4.swift */,
+				C644387E257F3F8700A6B7FB /* FileOperator.swift */,
 			);
 			path = Chapter18;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 				C6260CF62565006D00167D5F /* Sec13ViewController8.swift in Sources */,
 				C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */,
 				C64251F42570B3B70088DB09 /* Sec15ViewController.swift in Sources */,
+				C644387F257F3F8700A6B7FB /* FileOperator.swift in Sources */,
 				C6EDFCF2257725D700BE3623 /* Sec16ViewController.swift in Sources */,
 				C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */,
 				C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */,

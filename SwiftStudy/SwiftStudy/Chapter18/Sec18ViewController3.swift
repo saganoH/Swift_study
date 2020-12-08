@@ -2,9 +2,6 @@ import UIKit
 
 class Sec18ViewController3: UIViewController {
     
-    private let firstText = "文字を入力してください"
-    private let fileOperator = FileOperator(filePath: "/Documents/myTextfile.txt")
-    
     @IBOutlet weak var textView1: UITextView! {
         didSet {
             textView1.text = firstText
@@ -20,6 +17,9 @@ class Sec18ViewController3: UIViewController {
             textView2.layer.borderWidth = 1.0
         }
     }
+    
+    private let firstText = "文字を入力してください"
+    private let fileOperator = FileOperator(filePath: "/Documents/myTextfile.txt")
 
     override func viewDidAppear(_ animated: Bool) {
         let notification = NotificationCenter.default
@@ -43,34 +43,6 @@ class Sec18ViewController3: UIViewController {
         if textView1.text == firstText {
             // 初期値の文字を消す
             textView1.text = ""
-        }
-    }
-}
-
-class FileOperator {
-    
-    // テキストファイルのパスを指定
-    private let thePath: String
-    init(filePath: String) {
-        thePath = NSHomeDirectory() + filePath
-    }
-    
-    func save(text: String) {
-        // テキストデータの保存をトライする
-        do {
-            try text.write(toFile: thePath, atomically: true, encoding: String.Encoding.utf8)
-        } catch let error as NSError {
-            print("保存に失敗。\n \(error)")
-        }
-    }
-    
-    func read() -> String {
-        // テキストデータの読み込みをトライする
-        do {
-            let readText = try String(contentsOfFile: thePath, encoding: String.Encoding.utf8)
-            return readText
-        } catch let error as NSError {
-            return "読み込みに失敗。\n \(error)"
         }
     }
 }
