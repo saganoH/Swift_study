@@ -2,9 +2,11 @@ import UIKit
 
 class Sec18ViewController3: UIViewController {
     
+    let firstText = "文字を入力してください"
+    
     @IBOutlet weak var textView1: UITextView! {
         didSet {
-            textView1.text = "文字を入力してください"
+            textView1.text = firstText
             textView1.layer.borderColor = UIColor.black.cgColor
             textView1.layer.borderWidth = 1.0
         }
@@ -54,7 +56,9 @@ class Sec18ViewController3: UIViewController {
     
     // キーボードが表示された時実行
     @objc func keyboardDidShow(_ notification: Notification) {
-        // 初期値の文字を消す
-        textView1.text = ""
+        if textView1.text == firstText {
+            // 初期値の文字を消す
+            textView1.text = ""
+        }
     }
 }
