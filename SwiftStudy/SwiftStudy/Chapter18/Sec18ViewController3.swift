@@ -2,7 +2,8 @@ import UIKit
 
 class Sec18ViewController3: UIViewController {
     
-    let firstText = "文字を入力してください"
+    private let firstText = "文字を入力してください"
+    let fileOperator = FileOperator()
     
     @IBOutlet weak var textView1: UITextView! {
         didSet {
@@ -19,9 +20,6 @@ class Sec18ViewController3: UIViewController {
             textView2.layer.borderWidth = 1.0
         }
     }
-    
-    // テキストファイルのパスを指定
-    let thePath = NSHomeDirectory() + "/Documents/myTextfile.txt"
 
     override func viewDidAppear(_ animated: Bool) {
         let notification = NotificationCenter.default
@@ -29,26 +27,12 @@ class Sec18ViewController3: UIViewController {
     }
     
     @IBAction func saveToFile(_ sender: Any) {
-        // 保存するテキストデータ
-        let textData = textView1.text
-        // テキストデータの保存をトライする
-        do {
-            try textData?.write(toFile: thePath, atomically: true, encoding: String.Encoding.utf8)
-        } catch let error as NSError {
-            print("保存に失敗。\n \(error)")
-        }
+        fileOperator.save(text: textView1.text)
         view.endEditing(true)
     }
     
     @IBAction func readFromFile(_ sender: Any) {
-        // テキストデータの読み込みをトライする
-        do {
-            let textData = try String(contentsOfFile: thePath, encoding: String.Encoding.utf8)
-            // 読み込みが成功したら表示する
-            textView2.text = textData
-        } catch let error as NSError {
-            textView2.text = "読み込みに失敗。\n \(error)"
-        }
+        textView2.text = fileOperator.read()
     }
     
     @IBAction func comeHome18_3(segue: UIStoryboardSegue) {
@@ -59,6 +43,31 @@ class Sec18ViewController3: UIViewController {
         if textView1.text == firstText {
             // 初期値の文字を消す
             textView1.text = ""
+        }
+    }
+}
+
+class FileOperator {
+    
+    // テキストファイルのパスを指定
+    let thePath = NSHomeDirectory() + "/Documents/myTextfile.txt"
+    
+    func save(text: String) {
+        // テキストデータの保存をトライする
+        do {
+            try text.write(toFile: thePath, atomically: true, encoding: String.Encoding.utf8)
+        } catch let error as NSError {
+            print("保存に失敗。\n \(error)")
+        }
+    }
+    
+    func read() -> String {
+        // テキストデータの読み込みをトライする
+        do {
+            let readText = try String(contentsOfFile: thePath, encoding: String.Encoding.utf8)
+            return readText
+        } catch let error as NSError {
+            return "読み込みに失敗。\n \(error)"
         }
     }
 }

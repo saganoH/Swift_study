@@ -64,14 +64,8 @@ class Sec18ViewController4: UIViewController {
     
     @objc func save(_ sender: Any) {
         view.endEditing(true)
-        
-        let textData = myTextView.text
-        // テキストデータの保存をトライする
-        do {
-            try textData?.write(toFile: thePath, atomically: true, encoding: String.Encoding.utf8)
-        } catch let error as NSError {
-            print("保存に失敗。\n \(error)")
-        }
+        let fileOperator = FileOperator()
+        fileOperator.save(text: myTextView.text)
     }
     
     // キーボードが表示された時実行
@@ -105,13 +99,7 @@ class Sec18ViewController4: UIViewController {
 
     // ファイルからの読み込み
     private func readFromFile() {
-        // テキストデータの読み込みをトライする
-        do {
-            let textData = try String(contentsOfFile: thePath, encoding: String.Encoding.utf8)
-            // 成功したら表示する
-            myTextView.text = textData
-        } catch let error as NSError {
-            print("読み込みに失敗。\n \(error)")
-        }
+        let fileOperator = FileOperator()
+        myTextView.text = fileOperator.read()
     }
 }
