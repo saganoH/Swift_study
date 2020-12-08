@@ -74,6 +74,8 @@
 		C6C0D05825621FC3006E2195 /* Sec13ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D05725621FC3006E2195 /* Sec13ViewController3.swift */; };
 		C6C0D05D25623B94006E2195 /* Sec13ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D05C25623B94006E2195 /* Sec13ViewController4.swift */; };
 		C6C0D065256249D6006E2195 /* Sec13ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D064256249D6006E2195 /* Sec13ViewController5.swift */; };
+		C6C82E2C257F45A600F0E77C /* Chapter19-1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C82E2B257F45A600F0E77C /* Chapter19-1.storyboard */; };
+		C6C82E32257F461200F0E77C /* Sec19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C82E31257F461200F0E77C /* Sec19ViewController.swift */; };
 		C6D8417C2579CD2700DC7AA9 /* Sec18ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8417B2579CD2700DC7AA9 /* Sec18ViewController3.swift */; };
 		C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */; };
 		C6DD4D62255A385500714A56 /* BorderedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D61255A385500714A56 /* BorderedLabel.swift */; };
@@ -169,6 +171,8 @@
 		C6C0D05725621FC3006E2195 /* Sec13ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController3.swift; sourceTree = "<group>"; };
 		C6C0D05C25623B94006E2195 /* Sec13ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController4.swift; sourceTree = "<group>"; };
 		C6C0D064256249D6006E2195 /* Sec13ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController5.swift; sourceTree = "<group>"; };
+		C6C82E2B257F45A600F0E77C /* Chapter19-1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Chapter19-1.storyboard"; sourceTree = "<group>"; };
+		C6C82E31257F461200F0E77C /* Sec19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController.swift; sourceTree = "<group>"; };
 		C6D8417B2579CD2700DC7AA9 /* Sec18ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec18ViewController3.swift; sourceTree = "<group>"; };
 		C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController4.swift; sourceTree = "<group>"; };
 		C6DD4D61255A385500714A56 /* BorderedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedLabel.swift; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 				C661D0D32574966E000AFD85 /* Chapter15 */,
 				C6EDFCED2577256600BE3623 /* Chapter16 */,
 				C683A6BB25788C4000EF8EDE /* Chapter18 */,
+				C6C82E30257F45CB00F0E77C /* Chapter19-1 */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				C64251EE2570B2D30088DB09 /* Chapter15.storyboard */,
 				C6EDFCE32577247700BE3623 /* Chapter16.storyboard */,
 				C683A6B625788C0A00EF8EDE /* Chapter18.storyboard */,
+				C6C82E2B257F45A600F0E77C /* Chapter19-1.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -374,6 +380,14 @@
 				C644387E257F3F8700A6B7FB /* FileOperator.swift */,
 			);
 			path = Chapter18;
+			sourceTree = "<group>";
+		};
+		C6C82E30257F45CB00F0E77C /* Chapter19-1 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C82E31257F461200F0E77C /* Sec19ViewController.swift */,
+			);
+			path = "Chapter19-1";
 			sourceTree = "<group>";
 		};
 		C6EDFCED2577256600BE3623 /* Chapter16 */ = {
@@ -498,6 +512,7 @@
 				C64251CC25709B370088DB09 /* Chapter11.storyboard in Resources */,
 				C64251D425709BBA0088DB09 /* Chapter12.storyboard in Resources */,
 				C615B693252AEFD5008D3F0C /* Assets.xcassets in Resources */,
+				C6C82E2C257F45A600F0E77C /* Chapter19-1.storyboard in Resources */,
 				C64251D925709BF60088DB09 /* Chapter13.storyboard in Resources */,
 				C64251DE25709C110088DB09 /* Chapter14.storyboard in Resources */,
 				C615B691252AEFD5008D3F0C /* Main.storyboard in Resources */,
@@ -565,6 +580,7 @@
 				C603F369253023F70005F46F /* FunctionSample.swift in Sources */,
 				C60380272577321700466238 /* Sec16ViewController2.swift in Sources */,
 				C6C0D05D25623B94006E2195 /* Sec13ViewController4.swift in Sources */,
+				C6C82E32257F461200F0E77C /* Sec19ViewController.swift in Sources */,
 				C6174A4E2539432E00C1CF8F /* DictionarySample.swift in Sources */,
 				C61431212549059600642F07 /* NewGame.swift in Sources */,
 				C61431312549303200642F07 /* EnumSample.swift in Sources */,

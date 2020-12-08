@@ -71,6 +71,13 @@
                                     <segue destination="VJm-Sw-UGy" kind="presentation" modalPresentationStyle="fullScreen" id="D1S-B6-NkM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrG-Yg-1wm">
+                                <rect key="frame" x="139.5" y="626.5" width="135" height="30"/>
+                                <state key="normal" title="Chapter19-1 カメラ"/>
+                                <connections>
+                                    <segue destination="Lhs-Xv-Q4g" kind="presentation" modalPresentationStyle="fullScreen" id="tXd-Jx-QI1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -78,6 +85,7 @@
                             <constraint firstItem="8p4-7u-etq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ZI-3x-jr6"/>
                             <constraint firstItem="dl9-T0-N35" firstAttribute="top" secondItem="BZ4-bb-LFN" secondAttribute="bottom" constant="30" id="6Pe-2G-Co9"/>
                             <constraint firstItem="oUH-k4-wsP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="CjQ-Sp-ssx"/>
+                            <constraint firstItem="YrG-Yg-1wm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dvl-Ds-KL9"/>
                             <constraint firstItem="oUH-k4-wsP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ESL-cE-iap"/>
                             <constraint firstItem="BZ4-bb-LFN" firstAttribute="top" secondItem="Jzc-13-PFD" secondAttribute="bottom" constant="30" id="GwQ-SG-BUd"/>
                             <constraint firstItem="Jzc-13-PFD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ir2-Jv-jt2"/>
@@ -87,6 +95,7 @@
                             <constraint firstItem="jeP-hr-dA7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ukd-cG-Y3M"/>
                             <constraint firstItem="BZ4-bb-LFN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bd8-si-DrQ"/>
                             <constraint firstItem="dl9-T0-N35" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edw-79-NYl"/>
+                            <constraint firstItem="YrG-Yg-1wm" firstAttribute="top" secondItem="dl9-T0-N35" secondAttribute="bottom" constant="30" id="ij2-0X-reF"/>
                             <constraint firstItem="Jzc-13-PFD" firstAttribute="top" secondItem="BXd-IT-NCP" secondAttribute="bottom" constant="30" id="mV2-Wp-00c"/>
                             <constraint firstItem="Mnh-Q7-8ZA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p6A-Ln-oDt"/>
                             <constraint firstItem="BXd-IT-NCP" firstAttribute="top" secondItem="8p4-7u-etq" secondAttribute="bottom" constant="30" id="t7Q-ZI-crY"/>
@@ -157,6 +166,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cM3-X5-vbh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="181" y="1008"/>
+        </scene>
+        <!--Chapter19-1-->
+        <scene sceneID="Rkm-Eo-xnv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chapter19-1" id="Lhs-Xv-Q4g" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wpu-h6-veS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-606" y="1123"/>
         </scene>
         <!--Chapter18-->
         <scene sceneID="2Nx-CR-ir7">
