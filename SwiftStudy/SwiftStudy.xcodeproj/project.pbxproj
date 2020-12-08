@@ -76,6 +76,7 @@
 		C6C0D065256249D6006E2195 /* Sec13ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C0D064256249D6006E2195 /* Sec13ViewController5.swift */; };
 		C6C82E2C257F45A600F0E77C /* Chapter19-1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C82E2B257F45A600F0E77C /* Chapter19-1.storyboard */; };
 		C6C82E32257F461200F0E77C /* Sec19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C82E31257F461200F0E77C /* Sec19ViewController.swift */; };
+		C6C82E40257F563400F0E77C /* Sec19ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C82E3F257F563400F0E77C /* Sec19ViewController2.swift */; };
 		C6D8417C2579CD2700DC7AA9 /* Sec18ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8417B2579CD2700DC7AA9 /* Sec18ViewController3.swift */; };
 		C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */; };
 		C6DD4D62255A385500714A56 /* BorderedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D61255A385500714A56 /* BorderedLabel.swift */; };
@@ -173,6 +174,7 @@
 		C6C0D064256249D6006E2195 /* Sec13ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController5.swift; sourceTree = "<group>"; };
 		C6C82E2B257F45A600F0E77C /* Chapter19-1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Chapter19-1.storyboard"; sourceTree = "<group>"; };
 		C6C82E31257F461200F0E77C /* Sec19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController.swift; sourceTree = "<group>"; };
+		C6C82E3F257F563400F0E77C /* Sec19ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController2.swift; sourceTree = "<group>"; };
 		C6D8417B2579CD2700DC7AA9 /* Sec18ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec18ViewController3.swift; sourceTree = "<group>"; };
 		C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController4.swift; sourceTree = "<group>"; };
 		C6DD4D61255A385500714A56 /* BorderedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedLabel.swift; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				C6C82E31257F461200F0E77C /* Sec19ViewController.swift */,
+				C6C82E3F257F563400F0E77C /* Sec19ViewController2.swift */,
 			);
 			path = "Chapter19-1";
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				C6E27425256F6ABB00C35660 /* MyTabBarController.swift in Sources */,
 				C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */,
 				C61B51E3257877FB0043A974 /* ColorDecider.swift in Sources */,
+				C6C82E40257F563400F0E77C /* Sec19ViewController2.swift in Sources */,
 				C61431262549080900642F07 /* GameProtocol.swift in Sources */,
 				C630E4422547C0A200444C22 /* Player.swift in Sources */,
 				C6260CF62565006D00167D5F /* Sec13ViewController8.swift in Sources */,
