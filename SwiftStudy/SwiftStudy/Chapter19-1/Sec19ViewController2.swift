@@ -12,6 +12,16 @@ class Sec19ViewController2: UIViewController {
         notification.addObserver(self, selector: #selector(changedDeviceOrientation(_:)), name: UIDevice.orientationDidChangeNotification, object: nil)
     }
     
+    override var shouldAutorotate: Bool {
+        // オートローテーションを許可する
+        return true
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        //縦向きだけを許可する
+        return .portrait
+    }
+    
     @IBAction func goBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

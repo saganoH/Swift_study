@@ -63,6 +63,7 @@
 		C683A6B725788C0A00EF8EDE /* Chapter18.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C683A6B625788C0A00EF8EDE /* Chapter18.storyboard */; };
 		C683A6BD25788C6A00EF8EDE /* Sec18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683A6BC25788C6A00EF8EDE /* Sec18ViewController.swift */; };
 		C683A6C52578CA4500EF8EDE /* Sec18ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683A6C42578CA4500EF8EDE /* Sec18ViewController2.swift */; };
+		C695A67125806C3200577503 /* Sec19ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C695A67025806C3200577503 /* Sec19ViewController3.swift */; };
 		C6978DD52563653300172DDA /* Sec13ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6978DD42563653300172DDA /* Sec13ViewController6.swift */; };
 		C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */; };
 		C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */; };
@@ -161,6 +162,7 @@
 		C683A6B625788C0A00EF8EDE /* Chapter18.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter18.storyboard; sourceTree = "<group>"; };
 		C683A6BC25788C6A00EF8EDE /* Sec18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec18ViewController.swift; sourceTree = "<group>"; };
 		C683A6C42578CA4500EF8EDE /* Sec18ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec18ViewController2.swift; sourceTree = "<group>"; };
+		C695A67025806C3200577503 /* Sec19ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController3.swift; sourceTree = "<group>"; };
 		C6978DD42563653300172DDA /* Sec13ViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController6.swift; sourceTree = "<group>"; };
 		C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController.swift; sourceTree = "<group>"; };
 		C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController2.swift; sourceTree = "<group>"; };
@@ -389,6 +391,7 @@
 			children = (
 				C6C82E31257F461200F0E77C /* Sec19ViewController.swift */,
 				C6C82E3F257F563400F0E77C /* Sec19ViewController2.swift */,
+				C695A67025806C3200577503 /* Sec19ViewController3.swift */,
 			);
 			path = "Chapter19-1";
 			sourceTree = "<group>";
@@ -591,6 +594,7 @@
 				C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */,
 				C6D8417C2579CD2700DC7AA9 /* Sec18ViewController3.swift in Sources */,
 				C6B9A313256E13B4001C4AF6 /* WebListTableViewController.swift in Sources */,
+				C695A67125806C3200577503 /* Sec19ViewController3.swift in Sources */,
 				C6174A492537C30E00C1CF8F /* ArraySample.swift in Sources */,
 				C661D0D82574976E000AFD85 /* Sec15ViewController2.swift in Sources */,
 				C6DD4D62255A385500714A56 /* BorderedLabel.swift in Sources */,

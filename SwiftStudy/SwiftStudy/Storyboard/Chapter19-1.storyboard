@@ -97,11 +97,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNu-I2-paq">
+                                <rect key="frame" x="343" y="782" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="rLf-7V-ESx" kind="presentation" modalPresentationStyle="fullScreen" id="2Wd-JG-85M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HWs-sv-Spi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tPv-6A-6gs" firstAttribute="leading" secondItem="HWs-sv-Spi" secondAttribute="leading" constant="220" id="6F4-YG-RjO"/>
+                            <constraint firstItem="HWs-sv-Spi" firstAttribute="bottom" secondItem="mNu-I2-paq" secondAttribute="bottom" constant="50" id="NpY-Ws-OFk"/>
+                            <constraint firstItem="HWs-sv-Spi" firstAttribute="trailing" secondItem="mNu-I2-paq" secondAttribute="trailing" constant="40" id="Q62-9l-NOF"/>
                             <constraint firstItem="HWs-sv-Spi" firstAttribute="bottom" secondItem="Aa4-uh-dNE" secondAttribute="bottom" constant="100" id="TBW-Sl-fjK"/>
                             <constraint firstItem="qos-lf-RZk" firstAttribute="leading" secondItem="HWs-sv-Spi" secondAttribute="leading" constant="40" id="TaF-dz-LgA"/>
                             <constraint firstItem="og3-mg-v5p" firstAttribute="leading" secondItem="HWs-sv-Spi" secondAttribute="leading" constant="220" id="Ztk-iG-52Y"/>
@@ -123,6 +132,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ya2-er-e0o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="764.73214285714278" y="134.78260869565219"/>
+        </scene>
+        <!--Sec19 View Controller3-->
+        <scene sceneID="z5P-yN-Q58">
+            <objects>
+                <viewController id="rLf-7V-ESx" customClass="Sec19ViewController3" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="utr-IK-iah">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="id9-qs-LpO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="738"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvq-vL-E0D">
+                                <rect key="frame" x="191.5" y="782" width="31" height="30"/>
+                                <state key="normal" title="撮影"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="rLf-7V-ESx" eventType="touchUpInside" id="g4B-wG-gft"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3OQ-Bd-y8C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3OQ-Bd-y8C" firstAttribute="bottom" secondItem="zvq-vL-E0D" secondAttribute="bottom" constant="50" id="2YC-r3-npj"/>
+                            <constraint firstItem="3OQ-Bd-y8C" firstAttribute="trailing" secondItem="id9-qs-LpO" secondAttribute="trailing" id="JDP-6T-qTM"/>
+                            <constraint firstItem="3OQ-Bd-y8C" firstAttribute="top" secondItem="id9-qs-LpO" secondAttribute="bottom" constant="-738" id="Quj-Kq-kW9"/>
+                            <constraint firstItem="zvq-vL-E0D" firstAttribute="centerX" secondItem="utr-IK-iah" secondAttribute="centerX" id="at4-dC-j5G"/>
+                            <constraint firstItem="id9-qs-LpO" firstAttribute="top" secondItem="3OQ-Bd-y8C" secondAttribute="top" id="qiD-an-rvs"/>
+                            <constraint firstItem="id9-qs-LpO" firstAttribute="leading" secondItem="3OQ-Bd-y8C" secondAttribute="leading" id="sU9-DB-4bs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="id9-qs-LpO" id="a1d-ub-DLf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHh-dA-Xag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478" y="135"/>
         </scene>
     </scenes>
     <resources>
