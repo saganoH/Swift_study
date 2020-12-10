@@ -48,6 +48,7 @@
 		C630E44A2547D5DC00444C22 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E4492547D5DC00444C22 /* Car.swift */; };
 		C630E44F2547DA4000444C22 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E44E2547DA4000444C22 /* Game.swift */; };
 		C63DC01A25528ABA009A624E /* Sec11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DC01925528ABA009A624E /* Sec11ViewController.swift */; };
+		C640C8582581B97300E7A41F /* ExtensionSec19ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C640C8572581B97300E7A41F /* ExtensionSec19ViewController3.swift */; };
 		C64251CC25709B370088DB09 /* Chapter11.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64251CB25709B370088DB09 /* Chapter11.storyboard */; };
 		C64251D425709BBA0088DB09 /* Chapter12.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64251D325709BBA0088DB09 /* Chapter12.storyboard */; };
 		C64251D925709BF60088DB09 /* Chapter13.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64251D825709BF60088DB09 /* Chapter13.storyboard */; };
@@ -147,6 +148,7 @@
 		C630E4492547D5DC00444C22 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		C630E44E2547DA4000444C22 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		C63DC01925528ABA009A624E /* Sec11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec11ViewController.swift; sourceTree = "<group>"; };
+		C640C8572581B97300E7A41F /* ExtensionSec19ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSec19ViewController3.swift; sourceTree = "<group>"; };
 		C64251CB25709B370088DB09 /* Chapter11.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter11.storyboard; sourceTree = "<group>"; };
 		C64251D325709BBA0088DB09 /* Chapter12.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter12.storyboard; sourceTree = "<group>"; };
 		C64251D825709BF60088DB09 /* Chapter13.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter13.storyboard; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 				C6C82E31257F461200F0E77C /* Sec19ViewController.swift */,
 				C6C82E3F257F563400F0E77C /* Sec19ViewController2.swift */,
 				C695A67025806C3200577503 /* Sec19ViewController3.swift */,
+				C640C8572581B97300E7A41F /* ExtensionSec19ViewController3.swift */,
 			);
 			path = "Chapter19-1";
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				C6DD4D62255A385500714A56 /* BorderedLabel.swift in Sources */,
 				C630E44A2547D5DC00444C22 /* Car.swift in Sources */,
 				C67833DC2554E3F000DE7E54 /* Sec12ViewController3.swift in Sources */,
+				C640C8582581B97300E7A41F /* ExtensionSec19ViewController3.swift in Sources */,
 				C6C0D065256249D6006E2195 /* Sec13ViewController5.swift in Sources */,
 				C683A6BD25788C6A00EF8EDE /* Sec18ViewController.swift in Sources */,
 				C62581DF252EEF00009C884C /* OperatorSample.swift in Sources */,

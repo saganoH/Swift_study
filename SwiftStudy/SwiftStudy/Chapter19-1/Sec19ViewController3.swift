@@ -31,6 +31,12 @@ class Sec19ViewController3: UIViewController {
         session.startRunning()
     }
     @IBAction func takePhoto(_ sender: Any) {
+        let captureSetting = AVCapturePhotoSettings()
+        captureSetting.flashMode = .auto
+        // captureSetting.isAutoStillImageStabilizationEnabled = true
+        captureSetting.isHighResolutionPhotoEnabled = false
+        // キャプチャのイメージ処理はデリゲートに任せる
+        photoOutputObj.capturePhoto(with: captureSetting, delegate: self)
     }
     
     func setupInputOutput() {
@@ -66,6 +72,12 @@ class Sec19ViewController3: UIViewController {
     }
     
     func setPreviewLayer() {
-        
+        // プレビューレイヤを作る
+        let previewLayer = AVCaptureVideoPreviewLayer(session: session)
+        previewLayer.frame = view.bounds
+        previewLayer.masksToBounds = true
+        previewLayer.videoGravity = AVLayerVideoGravity.resizeAspect
+        // previewViewに追加する
+        previewView.layer.addSublayer(previewLayer)
     }
 }
