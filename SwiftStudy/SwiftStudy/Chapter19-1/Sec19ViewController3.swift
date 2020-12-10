@@ -14,19 +14,45 @@ class Sec19ViewController3: UIViewController {
     }
     
     @IBOutlet weak var previewView: UIView!
+    @IBOutlet weak var shutterButton: UIButton!
     
     var session = AVCaptureSession()
     var photoOutputObj = AVCapturePhotoOutput()
-
-    override func viewWillAppear(_ animated: Bool) {
+    var authStatus: AuthorizedStatus = .authorized
+    var inOutStatus: InputOutputStatus = .ready
+    // 認証のステータス
+    enum AuthorizedStatus {
+        case authorized
+        case notAuthorized
+        case failed
+    }
+    // 入出力のステータス
+    enum InputOutputStatus {
+        case ready
+        case notReady
+        case failed
+    }
+    
+    // MARK: - life cycle
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         // セッション実行中ならば中断する
         if session.isRunning {
             return
         }
+        // カメラのプライバシー認証確認
+        cameraAuth()
         
         setupInputOutput()
-        setPreviewLayer()
-        session.startRunning()
+        if (authStatus == .authorized) && (inOutStatus == .ready) {
+            setPreviewLayer()
+            session.startRunning()
+            shutterButton.isEnabled = true
+        } else {
+            showAlert(appName: "カメラ")
+        }
         
         // デバイスが回転した時に通知するイベントハンドラを設定する
         NotificationCenter.default.addObserver(self,
@@ -34,14 +60,24 @@ class Sec19ViewController3: UIViewController {
                                                name: UIDevice.orientationDidChangeNotification,
                                                object: nil)
     }
+    
+    // MARK: - @IBAction
+    
     @IBAction func takePhoto(_ sender: Any) {
-        let captureSetting = AVCapturePhotoSettings()
-        captureSetting.flashMode = .auto
-        // captureSetting.isAutoStillImageStabilizationEnabled = true
-        captureSetting.isHighResolutionPhotoEnabled = false
-        // キャプチャのイメージ処理はデリゲートに任せる
-        photoOutputObj.capturePhoto(with: captureSetting, delegate: self)
+        if (authStatus == .authorized) && (inOutStatus == .ready) {
+            let captureSetting = AVCapturePhotoSettings()
+            captureSetting.flashMode = .auto
+            // captureSetting.isAutoStillImageStabilizationEnabled = true
+            captureSetting.isHighResolutionPhotoEnabled = false
+            // キャプチャのイメージ処理はデリゲートに任せる
+            photoOutputObj.capturePhoto(with: captureSetting, delegate: self)
+        } else {
+            // カメラの利用を許可していない状態でシャッターボタンをタップした場合
+            showAlert(appName: "カメラ")
+        }
     }
+    
+    // MARK: - @objc
     
     @objc func changedDeviceOrientation(_ notification: Notification) {
         // 回転向きとデバイスを合わせる
@@ -61,7 +97,9 @@ class Sec19ViewController3: UIViewController {
         }
     }
     
-    func setupInputOutput() {
+    // MARK: - private
+    
+    private func setupInputOutput() {
         // 解像度の指定
         session.sessionPreset = AVCaptureSession.Preset.photo
         // 入力の設定
@@ -93,7 +131,7 @@ class Sec19ViewController3: UIViewController {
         }
     }
     
-    func setPreviewLayer() {
+    private func setPreviewLayer() {
         // プレビューレイヤを作る
         let previewLayer = AVCaptureVideoPreviewLayer(session: session)
         previewLayer.frame = view.bounds
@@ -101,5 +139,46 @@ class Sec19ViewController3: UIViewController {
         previewLayer.videoGravity = AVLayerVideoGravity.resizeAspect
         // previewViewに追加する
         previewView.layer.addSublayer(previewLayer)
+    }
+    
+    private func cameraAuth() {
+        switch AVCaptureDevice.authorizationStatus(for: AVMediaType.video) {
+        case .notDetermined:
+            // 初回起動時
+            AVCaptureDevice.requestAccess(for: AVMediaType.video,
+                                          completionHandler: { [unowned self] authorized in print("初回", authorized.description)
+                                            if authorized {
+                                                self.authStatus = .authorized
+                                            } else {
+                                                self.authStatus = .notAuthorized
+                                            }
+                                          })
+        case .restricted, .denied:
+            authStatus = .notAuthorized
+        case .authorized:
+            authStatus = .authorized
+        @unknown default:
+            authStatus = .failed
+        }
+    }
+    
+    private func showAlert(appName: String) {
+        let alertTitle = appName + "のプライバシー認証"
+        let alertMessage = "設定＞プライバシー＞" + appName + "で利用を許可してください。"
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        
+        //OKボタン
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        // 設定を開くボタン
+        alert.addAction(
+            UIAlertAction(title: "設定を開く",
+                          style: .default,
+                          handler: { action in UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!,
+                                                                         options: [:],
+                                                                         completionHandler: nil)
+                          })
+        )
+        // アラートを表示する
+        self.present(alert, animated: false, completion: nil)
     }
 }
