@@ -23,12 +23,16 @@ class Sec19ViewController3: UIViewController {
         if session.isRunning {
             return
         }
-        // 入出力の設定
+        
         setupInputOutput()
-        // プレビューレイヤの設定
         setPreviewLayer()
-        // セッション開始
         session.startRunning()
+        
+        // デバイスが回転した時に通知するイベントハンドラを設定する
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.changedDeviceOrientation(_:)),
+                                               name: UIDevice.orientationDidChangeNotification,
+                                               object: nil)
     }
     @IBAction func takePhoto(_ sender: Any) {
         let captureSetting = AVCapturePhotoSettings()
@@ -37,6 +41,24 @@ class Sec19ViewController3: UIViewController {
         captureSetting.isHighResolutionPhotoEnabled = false
         // キャプチャのイメージ処理はデリゲートに任せる
         photoOutputObj.capturePhoto(with: captureSetting, delegate: self)
+    }
+    
+    @objc func changedDeviceOrientation(_ notification: Notification) {
+        // 回転向きとデバイスを合わせる
+        if let photoOutputConnenction = self.photoOutputObj.connection(with: AVMediaType.video) {
+            switch UIDevice.current.orientation {
+            case .portrait:
+                photoOutputConnenction.videoOrientation = .portrait
+            case .portraitUpsideDown:
+                photoOutputConnenction.videoOrientation = .portraitUpsideDown
+            case .landscapeLeft:
+                photoOutputConnenction.videoOrientation = .landscapeRight
+            case .landscapeRight:
+                photoOutputConnenction.videoOrientation = .landscapeLeft
+            default:
+                break
+            }
+        }
     }
     
     func setupInputOutput() {
