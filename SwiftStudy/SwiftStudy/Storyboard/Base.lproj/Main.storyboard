@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeP-hr-dA7">
-                                <rect key="frame" x="109.5" y="206.5" width="195" height="30"/>
+                                <rect key="frame" x="109.5" y="146.5" width="195" height="30"/>
                                 <state key="normal" title="Chapter11 オートレイアウト"/>
                                 <connections>
                                     <segue destination="bEP-PX-GNf" kind="show" id="6wj-xO-ire"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mnh-Q7-8ZA">
-                                <rect key="frame" x="93" y="266.5" width="228" height="30"/>
+                                <rect key="frame" x="93" y="206.5" width="228" height="30"/>
                                 <state key="normal" title="Chapter12 アシスタントエディタ"/>
                                 <connections>
                                     <segue destination="izM-1m-suZ" kind="show" id="0ts-rc-Lfn"/>
@@ -37,42 +37,42 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8p4-7u-etq">
-                                <rect key="frame" x="123.5" y="326.5" width="167" height="30"/>
+                                <rect key="frame" x="123.5" y="266.5" width="167" height="30"/>
                                 <state key="normal" title="Chapter13 ビューと画像"/>
                                 <connections>
                                     <segue destination="UjP-LV-X3S" kind="show" id="veE-Dp-Uis"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXd-IT-NCP">
-                                <rect key="frame" x="100.5" y="386.5" width="213" height="30"/>
+                                <rect key="frame" x="100.5" y="326.5" width="213" height="30"/>
                                 <state key="normal" title="Chapter14 シーンの作成と移動"/>
                                 <connections>
                                     <segue destination="C0v-Dv-wZB" kind="show" id="PRa-e0-42e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jzc-13-PFD">
-                                <rect key="frame" x="77.5" y="446.5" width="259" height="30"/>
+                                <rect key="frame" x="77.5" y="386.5" width="259" height="30"/>
                                 <state key="normal" title="Chapter15 アニメーションと映像効果"/>
                                 <connections>
                                     <segue destination="ZYe-oZ-FOg" kind="show" id="IKK-sH-YcJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZ4-bb-LFN">
-                                <rect key="frame" x="93" y="506.5" width="228" height="30"/>
+                                <rect key="frame" x="93" y="446.5" width="228" height="30"/>
                                 <state key="normal" title="Chapter16 フィンガーアクション"/>
                                 <connections>
                                     <segue destination="KO0-Ig-JTf" kind="presentation" modalPresentationStyle="fullScreen" id="iCp-t4-ddX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dl9-T0-N35">
-                                <rect key="frame" x="85" y="566.5" width="244" height="30"/>
+                                <rect key="frame" x="85" y="506.5" width="244" height="30"/>
                                 <state key="normal" title="Chapter18 データの保存と読み込み"/>
                                 <connections>
                                     <segue destination="VJm-Sw-UGy" kind="presentation" modalPresentationStyle="fullScreen" id="D1S-B6-NkM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrG-Yg-1wm">
-                                <rect key="frame" x="139.5" y="626.5" width="135" height="30"/>
+                                <rect key="frame" x="139.5" y="566.5" width="135" height="30"/>
                                 <state key="normal" title="Chapter19-1 カメラ"/>
                                 <connections>
                                     <segue destination="Lhs-Xv-Q4g" kind="presentation" modalPresentationStyle="fullScreen" id="tXd-Jx-QI1"/>
@@ -99,7 +99,7 @@
                             <constraint firstItem="Jzc-13-PFD" firstAttribute="top" secondItem="BXd-IT-NCP" secondAttribute="bottom" constant="30" id="mV2-Wp-00c"/>
                             <constraint firstItem="Mnh-Q7-8ZA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p6A-Ln-oDt"/>
                             <constraint firstItem="BXd-IT-NCP" firstAttribute="top" secondItem="8p4-7u-etq" secondAttribute="bottom" constant="30" id="t7Q-ZI-crY"/>
-                            <constraint firstItem="jeP-hr-dA7" firstAttribute="top" secondItem="oUH-k4-wsP" secondAttribute="bottom" constant="100" id="tuq-tL-M4C"/>
+                            <constraint firstItem="jeP-hr-dA7" firstAttribute="top" secondItem="oUH-k4-wsP" secondAttribute="bottom" constant="40" id="tuq-tL-M4C"/>
                         </constraints>
                     </view>
                 </viewController>
