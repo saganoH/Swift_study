@@ -1,5 +1,25 @@
 import UIKit
 import AVFoundation
+import Photos
+
+extension Sec19ViewController3: AVCapturePhotoCaptureDelegate {
+    // 映像をキャプチャする
+    func photoOutput(_ output: AVCapturePhotoOutput,
+                     didFinishProcessingPhoto photo: AVCapturePhoto,
+                     error: Error?) {
+        // Dataを取り出す
+        guard let photoData = photo.fileDataRepresentation() else {
+            return
+        }
+        
+        // Dataから写真イメージを作る
+        if let stillImage = UIImage(data: photoData) {
+            // アルバムに追加する
+            UIImageWriteToSavedPhotosAlbum(stillImage, self, nil, nil)
+            shareImage = stillImage
+        }
+    }
+}
 
 class Sec19ViewController3: UIViewController {
     
@@ -16,21 +36,13 @@ class Sec19ViewController3: UIViewController {
     
     private var session = AVCaptureSession()
     private var photoOutputObj = AVCapturePhotoOutput()
-    var shareImage: UIImage?
+    private var shareImage: UIImage?
     
     private var authStatus: AuthorizedStatus = .authorized
     // 認証のステータス
     enum AuthorizedStatus {
         case authorized
         case notAuthorized
-        case failed
-    }
-    
-    private var inOutStatus: InputOutputStatus = .ready
-    // 入出力のステータス
-    enum InputOutputStatus {
-        case ready
-        case notReady
         case failed
     }
     
@@ -46,8 +58,8 @@ class Sec19ViewController3: UIViewController {
         // カメラのプライバシー認証確認
         cameraAuth()
         
-        setupInputOutput()
-        if (authStatus == .authorized) && (inOutStatus == .ready) {
+        if authStatus == .authorized {
+            setupInputOutput()
             setPreviewLayer()
             session.startRunning()
             shutterButton.isEnabled = true
@@ -65,7 +77,7 @@ class Sec19ViewController3: UIViewController {
     // MARK: - @IBAction
     
     @IBAction func takePhoto(_ sender: Any) {
-        if (authStatus == .authorized) && (inOutStatus == .ready) {
+        if authStatus == .authorized {
             let captureSetting = AVCapturePhotoSettings()
             captureSetting.flashMode = .auto
             captureSetting.isHighResolutionPhotoEnabled = false
@@ -157,7 +169,8 @@ class Sec19ViewController3: UIViewController {
         case .notDetermined:
             // 初回起動時
             AVCaptureDevice.requestAccess(for: AVMediaType.video,
-                                          completionHandler: { [unowned self] authorized in print("初回", authorized.description)
+                                          completionHandler: { [unowned self] authorized in
+                                            print("初回", authorized.description)
                                             if authorized {
                                                 self.authStatus = .authorized
                                             } else {
