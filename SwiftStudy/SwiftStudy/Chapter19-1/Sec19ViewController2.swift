@@ -45,9 +45,11 @@ class Sec19ViewController2: UIViewController {
     }
     
     private func rotateLabel(_ radian: CGFloat) {
-        label1.transform = CGAffineTransform(rotationAngle: radian)
-        label2.transform = CGAffineTransform(rotationAngle: radian)
-        label3.transform = CGAffineTransform(rotationAngle: radian)
-        label4.transform = CGAffineTransform(rotationAngle: radian)
+        UIView.animate(withDuration: 0.3, animations: {
+            self.label1.transform = CGAffineTransform(rotationAngle: radian)
+            self.label2.transform = CGAffineTransform(rotationAngle: radian)
+            self.label3.transform = CGAffineTransform(rotationAngle: radian)
+            self.label4.transform = CGAffineTransform(rotationAngle: radian)
+        }, completion: nil)
     }
 }
