@@ -14,11 +14,11 @@ class Sec19ViewController3: UIViewController {
     @IBOutlet weak var previewView: UIView!
     @IBOutlet weak var shutterButton: UIButton!
     
-    var session = AVCaptureSession()
-    var photoOutputObj = AVCapturePhotoOutput()
+    private var session = AVCaptureSession()
+    private var photoOutputObj = AVCapturePhotoOutput()
     var shareImage: UIImage?
     
-    var authStatus: AuthorizedStatus = .authorized
+    private var authStatus: AuthorizedStatus = .authorized
     // 認証のステータス
     enum AuthorizedStatus {
         case authorized
@@ -26,7 +26,7 @@ class Sec19ViewController3: UIViewController {
         case failed
     }
     
-    var inOutStatus: InputOutputStatus = .ready
+    private var inOutStatus: InputOutputStatus = .ready
     // 入出力のステータス
     enum InputOutputStatus {
         case ready
@@ -68,7 +68,6 @@ class Sec19ViewController3: UIViewController {
         if (authStatus == .authorized) && (inOutStatus == .ready) {
             let captureSetting = AVCapturePhotoSettings()
             captureSetting.flashMode = .auto
-            // captureSetting.isAutoStillImageStabilizationEnabled = true
             captureSetting.isHighResolutionPhotoEnabled = false
             // キャプチャのイメージ処理はデリゲートに任せる
             photoOutputObj.capturePhoto(with: captureSetting, delegate: self)
@@ -82,7 +81,7 @@ class Sec19ViewController3: UIViewController {
         guard let shareImage = shareImage else {
             return
         }
-        let sharedText = "シェアします。"
+        let sharedText = "撮影した画像をシェアします。"
         let sharedUrl = "http://oshige.com"
         let activities = [sharedText, sharedUrl, shareImage] as [Any]
         // アクティビティコントローラを表示する
@@ -118,10 +117,9 @@ class Sec19ViewController3: UIViewController {
         // 入力の設定
         do {
             // デバイスの取得
-            let device = AVCaptureDevice.default(
-                AVCaptureDevice.DeviceType.builtInWideAngleCamera,
-                for: AVMediaType.video,
-                position: AVCaptureDevice.Position.back)
+            let device = AVCaptureDevice.default(AVCaptureDevice.DeviceType.builtInWideAngleCamera,
+                                                 for: AVMediaType.video,
+                                                 position: AVCaptureDevice.Position.back)
             // 入力元
             let input = try AVCaptureDeviceInput(device: device!)
             if session.canAddInput(input) {

@@ -7,21 +7,21 @@ class Sec19ViewController2: UIViewController {
     @IBOutlet weak var label3: UILabel!
     @IBOutlet weak var label4: UILabel!
     
-    override func viewWillAppear(_ animated: Bool) {
-        let notification = NotificationCenter.default
-        notification.addObserver(self, selector: #selector(changedDeviceOrientation(_:)), name: UIDevice.orientationDidChangeNotification, object: nil)
-    }
-    
     override var shouldAutorotate: Bool {
-        // オートローテーションを許可する
         return true
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        //縦向きだけを許可する
         return .portrait
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self,
+                                 selector: #selector(changedDeviceOrientation(_:)),
+                                 name: UIDevice.orientationDidChangeNotification,
+                                 object: nil)
+    }
+
     @IBAction func goBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
