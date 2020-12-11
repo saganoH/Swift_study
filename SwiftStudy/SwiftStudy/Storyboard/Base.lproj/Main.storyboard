@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeP-hr-dA7">
-                                <rect key="frame" x="109.5" y="206.5" width="195" height="30"/>
+                                <rect key="frame" x="109.5" y="146.5" width="195" height="30"/>
                                 <state key="normal" title="Chapter11 オートレイアウト"/>
                                 <connections>
                                     <segue destination="bEP-PX-GNf" kind="show" id="6wj-xO-ire"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mnh-Q7-8ZA">
-                                <rect key="frame" x="93" y="266.5" width="228" height="30"/>
+                                <rect key="frame" x="93" y="206.5" width="228" height="30"/>
                                 <state key="normal" title="Chapter12 アシスタントエディタ"/>
                                 <connections>
                                     <segue destination="izM-1m-suZ" kind="show" id="0ts-rc-Lfn"/>
@@ -37,38 +37,45 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8p4-7u-etq">
-                                <rect key="frame" x="123.5" y="326.5" width="167" height="30"/>
+                                <rect key="frame" x="123.5" y="266.5" width="167" height="30"/>
                                 <state key="normal" title="Chapter13 ビューと画像"/>
                                 <connections>
                                     <segue destination="UjP-LV-X3S" kind="show" id="veE-Dp-Uis"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXd-IT-NCP">
-                                <rect key="frame" x="100.5" y="386.5" width="213" height="30"/>
+                                <rect key="frame" x="100.5" y="326.5" width="213" height="30"/>
                                 <state key="normal" title="Chapter14 シーンの作成と移動"/>
                                 <connections>
                                     <segue destination="C0v-Dv-wZB" kind="show" id="PRa-e0-42e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jzc-13-PFD">
-                                <rect key="frame" x="77.5" y="446.5" width="259" height="30"/>
+                                <rect key="frame" x="77.5" y="386.5" width="259" height="30"/>
                                 <state key="normal" title="Chapter15 アニメーションと映像効果"/>
                                 <connections>
                                     <segue destination="ZYe-oZ-FOg" kind="show" id="IKK-sH-YcJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZ4-bb-LFN">
-                                <rect key="frame" x="93" y="506.5" width="228" height="30"/>
+                                <rect key="frame" x="93" y="446.5" width="228" height="30"/>
                                 <state key="normal" title="Chapter16 フィンガーアクション"/>
                                 <connections>
                                     <segue destination="KO0-Ig-JTf" kind="presentation" modalPresentationStyle="fullScreen" id="iCp-t4-ddX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dl9-T0-N35">
-                                <rect key="frame" x="85" y="566.5" width="244" height="30"/>
+                                <rect key="frame" x="85" y="506.5" width="244" height="30"/>
                                 <state key="normal" title="Chapter18 データの保存と読み込み"/>
                                 <connections>
                                     <segue destination="VJm-Sw-UGy" kind="presentation" modalPresentationStyle="fullScreen" id="D1S-B6-NkM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrG-Yg-1wm">
+                                <rect key="frame" x="139.5" y="566.5" width="135" height="30"/>
+                                <state key="normal" title="Chapter19-1 カメラ"/>
+                                <connections>
+                                    <segue destination="Lhs-Xv-Q4g" kind="presentation" modalPresentationStyle="fullScreen" id="tXd-Jx-QI1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -78,6 +85,7 @@
                             <constraint firstItem="8p4-7u-etq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ZI-3x-jr6"/>
                             <constraint firstItem="dl9-T0-N35" firstAttribute="top" secondItem="BZ4-bb-LFN" secondAttribute="bottom" constant="30" id="6Pe-2G-Co9"/>
                             <constraint firstItem="oUH-k4-wsP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="CjQ-Sp-ssx"/>
+                            <constraint firstItem="YrG-Yg-1wm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dvl-Ds-KL9"/>
                             <constraint firstItem="oUH-k4-wsP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ESL-cE-iap"/>
                             <constraint firstItem="BZ4-bb-LFN" firstAttribute="top" secondItem="Jzc-13-PFD" secondAttribute="bottom" constant="30" id="GwQ-SG-BUd"/>
                             <constraint firstItem="Jzc-13-PFD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ir2-Jv-jt2"/>
@@ -87,10 +95,11 @@
                             <constraint firstItem="jeP-hr-dA7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ukd-cG-Y3M"/>
                             <constraint firstItem="BZ4-bb-LFN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bd8-si-DrQ"/>
                             <constraint firstItem="dl9-T0-N35" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edw-79-NYl"/>
+                            <constraint firstItem="YrG-Yg-1wm" firstAttribute="top" secondItem="dl9-T0-N35" secondAttribute="bottom" constant="30" id="ij2-0X-reF"/>
                             <constraint firstItem="Jzc-13-PFD" firstAttribute="top" secondItem="BXd-IT-NCP" secondAttribute="bottom" constant="30" id="mV2-Wp-00c"/>
                             <constraint firstItem="Mnh-Q7-8ZA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p6A-Ln-oDt"/>
                             <constraint firstItem="BXd-IT-NCP" firstAttribute="top" secondItem="8p4-7u-etq" secondAttribute="bottom" constant="30" id="t7Q-ZI-crY"/>
-                            <constraint firstItem="jeP-hr-dA7" firstAttribute="top" secondItem="oUH-k4-wsP" secondAttribute="bottom" constant="100" id="tuq-tL-M4C"/>
+                            <constraint firstItem="jeP-hr-dA7" firstAttribute="top" secondItem="oUH-k4-wsP" secondAttribute="bottom" constant="40" id="tuq-tL-M4C"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -106,7 +115,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pRf-OP-XHG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46" y="27"/>
+            <point key="canvasLocation" x="202" y="-20"/>
         </scene>
         <!--Chapter12-->
         <scene sceneID="GP4-2R-DUN">
@@ -116,7 +125,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K9R-cR-Ce9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="241" y="394"/>
+            <point key="canvasLocation" x="269" y="58"/>
         </scene>
         <!--Chapter13-->
         <scene sceneID="nsS-vP-FX6">
@@ -126,7 +135,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zX-dK-ZqV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="269" y="563"/>
+            <point key="canvasLocation" x="320" y="139"/>
         </scene>
         <!--Chapter14-->
         <scene sceneID="UXI-je-bxa">
@@ -136,7 +145,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jgt-nz-QIq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="319" y="679"/>
+            <point key="canvasLocation" x="377" y="216"/>
         </scene>
         <!--Chapter15-->
         <scene sceneID="p5Z-Qu-a9k">
@@ -146,7 +155,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qc-Q8-3BA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="420" y="830"/>
+            <point key="canvasLocation" x="450" y="313"/>
         </scene>
         <!--Chapter16-->
         <scene sceneID="GQo-Iu-UaK">
@@ -156,7 +165,15 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cM3-X5-vbh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="181" y="1008"/>
+            <point key="canvasLocation" x="506" y="408"/>
+        </scene>
+        <!--Chapter19-1-->
+        <scene sceneID="Rkm-Eo-xnv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chapter19-1" id="Lhs-Xv-Q4g" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wpu-h6-veS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="603"/>
         </scene>
         <!--Chapter18-->
         <scene sceneID="2Nx-CR-ir7">
@@ -164,7 +181,7 @@
                 <viewControllerPlaceholder storyboardName="Chapter18" id="VJm-Sw-UGy" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PpM-dz-YHM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-99" y="1132"/>
+            <point key="canvasLocation" x="559" y="494"/>
         </scene>
     </scenes>
     <resources>
