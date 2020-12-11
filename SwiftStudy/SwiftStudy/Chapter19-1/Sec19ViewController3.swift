@@ -32,7 +32,8 @@ class Sec19ViewController3: UIViewController {
     }
     
     @IBOutlet weak var previewView: UIView!
-    @IBOutlet weak var shutterButton: UIButton!
+    @IBOutlet weak var shutterButton: UIBarButtonItem!
+   // @IBOutlet weak var shutterButton: UIButton!
     
     private var session = AVCaptureSession()
     private var photoOutputObj = AVCapturePhotoOutput()
