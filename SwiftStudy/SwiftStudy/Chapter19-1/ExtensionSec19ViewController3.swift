@@ -15,6 +15,7 @@ extension Sec19ViewController3: AVCapturePhotoCaptureDelegate {
         if let stillImage = UIImage(data: photoData) {
             // アルバムに追加する
             UIImageWriteToSavedPhotosAlbum(stillImage, self, nil, nil)
+            shareImage = stillImage
         }
     }
 }

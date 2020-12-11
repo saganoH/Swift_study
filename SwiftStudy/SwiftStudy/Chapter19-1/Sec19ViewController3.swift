@@ -4,12 +4,10 @@ import AVFoundation
 class Sec19ViewController3: UIViewController {
     
     override var shouldAutorotate: Bool {
-        // オートローテーションを許可する
         return true
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        //縦向きだけを許可する
         return .portrait
     }
     
@@ -18,14 +16,17 @@ class Sec19ViewController3: UIViewController {
     
     var session = AVCaptureSession()
     var photoOutputObj = AVCapturePhotoOutput()
+    var shareImage: UIImage?
+    
     var authStatus: AuthorizedStatus = .authorized
-    var inOutStatus: InputOutputStatus = .ready
     // 認証のステータス
     enum AuthorizedStatus {
         case authorized
         case notAuthorized
         case failed
     }
+    
+    var inOutStatus: InputOutputStatus = .ready
     // 入出力のステータス
     enum InputOutputStatus {
         case ready
@@ -75,6 +76,18 @@ class Sec19ViewController3: UIViewController {
             // カメラの利用を許可していない状態でシャッターボタンをタップした場合
             showAlert(appName: "カメラ")
         }
+    }
+    
+    @IBAction func shareAction(_ sender: Any) {
+        guard let shareImage = shareImage else {
+            return
+        }
+        let sharedText = "シェアします。"
+        let sharedUrl = "http://oshige.com"
+        let activities = [sharedText, sharedUrl, shareImage] as [Any]
+        // アクティビティコントローラを表示する
+        let activityVC = UIActivityViewController(activityItems: activities, applicationActivities: nil)
+        self.present(activityVC, animated: true, completion: nil)
     }
     
     // MARK: - @objc

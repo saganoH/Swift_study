@@ -145,6 +145,16 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="738"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jso-YQ-6Zo">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="jmT-2a-sBf">
+                                        <connections>
+                                            <action selector="shareAction:" destination="rLf-7V-ESx" id="Cvh-n0-0WV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvq-vL-E0D">
                                 <rect key="frame" x="191.5" y="782" width="31" height="30"/>
                                 <state key="normal" title="撮影"/>
@@ -158,8 +168,11 @@
                         <constraints>
                             <constraint firstItem="3OQ-Bd-y8C" firstAttribute="bottom" secondItem="zvq-vL-E0D" secondAttribute="bottom" constant="50" id="2YC-r3-npj"/>
                             <constraint firstItem="3OQ-Bd-y8C" firstAttribute="trailing" secondItem="id9-qs-LpO" secondAttribute="trailing" id="JDP-6T-qTM"/>
+                            <constraint firstItem="Jso-YQ-6Zo" firstAttribute="leading" secondItem="3OQ-Bd-y8C" secondAttribute="leading" id="JPh-fj-Hi1"/>
                             <constraint firstItem="3OQ-Bd-y8C" firstAttribute="top" secondItem="id9-qs-LpO" secondAttribute="bottom" constant="-738" id="Quj-Kq-kW9"/>
                             <constraint firstItem="zvq-vL-E0D" firstAttribute="centerX" secondItem="utr-IK-iah" secondAttribute="centerX" id="at4-dC-j5G"/>
+                            <constraint firstItem="Jso-YQ-6Zo" firstAttribute="trailing" secondItem="3OQ-Bd-y8C" secondAttribute="trailing" id="m1u-UG-OTR"/>
+                            <constraint firstItem="3OQ-Bd-y8C" firstAttribute="bottom" secondItem="Jso-YQ-6Zo" secondAttribute="bottom" id="mxM-Ly-ll5"/>
                             <constraint firstItem="id9-qs-LpO" firstAttribute="top" secondItem="3OQ-Bd-y8C" secondAttribute="top" id="qiD-an-rvs"/>
                             <constraint firstItem="id9-qs-LpO" firstAttribute="leading" secondItem="3OQ-Bd-y8C" secondAttribute="leading" id="sU9-DB-4bs"/>
                         </constraints>
