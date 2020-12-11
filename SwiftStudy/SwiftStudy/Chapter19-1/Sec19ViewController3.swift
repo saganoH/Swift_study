@@ -2,25 +2,6 @@ import UIKit
 import AVFoundation
 import Photos
 
-extension Sec19ViewController3: AVCapturePhotoCaptureDelegate {
-    // 映像をキャプチャする
-    func photoOutput(_ output: AVCapturePhotoOutput,
-                     didFinishProcessingPhoto photo: AVCapturePhoto,
-                     error: Error?) {
-        // Dataを取り出す
-        guard let photoData = photo.fileDataRepresentation() else {
-            return
-        }
-        
-        // Dataから写真イメージを作る
-        if let stillImage = UIImage(data: photoData) {
-            // アルバムに追加する
-            UIImageWriteToSavedPhotosAlbum(stillImage, self, nil, nil)
-            shareImage = stillImage
-        }
-    }
-}
-
 class Sec19ViewController3: UIViewController {
     
     override var shouldAutorotate: Bool {
@@ -33,7 +14,6 @@ class Sec19ViewController3: UIViewController {
     
     @IBOutlet weak var previewView: UIView!
     @IBOutlet weak var shutterButton: UIBarButtonItem!
-   // @IBOutlet weak var shutterButton: UIButton!
     
     private var session = AVCaptureSession()
     private var photoOutputObj = AVCapturePhotoOutput()
@@ -207,3 +187,25 @@ class Sec19ViewController3: UIViewController {
         self.present(alert, animated: false, completion: nil)
     }
 }
+
+// MARK: - AVCapturePhotoCaptureDelegate
+
+extension Sec19ViewController3: AVCapturePhotoCaptureDelegate {
+    // 映像をキャプチャする
+    func photoOutput(_ output: AVCapturePhotoOutput,
+                     didFinishProcessingPhoto photo: AVCapturePhoto,
+                     error: Error?) {
+        // Dataを取り出す
+        guard let photoData = photo.fileDataRepresentation() else {
+            return
+        }
+        
+        // Dataから写真イメージを作る
+        if let stillImage = UIImage(data: photoData) {
+            // アルバムに追加する
+            UIImageWriteToSavedPhotosAlbum(stillImage, self, nil, nil)
+            shareImage = stillImage
+        }
+    }
+}
+
