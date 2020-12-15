@@ -22,6 +22,7 @@ class CameraPresenter {
             let captureSetting = AVCapturePhotoSettings()
             captureSetting.flashMode = .auto
             captureSetting.isHighResolutionPhotoEnabled = false
+            self.delegate?.canTakePhoto(setting: captureSetting)
             
         } else {
             // カメラの利用を許可していない状態でシャッターボタンをタップした場合
