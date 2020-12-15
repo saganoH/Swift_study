@@ -78,6 +78,8 @@
 		C6C82E2C257F45A600F0E77C /* Chapter19-1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C82E2B257F45A600F0E77C /* Chapter19-1.storyboard */; };
 		C6C82E32257F461200F0E77C /* Sec19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C82E31257F461200F0E77C /* Sec19ViewController.swift */; };
 		C6C82E40257F563400F0E77C /* Sec19ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C82E3F257F563400F0E77C /* Sec19ViewController2.swift */; };
+		C6CE96A12588785C000FAF01 /* CameraPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE96A02588785C000FAF01 /* CameraPresenter.swift */; };
+		C6CE96A6258878C7000FAF01 /* CameraAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE96A5258878C7000FAF01 /* CameraAuth.swift */; };
 		C6D8417C2579CD2700DC7AA9 /* Sec18ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8417B2579CD2700DC7AA9 /* Sec18ViewController3.swift */; };
 		C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */; };
 		C6DD4D62255A385500714A56 /* BorderedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D61255A385500714A56 /* BorderedLabel.swift */; };
@@ -177,6 +179,8 @@
 		C6C82E2B257F45A600F0E77C /* Chapter19-1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Chapter19-1.storyboard"; sourceTree = "<group>"; };
 		C6C82E31257F461200F0E77C /* Sec19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController.swift; sourceTree = "<group>"; };
 		C6C82E3F257F563400F0E77C /* Sec19ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController2.swift; sourceTree = "<group>"; };
+		C6CE96A02588785C000FAF01 /* CameraPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPresenter.swift; sourceTree = "<group>"; };
+		C6CE96A5258878C7000FAF01 /* CameraAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAuth.swift; sourceTree = "<group>"; };
 		C6D8417B2579CD2700DC7AA9 /* Sec18ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec18ViewController3.swift; sourceTree = "<group>"; };
 		C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController4.swift; sourceTree = "<group>"; };
 		C6DD4D61255A385500714A56 /* BorderedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedLabel.swift; sourceTree = "<group>"; };
@@ -392,6 +396,8 @@
 				C6C82E31257F461200F0E77C /* Sec19ViewController.swift */,
 				C6C82E3F257F563400F0E77C /* Sec19ViewController2.swift */,
 				C695A67025806C3200577503 /* Sec19ViewController3.swift */,
+				C6CE96A02588785C000FAF01 /* CameraPresenter.swift */,
+				C6CE96A5258878C7000FAF01 /* CameraAuth.swift */,
 			);
 			path = "Chapter19-1";
 			sourceTree = "<group>";
@@ -560,6 +566,7 @@
 				C615A57E253E81640011B547 /* SetSample.swift in Sources */,
 				C6266922255E60A9003B6E28 /* Sec13ViewController2.swift in Sources */,
 				C673BBC625776394004C2EE0 /* Sec16ViewController4.swift in Sources */,
+				C6CE96A6258878C7000FAF01 /* CameraAuth.swift in Sources */,
 				C6B1B59B254A9682008C6DC6 /* StructSample.swift in Sources */,
 				C62581E4252EF0EC009C884C /* ForSample.swift in Sources */,
 				C630E44F2547DA4000444C22 /* Game.swift in Sources */,
@@ -583,6 +590,7 @@
 				C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */,
 				C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */,
 				C6226A1A2535383600E2B794 /* StringSample.swift in Sources */,
+				C6CE96A12588785C000FAF01 /* CameraPresenter.swift in Sources */,
 				C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */,
 				C603F369253023F70005F46F /* FunctionSample.swift in Sources */,
 				C60380272577321700466238 /* Sec16ViewController2.swift in Sources */,

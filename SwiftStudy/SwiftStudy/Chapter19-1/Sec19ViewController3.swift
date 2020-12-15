@@ -1,5 +1,4 @@
 import UIKit
-import AVFoundation
 import Photos
 
 class Sec19ViewController3: UIViewController {
@@ -18,14 +17,8 @@ class Sec19ViewController3: UIViewController {
     private var session = AVCaptureSession()
     private var photoOutputObj = AVCapturePhotoOutput()
     private var shareImage: UIImage?
+    private var presenter = CameraPresenter()
     
-    private var authStatus: AuthorizedStatus = .authorized
-    // 認証のステータス
-    enum AuthorizedStatus {
-        case authorized
-        case notAuthorized
-        case failed
-    }
     
     // MARK: - life cycle
     
@@ -36,18 +29,9 @@ class Sec19ViewController3: UIViewController {
         if session.isRunning {
             return
         }
-        // カメラのプライバシー認証確認
-        cameraAuth()
-        
-        if authStatus == .authorized {
-            setupInputOutput()
-            setPreviewLayer()
-            session.startRunning()
-            shutterButton.isEnabled = true
-        } else {
-            showAlert(appName: "カメラ")
-        }
-        
+        presenter.delegate = self
+        presenter.didAppear()
+
         // デバイスが回転した時に通知するイベントハンドラを設定する
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.changedDeviceOrientation(_:)),
@@ -58,28 +42,14 @@ class Sec19ViewController3: UIViewController {
     // MARK: - @IBAction
     
     @IBAction func takePhoto(_ sender: Any) {
-        if authStatus == .authorized {
-            let captureSetting = AVCapturePhotoSettings()
-            captureSetting.flashMode = .auto
-            captureSetting.isHighResolutionPhotoEnabled = false
-            // キャプチャのイメージ処理はデリゲートに任せる
-            photoOutputObj.capturePhoto(with: captureSetting, delegate: self)
-        } else {
-            // カメラの利用を許可していない状態でシャッターボタンをタップした場合
-            showAlert(appName: "カメラ")
-        }
+        presenter.takePhoto()
     }
     
     @IBAction func shareAction(_ sender: Any) {
         guard let shareImage = shareImage else {
             return
         }
-        let sharedText = "撮影した画像をシェアします。"
-        let sharedUrl = "http://oshige.com"
-        let activities = [sharedText, sharedUrl, shareImage] as [Any]
-        // アクティビティコントローラを表示する
-        let activityVC = UIActivityViewController(activityItems: activities, applicationActivities: nil)
-        self.present(activityVC, animated: true, completion: nil)
+        presenter.shareImage(shareImage: shareImage)
     }
     
     // MARK: - @objc
@@ -144,48 +114,6 @@ class Sec19ViewController3: UIViewController {
         // previewViewに追加する
         previewView.layer.addSublayer(previewLayer)
     }
-    
-    private func cameraAuth() {
-        switch AVCaptureDevice.authorizationStatus(for: AVMediaType.video) {
-        case .notDetermined:
-            // 初回起動時
-            AVCaptureDevice.requestAccess(for: AVMediaType.video,
-                                          completionHandler: { [unowned self] authorized in
-                                            print("初回", authorized.description)
-                                            if authorized {
-                                                self.authStatus = .authorized
-                                            } else {
-                                                self.authStatus = .notAuthorized
-                                            }
-                                          })
-        case .restricted, .denied:
-            authStatus = .notAuthorized
-        case .authorized:
-            authStatus = .authorized
-        @unknown default:
-            authStatus = .failed
-        }
-    }
-    
-    private func showAlert(appName: String) {
-        let alertTitle = appName + "のプライバシー認証"
-        let alertMessage = "設定＞プライバシー＞" + appName + "で利用を許可してください。"
-        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
-        
-        //OKボタン
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        // 設定を開くボタン
-        alert.addAction(
-            UIAlertAction(title: "設定を開く",
-                          style: .default,
-                          handler: { action in UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!,
-                                                                         options: [:],
-                                                                         completionHandler: nil)
-                          })
-        )
-        // アラートを表示する
-        self.present(alert, animated: false, completion: nil)
-    }
 }
 
 // MARK: - AVCapturePhotoCaptureDelegate
@@ -206,6 +134,37 @@ extension Sec19ViewController3: AVCapturePhotoCaptureDelegate {
             UIImageWriteToSavedPhotosAlbum(stillImage, self, nil, nil)
             shareImage = stillImage
         }
+    }
+}
+
+// MARK: - PresenterDelegate
+
+protocol PresenterDelegate {
+    func showAlert(alertVc: UIAlertController)
+    func canUseCamera()
+    func canTakePhoto(setting: AVCapturePhotoSettings)
+    func canSharePhoto(activityVC: UIActivityViewController)
+}
+
+extension Sec19ViewController3: PresenterDelegate {
+    
+    func showAlert(alertVc: UIAlertController) {
+        self.present(alertVc, animated: false, completion: nil)
+    }
+    
+    func canUseCamera() {
+        setupInputOutput()
+        setPreviewLayer()
+        session.startRunning()
+        shutterButton.isEnabled = true
+    }
+    
+    func canTakePhoto(setting: AVCapturePhotoSettings) {
+        photoOutputObj.capturePhoto(with: setting, delegate: self)
+    }
+    
+    func canSharePhoto(activityVC: UIActivityViewController) {
+        self.present(activityVC, animated: true, completion: nil)
     }
 }
 
