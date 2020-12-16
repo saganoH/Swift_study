@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="50Y-Am-RM8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sec19 View Controller4-->
+        <scene sceneID="hJw-SP-4xD">
+            <objects>
+                <viewController id="50Y-Am-RM8" customClass="Sec19ViewController4" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1P2-ww-2eU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I18-Sx-qUO">
+                                <rect key="frame" x="343" y="782" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <segue destination="Aya-yH-rrM" kind="presentation" modalPresentationStyle="fullScreen" id="Cmo-Gc-35P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsc-nx-WZ3">
+                                <rect key="frame" x="40" y="94" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="cHF-ft-wYM" kind="unwind" unwindAction="comeHomeWithSegue:" id="JgV-UC-8tA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コンパス、スキップ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzr-CO-8gE">
+                                <rect key="frame" x="129" y="437.5" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pQF-5P-oOG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pQF-5P-oOG" firstAttribute="trailing" secondItem="I18-Sx-qUO" secondAttribute="trailing" constant="40" id="1VK-mA-D9l"/>
+                            <constraint firstItem="qsc-nx-WZ3" firstAttribute="leading" secondItem="pQF-5P-oOG" secondAttribute="leading" constant="40" id="8T6-7G-Shw"/>
+                            <constraint firstItem="pQF-5P-oOG" firstAttribute="bottom" secondItem="I18-Sx-qUO" secondAttribute="bottom" constant="50" id="C2t-KI-eUH"/>
+                            <constraint firstItem="Xzr-CO-8gE" firstAttribute="centerX" secondItem="1P2-ww-2eU" secondAttribute="centerX" id="ZCh-Db-XDE"/>
+                            <constraint firstItem="Xzr-CO-8gE" firstAttribute="centerY" secondItem="1P2-ww-2eU" secondAttribute="centerY" id="v0a-p3-qyf"/>
+                            <constraint firstItem="qsc-nx-WZ3" firstAttribute="top" secondItem="pQF-5P-oOG" secondAttribute="top" constant="50" id="xAC-Xh-Aqm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQf-Me-mus" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="cHF-ft-wYM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="133"/>
+        </scene>
+        <!--Sec19 View Controller5-->
+        <scene sceneID="PtW-so-hqF">
+            <objects>
+                <viewController id="Aya-yH-rrM" customClass="Sec19ViewController5" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aof-um-m9x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3x2-Hi-avg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQp-zP-49d">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem style="plain" id="x3q-1E-Ybe">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="yYw-qY-tmH">
+                                            <rect key="frame" x="20" y="12" width="31" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="戻る"/>
+                                            <connections>
+                                                <action selector="goBack:" destination="Aya-yH-rrM" eventType="touchUpInside" id="c4J-4H-VnU"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="cIi-Zw-BgV"/>
+                                    <barButtonItem style="plain" id="Oji-IV-Ne2">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="XaG-1Y-Ebi">
+                                            <rect key="frame" x="71" y="12" width="31" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="札幌"/>
+                                            <connections>
+                                                <action selector="goToSapporo:" destination="Aya-yH-rrM" eventType="touchUpInside" id="eYT-bA-dGZ"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem width="15" style="plain" systemItem="fixedSpace" id="gj9-WO-e5F"/>
+                                    <barButtonItem style="plain" id="AAL-RR-1zq">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="fGm-SR-Niq">
+                                            <rect key="frame" x="117" y="10.5" width="263" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="地図" width="60"/>
+                                                <segment title="写真" width="60"/>
+                                                <segment title="地図＋写真" width="80"/>
+                                                <segment title="3D" width="60"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="changeMapType:" destination="Aya-yH-rrM" eventType="valueChanged" id="IGX-kX-C7U"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vaX-kl-W3B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3x2-Hi-avg" firstAttribute="top" secondItem="vaX-kl-W3B" secondAttribute="top" id="2nW-4J-5nX"/>
+                            <constraint firstItem="3x2-Hi-avg" firstAttribute="leading" secondItem="vaX-kl-W3B" secondAttribute="leading" id="NmX-Fu-gye"/>
+                            <constraint firstItem="vaX-kl-W3B" firstAttribute="bottom" secondItem="TQp-zP-49d" secondAttribute="bottom" id="ObY-n9-jom"/>
+                            <constraint firstItem="TQp-zP-49d" firstAttribute="trailing" secondItem="vaX-kl-W3B" secondAttribute="trailing" id="Rss-PX-aPc"/>
+                            <constraint firstItem="vaX-kl-W3B" firstAttribute="bottom" secondItem="3x2-Hi-avg" secondAttribute="bottom" id="Tvj-gn-fKA"/>
+                            <constraint firstItem="TQp-zP-49d" firstAttribute="leading" secondItem="vaX-kl-W3B" secondAttribute="leading" id="qlN-Lp-CHP"/>
+                            <constraint firstItem="vaX-kl-W3B" firstAttribute="trailing" secondItem="3x2-Hi-avg" secondAttribute="trailing" id="sXz-tB-30C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myMap" destination="3x2-Hi-avg" id="u2I-t4-nY4"/>
+                        <outlet property="toolBar" destination="TQp-zP-49d" id="Yp2-rk-ExJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNq-bx-5fS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
