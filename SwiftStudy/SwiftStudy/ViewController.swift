@@ -16,6 +16,13 @@ extension UIColor {
 
 class ViewController: UIViewController {
     
+    
+    @IBAction func randomJump(_ sender: Any) {
+        let randomPresenterC = RandomPresenter()
+
+        performSegue(withIdentifier: randomPresenterC.chapterDecider(), sender: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

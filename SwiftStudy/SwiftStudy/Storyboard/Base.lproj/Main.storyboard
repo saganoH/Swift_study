@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="109.5" y="146.5" width="195" height="30"/>
                                 <state key="normal" title="Chapter11 オートレイアウト"/>
                                 <connections>
-                                    <segue destination="bEP-PX-GNf" kind="show" id="6wj-xO-ire"/>
+                                    <segue destination="bEP-PX-GNf" kind="show" identifier="" id="6wj-xO-ire"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mnh-Q7-8ZA">
@@ -61,14 +61,14 @@
                                 <rect key="frame" x="93" y="446.5" width="228" height="30"/>
                                 <state key="normal" title="Chapter16 フィンガーアクション"/>
                                 <connections>
-                                    <segue destination="KO0-Ig-JTf" kind="presentation" modalPresentationStyle="fullScreen" id="iCp-t4-ddX"/>
+                                    <segue destination="KO0-Ig-JTf" kind="presentation" identifier="" modalPresentationStyle="fullScreen" id="iCp-t4-ddX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dl9-T0-N35">
                                 <rect key="frame" x="85" y="506.5" width="244" height="30"/>
                                 <state key="normal" title="Chapter18 データの保存と読み込み"/>
                                 <connections>
-                                    <segue destination="VJm-Sw-UGy" kind="presentation" modalPresentationStyle="fullScreen" id="D1S-B6-NkM"/>
+                                    <segue destination="VJm-Sw-UGy" kind="presentation" identifier="" modalPresentationStyle="fullScreen" id="D1S-B6-NkM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrG-Yg-1wm">
@@ -78,10 +78,19 @@
                                     <segue destination="Lhs-Xv-Q4g" kind="presentation" modalPresentationStyle="fullScreen" id="tXd-Jx-QI1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQl-Mh-Qq4">
+                                <rect key="frame" x="180.5" y="802" width="53" height="30"/>
+                                <state key="normal" title="random"/>
+                                <connections>
+                                    <action selector="randomJump:" destination="5Xy-za-caW" eventType="touchUpInside" id="nzo-3g-ztr"/>
+                                    <action selector="randomJump:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKV-Iy-NUk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PQl-Mh-Qq4" secondAttribute="bottom" constant="30" id="1zP-hY-4Tb"/>
                             <constraint firstItem="8p4-7u-etq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ZI-3x-jr6"/>
                             <constraint firstItem="dl9-T0-N35" firstAttribute="top" secondItem="BZ4-bb-LFN" secondAttribute="bottom" constant="30" id="6Pe-2G-Co9"/>
                             <constraint firstItem="oUH-k4-wsP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="CjQ-Sp-ssx"/>
@@ -96,14 +105,26 @@
                             <constraint firstItem="BZ4-bb-LFN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bd8-si-DrQ"/>
                             <constraint firstItem="dl9-T0-N35" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edw-79-NYl"/>
                             <constraint firstItem="YrG-Yg-1wm" firstAttribute="top" secondItem="dl9-T0-N35" secondAttribute="bottom" constant="30" id="ij2-0X-reF"/>
+                            <constraint firstItem="PQl-Mh-Qq4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kcJ-l9-EOG"/>
                             <constraint firstItem="Jzc-13-PFD" firstAttribute="top" secondItem="BXd-IT-NCP" secondAttribute="bottom" constant="30" id="mV2-Wp-00c"/>
                             <constraint firstItem="Mnh-Q7-8ZA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p6A-Ln-oDt"/>
                             <constraint firstItem="BXd-IT-NCP" firstAttribute="top" secondItem="8p4-7u-etq" secondAttribute="bottom" constant="30" id="t7Q-ZI-crY"/>
                             <constraint firstItem="jeP-hr-dA7" firstAttribute="top" secondItem="oUH-k4-wsP" secondAttribute="bottom" constant="40" id="tuq-tL-M4C"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="bEP-PX-GNf" kind="show" identifier="chapter11" id="WJQ-rO-gwq"/>
+                        <segue destination="izM-1m-suZ" kind="show" identifier="chapter12" id="hw8-Qq-3ga"/>
+                        <segue destination="UjP-LV-X3S" kind="show" identifier="chapter13" id="BsE-a9-CuK"/>
+                        <segue destination="C0v-Dv-wZB" kind="show" identifier="chapter14" id="YCT-KS-2Ku"/>
+                        <segue destination="ZYe-oZ-FOg" kind="show" identifier="chapter15" id="1wO-yC-hzl"/>
+                        <segue destination="VJm-Sw-UGy" kind="show" identifier="chapter18" id="2XG-yr-CPX"/>
+                        <segue destination="KO0-Ig-JTf" kind="show" identifier="chapter16" id="3bw-KU-ewt"/>
+                        <segue destination="Lhs-Xv-Q4g" kind="show" identifier="chapter19-1" id="Wz0-iz-KpV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="5Xy-za-caW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-657" y="528"/>
         </scene>
@@ -170,7 +191,9 @@
         <!--Chapter19-1-->
         <scene sceneID="Rkm-Eo-xnv">
             <objects>
-                <viewControllerPlaceholder storyboardName="Chapter19-1" id="Lhs-Xv-Q4g" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Chapter19-1" id="Lhs-Xv-Q4g" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="j1F-Rh-BIe"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wpu-h6-veS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="601" y="603"/>
@@ -178,12 +201,24 @@
         <!--Chapter18-->
         <scene sceneID="2Nx-CR-ir7">
             <objects>
-                <viewControllerPlaceholder storyboardName="Chapter18" id="VJm-Sw-UGy" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Chapter18" id="VJm-Sw-UGy" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QG8-Yv-0gl"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PpM-dz-YHM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="559" y="494"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2XG-yr-CPX"/>
+        <segue reference="Wz0-iz-KpV"/>
+        <segue reference="3bw-KU-ewt"/>
+        <segue reference="1wO-yC-hzl"/>
+        <segue reference="YCT-KS-2Ku"/>
+        <segue reference="BsE-a9-CuK"/>
+        <segue reference="hw8-Qq-3ga"/>
+        <segue reference="WJQ-rO-gwq"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
