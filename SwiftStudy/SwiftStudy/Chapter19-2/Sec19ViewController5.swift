@@ -11,6 +11,7 @@ class Sec19ViewController5: UIViewController {
         toolbarDefaultColor = toolBar.tintColor
         // スケールを表示
         myMap.showsScale = true
+        myMap.mapType = .standard
     }
   
     // MARK: - @IBAction
