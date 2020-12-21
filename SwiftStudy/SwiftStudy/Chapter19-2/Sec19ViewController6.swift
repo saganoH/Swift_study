@@ -21,7 +21,8 @@ class Sec19ViewController6: UIViewController {
         switch myMap.userTrackingMode {
         case .none:
             myMap.setUserTrackingMode(.follow, animated: true)
-            trackingButton.image = UIImage.
+            trackingButton.image = UIImage(systemName: "location")
+        case
         }
     }
 }
