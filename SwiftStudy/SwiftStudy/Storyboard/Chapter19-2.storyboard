@@ -175,11 +175,11 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQp-zP-49d">
-                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
                                     <barButtonItem style="plain" id="x3q-1E-Ybe">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="yYw-qY-tmH">
-                                            <rect key="frame" x="20" y="7" width="31" height="30"/>
+                                            <rect key="frame" x="20" y="12" width="31" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="戻る"/>
                                             <connections>
@@ -190,7 +190,7 @@
                                     <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="cIi-Zw-BgV"/>
                                     <barButtonItem style="plain" id="Oji-IV-Ne2">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="XaG-1Y-Ebi">
-                                            <rect key="frame" x="71" y="7" width="31" height="30"/>
+                                            <rect key="frame" x="71" y="12" width="31" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="札幌"/>
                                             <connections>
@@ -201,18 +201,28 @@
                                     <barButtonItem width="15" style="plain" systemItem="fixedSpace" id="gj9-WO-e5F"/>
                                     <barButtonItem style="plain" id="AAL-RR-1zq">
                                         <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="fGm-SR-Niq">
-                                            <rect key="frame" x="117" y="5.5" width="263" height="33"/>
+                                            <rect key="frame" x="117" y="10.5" width="263" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
-                                                <segment title="地図" width="60"/>
-                                                <segment title="写真" width="60"/>
-                                                <segment title="地図＋写真" width="80"/>
-                                                <segment title="3D" width="60"/>
+                                                <segment title="地図" width="50"/>
+                                                <segment title="写真" width="50"/>
+                                                <segment title="地図＋写真" width="75"/>
+                                                <segment title="3D" width="50"/>
                                             </segments>
                                             <connections>
                                                 <action selector="changeMapType:" destination="Aya-yH-rrM" eventType="valueChanged" id="IGX-kX-C7U"/>
                                             </connections>
                                         </segmentedControl>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="4qj-a5-Lfr">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="AGt-Tk-Sri">
+                                            <rect key="frame" x="380" y="12" width="31" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="次へ"/>
+                                        </button>
+                                        <connections>
+                                            <segue destination="now-ih-J8n" kind="presentation" modalPresentationStyle="fullScreen" id="ZGg-NX-h7w"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
@@ -238,10 +248,61 @@
             </objects>
             <point key="canvasLocation" x="857" y="133"/>
         </scene>
+        <!--Sec19 View Controller6-->
+        <scene sceneID="EKx-F8-nma">
+            <objects>
+                <viewController id="now-ih-J8n" customClass="Sec19ViewController6" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wqe-OR-q8O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f8a-pK-DkV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aph-Yp-ilL">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem image="arrowshape.turn.up.left" catalog="system" id="lrc-Qe-vRf">
+                                        <connections>
+                                            <action selector="goBack:" destination="now-ih-J8n" id="1Tk-V0-8u0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SkJ-f2-bFb"/>
+                                    <barButtonItem title="Item" image="location" catalog="system" id="vNE-qM-9RH">
+                                        <connections>
+                                            <action selector="tapTrackingButton:" destination="now-ih-J8n" id="cBz-RH-f2A"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a1R-XL-Enf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aph-Yp-ilL" firstAttribute="leading" secondItem="a1R-XL-Enf" secondAttribute="leading" id="Bcy-Ks-Qwt"/>
+                            <constraint firstItem="aph-Yp-ilL" firstAttribute="trailing" secondItem="a1R-XL-Enf" secondAttribute="trailing" id="Mfa-Y9-gKo"/>
+                            <constraint firstItem="a1R-XL-Enf" firstAttribute="trailing" secondItem="f8a-pK-DkV" secondAttribute="trailing" id="RpJ-ST-2XC"/>
+                            <constraint firstItem="aph-Yp-ilL" firstAttribute="bottom" secondItem="a1R-XL-Enf" secondAttribute="bottom" id="eGg-Up-THB"/>
+                            <constraint firstItem="f8a-pK-DkV" firstAttribute="leading" secondItem="a1R-XL-Enf" secondAttribute="leading" id="iu7-Vf-2HA"/>
+                            <constraint firstItem="a1R-XL-Enf" firstAttribute="bottom" secondItem="f8a-pK-DkV" secondAttribute="bottom" id="qE4-Qf-VFu"/>
+                            <constraint firstItem="f8a-pK-DkV" firstAttribute="top" secondItem="Wqe-OR-q8O" secondAttribute="top" id="x6q-Qw-xy2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myMap" destination="f8a-pK-DkV" id="GVg-0o-nyo"/>
+                        <outlet property="trackingButton" destination="vNE-qM-9RH" id="gu8-fv-ZbY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpl-nE-qqC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656.521739130435" y="132.58928571428572"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.turn.up.left" catalog="system" width="128" height="106"/>
         <image name="compass_back" width="531" height="530"/>
         <image name="compass_shin" width="50" height="387"/>
+        <image name="location" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
