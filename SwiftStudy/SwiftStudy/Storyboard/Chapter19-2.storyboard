@@ -196,7 +196,7 @@
                                     <barButtonItem width="15" style="plain" systemItem="fixedSpace" id="gj9-WO-e5F"/>
                                     <barButtonItem style="plain" id="AAL-RR-1zq">
                                         <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="fGm-SR-Niq">
-                                            <rect key="frame" x="123" y="10.5" width="213" height="33"/>
+                                            <rect key="frame" x="135" y="10.5" width="213" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
                                                 <segment title="地図" width="45"/>
@@ -304,15 +304,32 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vlc-eX-Eyc">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gX3-5z-nTf" appends="YES" id="Xbx-u9-Zhq"/>
+                                </connections>
                             </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkM-3x-Iwq">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem title="back" image="chevron.backward" catalog="system" id="lsK-Ax-4et">
+                                        <connections>
+                                            <action selector="goBack:" destination="Kn1-NA-0uM" id="Hz1-MS-q0i"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aK7-fO-2YT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Vlc-eX-Eyc" firstAttribute="leading" secondItem="aK7-fO-2YT" secondAttribute="leading" id="7bk-sZ-rO8"/>
                             <constraint firstItem="aK7-fO-2YT" firstAttribute="trailing" secondItem="Vlc-eX-Eyc" secondAttribute="trailing" id="YR1-26-XYC"/>
+                            <constraint firstItem="gkM-3x-Iwq" firstAttribute="leading" secondItem="aK7-fO-2YT" secondAttribute="leading" id="a9u-5h-nl8"/>
                             <constraint firstItem="Vlc-eX-Eyc" firstAttribute="top" secondItem="aK7-fO-2YT" secondAttribute="top" id="hKn-vR-z8l"/>
                             <constraint firstItem="aK7-fO-2YT" firstAttribute="bottom" secondItem="Vlc-eX-Eyc" secondAttribute="bottom" id="kK7-iA-L5Y"/>
+                            <constraint firstItem="gkM-3x-Iwq" firstAttribute="trailing" secondItem="aK7-fO-2YT" secondAttribute="trailing" id="rbB-Bz-EtS"/>
+                            <constraint firstItem="aK7-fO-2YT" firstAttribute="bottom" secondItem="gkM-3x-Iwq" secondAttribute="bottom" id="s6X-hi-sK2"/>
                         </constraints>
                     </view>
                     <connections>
@@ -320,6 +337,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BbJ-M3-gQW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="gX3-5z-nTf">
+                    <connections>
+                        <action selector="mapLongPress:" destination="Kn1-NA-0uM" id="pTy-js-6Mt"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2423" y="133"/>
         </scene>
