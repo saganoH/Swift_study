@@ -47,6 +47,13 @@ class Sec19ViewController7: UIViewController, MKMapViewDelegate {
         myMap.addAnnotation(annotation)
     }
     
+    @IBAction func removeLastPin(_ sender: Any) {
+        // 最後に追加したピンを削除する
+        if annotationlist.count > 0 {
+            myMap.removeAnnotation(annotationlist.removeLast())
+        }
+    }
+    
     // MARK: - MKMapViewDelegate
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {

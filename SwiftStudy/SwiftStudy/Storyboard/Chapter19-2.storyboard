@@ -317,6 +317,12 @@
                                             <action selector="goBack:" destination="Kn1-NA-0uM" id="Hz1-MS-q0i"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="eSc-mw-SCO"/>
+                                    <barButtonItem title="removeLastPin" image="trash" catalog="system" id="RAh-QE-kqm">
+                                        <connections>
+                                            <action selector="removeLastPin:" destination="Kn1-NA-0uM" id="g1b-S5-wqn"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -352,6 +358,7 @@
         <image name="compass_back" width="531" height="530"/>
         <image name="compass_shin" width="50" height="387"/>
         <image name="location" catalog="system" width="128" height="121"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
