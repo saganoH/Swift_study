@@ -5,7 +5,7 @@ class Sec19ViewController5: UIViewController {
     
     @IBOutlet weak var myMap: MKMapView!
     @IBOutlet weak var toolBar: UIToolbar!
-    var toolbarDefaultColor: UIColor!
+    private var toolbarDefaultColor: UIColor!
     
     override func viewWillAppear(_ animated: Bool) {
         toolbarDefaultColor = toolBar.tintColor

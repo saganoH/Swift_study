@@ -187,41 +187,32 @@
                                             </connections>
                                         </button>
                                     </barButtonItem>
-                                    <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="cIi-Zw-BgV"/>
-                                    <barButtonItem style="plain" id="Oji-IV-Ne2">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="XaG-1Y-Ebi">
-                                            <rect key="frame" x="71" y="12" width="31" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="札幌"/>
-                                            <connections>
-                                                <action selector="goToSapporo:" destination="Aya-yH-rrM" eventType="touchUpInside" id="eYT-bA-dGZ"/>
-                                            </connections>
-                                        </button>
+                                    <barButtonItem width="15" style="plain" systemItem="fixedSpace" id="cIi-Zw-BgV"/>
+                                    <barButtonItem title="札幌" id="mae-eo-93P">
+                                        <connections>
+                                            <action selector="goToSapporo:" destination="Aya-yH-rrM" id="YRk-jl-HCL"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem width="15" style="plain" systemItem="fixedSpace" id="gj9-WO-e5F"/>
                                     <barButtonItem style="plain" id="AAL-RR-1zq">
                                         <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="fGm-SR-Niq">
-                                            <rect key="frame" x="117" y="10.5" width="263" height="33"/>
+                                            <rect key="frame" x="123" y="10.5" width="213" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
-                                                <segment title="地図" width="50"/>
-                                                <segment title="写真" width="50"/>
+                                                <segment title="地図" width="45"/>
+                                                <segment title="写真" width="45"/>
                                                 <segment title="地図＋写真" width="75"/>
-                                                <segment title="3D" width="50"/>
+                                                <segment title="3D" width="45"/>
                                             </segments>
                                             <connections>
                                                 <action selector="changeMapType:" destination="Aya-yH-rrM" eventType="valueChanged" id="IGX-kX-C7U"/>
                                             </connections>
                                         </segmentedControl>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" id="4qj-a5-Lfr">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="AGt-Tk-Sri">
-                                            <rect key="frame" x="380" y="12" width="31" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="次へ"/>
-                                        </button>
+                                    <barButtonItem width="15" systemItem="fixedSpace" id="bb7-g0-NzB"/>
+                                    <barButtonItem title="次へ" id="lhV-Ws-GOW">
                                         <connections>
-                                            <segue destination="now-ih-J8n" kind="presentation" modalPresentationStyle="fullScreen" id="ZGg-NX-h7w"/>
+                                            <segue destination="now-ih-J8n" kind="presentation" modalPresentationStyle="fullScreen" id="7If-Sr-x2z"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -260,9 +251,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aph-Yp-ilL">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <items>
-                                    <barButtonItem image="arrowshape.turn.up.left" catalog="system" id="lrc-Qe-vRf">
+                                    <barButtonItem title="back" image="chevron.backward" catalog="system" id="lrc-Qe-vRf">
                                         <connections>
                                             <action selector="goBack:" destination="now-ih-J8n" id="1Tk-V0-8u0"/>
                                         </connections>
@@ -299,7 +290,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrowshape.turn.up.left" catalog="system" width="128" height="106"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="compass_back" width="531" height="530"/>
         <image name="compass_shin" width="50" height="387"/>
         <image name="location" catalog="system" width="128" height="121"/>
