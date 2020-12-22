@@ -12,6 +12,7 @@
 		C60380272577321700466238 /* Sec16ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60380262577321700466238 /* Sec16ViewController2.swift */; };
 		C603F369253023F70005F46F /* FunctionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603F368253023F70005F46F /* FunctionSample.swift */; };
 		C6064208259082D400099B0D /* Sec19ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6064207259082D400099B0D /* Sec19ViewController6.swift */; };
+		C606420D2591887000099B0D /* Sec19ViewController7.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606420C2591887000099B0D /* Sec19ViewController7.swift */; };
 		C608B9692546A55100098140 /* ClassSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608B9682546A55100098140 /* ClassSample.swift */; };
 		C61431212549059600642F07 /* NewGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61431202549059600642F07 /* NewGame.swift */; };
 		C61431262549080900642F07 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61431252549080900642F07 /* GameProtocol.swift */; };
@@ -114,6 +115,7 @@
 		C60380262577321700466238 /* Sec16ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec16ViewController2.swift; sourceTree = "<group>"; };
 		C603F368253023F70005F46F /* FunctionSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionSample.swift; sourceTree = "<group>"; };
 		C6064207259082D400099B0D /* Sec19ViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController6.swift; sourceTree = "<group>"; };
+		C606420C2591887000099B0D /* Sec19ViewController7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController7.swift; sourceTree = "<group>"; };
 		C608B9682546A55100098140 /* ClassSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSample.swift; sourceTree = "<group>"; };
 		C61431202549059600642F07 /* NewGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGame.swift; sourceTree = "<group>"; };
 		C61431252549080900642F07 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 				C6DFAC5E2589C13900B94889 /* Sec19ViewController4.swift */,
 				C6DFAC752589CA7B00B94889 /* Sec19ViewController5.swift */,
 				C6064207259082D400099B0D /* Sec19ViewController6.swift */,
+				C606420C2591887000099B0D /* Sec19ViewController7.swift */,
 			);
 			path = "Chapter19-2";
 			sourceTree = "<group>";
@@ -621,6 +624,7 @@
 				C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */,
 				C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */,
 				C6226A1A2535383600E2B794 /* StringSample.swift in Sources */,
+				C606420D2591887000099B0D /* Sec19ViewController7.swift in Sources */,
 				C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */,
 				C603F369253023F70005F46F /* FunctionSample.swift in Sources */,
 				C60380272577321700466238 /* Sec16ViewController2.swift in Sources */,

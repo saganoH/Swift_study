@@ -251,7 +251,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aph-Yp-ilL">
-                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
                                     <barButtonItem title="back" image="chevron.backward" catalog="system" id="lrc-Qe-vRf">
                                         <connections>
@@ -262,6 +262,12 @@
                                     <barButtonItem title="Item" image="location" catalog="system" id="vNE-qM-9RH">
                                         <connections>
                                             <action selector="tapTrackingButton:" destination="now-ih-J8n" id="cBz-RH-f2A"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ROq-BK-jgz"/>
+                                    <barButtonItem title="next" image="chevron.forward" catalog="system" id="rdm-B0-CU6">
+                                        <connections>
+                                            <segue destination="Kn1-NA-0uM" kind="presentation" modalPresentationStyle="fullScreen" id="VJc-6f-HqE"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -288,9 +294,39 @@
             </objects>
             <point key="canvasLocation" x="1656.521739130435" y="132.58928571428572"/>
         </scene>
+        <!--Sec19 View Controller7-->
+        <scene sceneID="57Z-Kc-u1Z">
+            <objects>
+                <viewController id="Kn1-NA-0uM" customClass="Sec19ViewController7" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gRg-EF-srT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vlc-eX-Eyc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aK7-fO-2YT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vlc-eX-Eyc" firstAttribute="leading" secondItem="aK7-fO-2YT" secondAttribute="leading" id="7bk-sZ-rO8"/>
+                            <constraint firstItem="aK7-fO-2YT" firstAttribute="trailing" secondItem="Vlc-eX-Eyc" secondAttribute="trailing" id="YR1-26-XYC"/>
+                            <constraint firstItem="Vlc-eX-Eyc" firstAttribute="top" secondItem="aK7-fO-2YT" secondAttribute="top" id="hKn-vR-z8l"/>
+                            <constraint firstItem="aK7-fO-2YT" firstAttribute="bottom" secondItem="Vlc-eX-Eyc" secondAttribute="bottom" id="kK7-iA-L5Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myMap" destination="Vlc-eX-Eyc" id="R4r-7q-ZCj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BbJ-M3-gQW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2423" y="133"/>
+        </scene>
     </scenes>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="chevron.forward" catalog="system" width="96" height="128"/>
         <image name="compass_back" width="531" height="530"/>
         <image name="compass_shin" width="50" height="387"/>
         <image name="location" catalog="system" width="128" height="121"/>
