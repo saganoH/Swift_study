@@ -15,8 +15,8 @@ class Sec19ViewController6: UIViewController, MKMapViewDelegate, CLLocationManag
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        myMap.delegate = self
         myMap.showsScale = true
+        myMap.delegate = self
         locationManager.delegate = self
     }
     

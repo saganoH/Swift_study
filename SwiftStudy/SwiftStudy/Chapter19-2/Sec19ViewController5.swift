@@ -6,6 +6,7 @@ class Sec19ViewController5: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var myMap: MKMapView!
     @IBOutlet weak var toolBar: UIToolbar!
     private var toolbarDefaultColor: UIColor!
+    
     private let tokyoPoint = CLLocationCoordinate2D(latitude: 35.690553, longitude: 139.699579)
     private let sapporoPoint = CLLocationCoordinate2D(latitude: 43.068564, longitude: 141.3507138)
     
@@ -47,19 +48,15 @@ class Sec19ViewController5: UIViewController, MKMapViewDelegate {
             myMap.mapType = .standard
             myMap.camera.pitch = 0.0
             toolBar.tintColor = toolbarDefaultColor
-            toolBar.alpha = 1.0
         case 1:
             myMap.mapType = .satellite
             toolBar.tintColor = UIColor.black
-            toolBar.alpha = 0.8
         case 2:
             myMap.mapType = .hybrid
             toolBar.tintColor = UIColor.black
-            toolBar.alpha = 0.8
         case 3:
             myMap.mapType = .standard
             toolBar.tintColor = toolbarDefaultColor
-            toolBar.alpha = 1.0
             // 3Dビュー
             myMap.camera.pitch = 70 // 見下ろす角度
             myMap.camera.altitude = 700 // 標高
@@ -72,6 +69,7 @@ class Sec19ViewController5: UIViewController, MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer: MKOverlayPathRenderer
+        
         switch overlay {
         case is MKPolyline:
             renderer = MKPolylineRenderer(overlay: overlay)

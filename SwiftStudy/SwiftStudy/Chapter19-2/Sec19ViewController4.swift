@@ -14,6 +14,7 @@ class Sec19ViewController4: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var idoLabel: UILabel!
     @IBOutlet weak var keidoLabel: UILabel!
     @IBOutlet weak var hyoukouLabel: UILabel!
+    
     @IBOutlet weak var henkakuLabel: UILabel!
     @IBOutlet weak var houiLabel: UILabel!
     @IBOutlet weak var jihokuSeg: UISegmentedControl!
@@ -100,12 +101,14 @@ class Sec19ViewController4: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         let makita = newHeading.trueHeading
         let jihoku = newHeading.magneticHeading
+        
         var henkaku = jihoku - makita
         if henkaku < 0 {
             henkaku = henkaku + 360
         }
         henkaku = round(henkaku*100) / 100
         henkakuLabel.text = String(henkaku)
+        
         // 北の方角を設定
         var kitamuki: CLLocationDirection!
         if jihokuSeg.selectedSegmentIndex == 0 {
@@ -113,6 +116,7 @@ class Sec19ViewController4: UIViewController, CLLocationManagerDelegate {
         } else {
             kitamuki = makita
         }
+        
         // 磁針で北を指す
         compass.transform = CGAffineTransform(rotationAngle: CGFloat(-kitamuki * Double.pi/180))
         // デバイスが向いている方位角度
