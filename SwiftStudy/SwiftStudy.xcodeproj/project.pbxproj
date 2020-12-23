@@ -11,6 +11,8 @@
 		105D4D982535394F0062B0E3 /* OperatorSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581DE252EEF00009C884C /* OperatorSample.swift */; };
 		C60380272577321700466238 /* Sec16ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60380262577321700466238 /* Sec16ViewController2.swift */; };
 		C603F369253023F70005F46F /* FunctionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603F368253023F70005F46F /* FunctionSample.swift */; };
+		C6064208259082D400099B0D /* Sec19ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6064207259082D400099B0D /* Sec19ViewController6.swift */; };
+		C606420D2591887000099B0D /* Sec19ViewController7.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606420C2591887000099B0D /* Sec19ViewController7.swift */; };
 		C608B9692546A55100098140 /* ClassSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608B9682546A55100098140 /* ClassSample.swift */; };
 		C61431212549059600642F07 /* NewGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61431202549059600642F07 /* NewGame.swift */; };
 		C61431262549080900642F07 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61431252549080900642F07 /* GameProtocol.swift */; };
@@ -81,6 +83,11 @@
 		C6D8417C2579CD2700DC7AA9 /* Sec18ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8417B2579CD2700DC7AA9 /* Sec18ViewController3.swift */; };
 		C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */; };
 		C6DD4D62255A385500714A56 /* BorderedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD4D61255A385500714A56 /* BorderedLabel.swift */; };
+		C6DFAC5F2589C13900B94889 /* Sec19ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFAC5E2589C13900B94889 /* Sec19ViewController4.swift */; };
+		C6DFAC672589C1DF00B94889 /* Chapter19-2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6DFAC662589C1DF00B94889 /* Chapter19-2.storyboard */; };
+		C6DFAC712589C3EE00B94889 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6DFAC6C2589C31E00B94889 /* CoreLocation.framework */; };
+		C6DFAC762589CA7B00B94889 /* Sec19ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DFAC752589CA7B00B94889 /* Sec19ViewController5.swift */; };
+		C6DFAC7B2589CDE100B94889 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6DFAC7A2589CDE100B94889 /* MapKit.framework */; };
 		C6E27425256F6ABB00C35660 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E27424256F6ABB00C35660 /* MyTabBarController.swift */; };
 		C6EDFCE42577247700BE3623 /* Chapter16.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EDFCE32577247700BE3623 /* Chapter16.storyboard */; };
 		C6EDFCF2257725D700BE3623 /* Sec16ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EDFCF1257725D700BE3623 /* Sec16ViewController.swift */; };
@@ -107,6 +114,8 @@
 		105D4D93253539480062B0E3 /* OperatorSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorSampleTests.swift; sourceTree = "<group>"; };
 		C60380262577321700466238 /* Sec16ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec16ViewController2.swift; sourceTree = "<group>"; };
 		C603F368253023F70005F46F /* FunctionSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionSample.swift; sourceTree = "<group>"; };
+		C6064207259082D400099B0D /* Sec19ViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController6.swift; sourceTree = "<group>"; };
+		C606420C2591887000099B0D /* Sec19ViewController7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController7.swift; sourceTree = "<group>"; };
 		C608B9682546A55100098140 /* ClassSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSample.swift; sourceTree = "<group>"; };
 		C61431202549059600642F07 /* NewGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGame.swift; sourceTree = "<group>"; };
 		C61431252549080900642F07 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
@@ -180,6 +189,11 @@
 		C6D8417B2579CD2700DC7AA9 /* Sec18ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec18ViewController3.swift; sourceTree = "<group>"; };
 		C6DD4D59255A258000714A56 /* Sec12ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController4.swift; sourceTree = "<group>"; };
 		C6DD4D61255A385500714A56 /* BorderedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedLabel.swift; sourceTree = "<group>"; };
+		C6DFAC5E2589C13900B94889 /* Sec19ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController4.swift; sourceTree = "<group>"; };
+		C6DFAC662589C1DF00B94889 /* Chapter19-2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Chapter19-2.storyboard"; sourceTree = "<group>"; };
+		C6DFAC6C2589C31E00B94889 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C6DFAC752589CA7B00B94889 /* Sec19ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController5.swift; sourceTree = "<group>"; };
+		C6DFAC7A2589CDE100B94889 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C6E27424256F6ABB00C35660 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		C6EDFCE32577247700BE3623 /* Chapter16.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter16.storyboard; sourceTree = "<group>"; };
 		C6EDFCF1257725D700BE3623 /* Sec16ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Sec16ViewController.swift; path = SwiftStudy/Sec16ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -190,6 +204,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6DFAC7B2589CDE100B94889 /* MapKit.framework in Frameworks */,
+				C6DFAC712589C3EE00B94889 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +233,7 @@
 				C615B69F252AEFD5008D3F0C /* SwiftStudyTests */,
 				C615B6AA252AEFD5008D3F0C /* SwiftStudyUITests */,
 				C615B687252AEFD5008D3F0C /* Products */,
+				C6DFAC6B2589C31E00B94889 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,6 +264,7 @@
 				C6EDFCED2577256600BE3623 /* Chapter16 */,
 				C683A6BB25788C4000EF8EDE /* Chapter18 */,
 				C6C82E30257F45CB00F0E77C /* Chapter19-1 */,
+				C6DFAC5D2589C0FE00B94889 /* Chapter19-2 */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -283,6 +301,7 @@
 				C6EDFCE32577247700BE3623 /* Chapter16.storyboard */,
 				C683A6B625788C0A00EF8EDE /* Chapter18.storyboard */,
 				C6C82E2B257F45A600F0E77C /* Chapter19-1.storyboard */,
+				C6DFAC662589C1DF00B94889 /* Chapter19-2.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -394,6 +413,26 @@
 				C695A67025806C3200577503 /* Sec19ViewController3.swift */,
 			);
 			path = "Chapter19-1";
+			sourceTree = "<group>";
+		};
+		C6DFAC5D2589C0FE00B94889 /* Chapter19-2 */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFAC5E2589C13900B94889 /* Sec19ViewController4.swift */,
+				C6DFAC752589CA7B00B94889 /* Sec19ViewController5.swift */,
+				C6064207259082D400099B0D /* Sec19ViewController6.swift */,
+				C606420C2591887000099B0D /* Sec19ViewController7.swift */,
+			);
+			path = "Chapter19-2";
+			sourceTree = "<group>";
+		};
+		C6DFAC6B2589C31E00B94889 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFAC7A2589CDE100B94889 /* MapKit.framework */,
+				C6DFAC6C2589C31E00B94889 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C6EDFCED2577256600BE3623 /* Chapter16 */ = {
@@ -520,6 +559,7 @@
 				C615B693252AEFD5008D3F0C /* Assets.xcassets in Resources */,
 				C6C82E2C257F45A600F0E77C /* Chapter19-1.storyboard in Resources */,
 				C64251D925709BF60088DB09 /* Chapter13.storyboard in Resources */,
+				C6DFAC672589C1DF00B94889 /* Chapter19-2.storyboard in Resources */,
 				C64251DE25709C110088DB09 /* Chapter14.storyboard in Resources */,
 				C615B691252AEFD5008D3F0C /* Main.storyboard in Resources */,
 			);
@@ -576,6 +616,7 @@
 				C630E4422547C0A200444C22 /* Player.swift in Sources */,
 				C6260CF62565006D00167D5F /* Sec13ViewController8.swift in Sources */,
 				C6DD4D5A255A258000714A56 /* Sec12ViewController4.swift in Sources */,
+				C6DFAC762589CA7B00B94889 /* Sec19ViewController5.swift in Sources */,
 				C64251F42570B3B70088DB09 /* Sec15ViewController.swift in Sources */,
 				C644387F257F3F8700A6B7FB /* FileOperator.swift in Sources */,
 				C6EDFCF2257725D700BE3623 /* Sec16ViewController.swift in Sources */,
@@ -583,6 +624,7 @@
 				C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */,
 				C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */,
 				C6226A1A2535383600E2B794 /* StringSample.swift in Sources */,
+				C606420D2591887000099B0D /* Sec19ViewController7.swift in Sources */,
 				C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */,
 				C603F369253023F70005F46F /* FunctionSample.swift in Sources */,
 				C60380272577321700466238 /* Sec16ViewController2.swift in Sources */,
@@ -590,12 +632,14 @@
 				C6C82E32257F461200F0E77C /* Sec19ViewController.swift in Sources */,
 				C6174A4E2539432E00C1CF8F /* DictionarySample.swift in Sources */,
 				C61431212549059600642F07 /* NewGame.swift in Sources */,
+				C6DFAC5F2589C13900B94889 /* Sec19ViewController4.swift in Sources */,
 				C61431312549303200642F07 /* EnumSample.swift in Sources */,
 				C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */,
 				C6D8417C2579CD2700DC7AA9 /* Sec18ViewController3.swift in Sources */,
 				C6B9A313256E13B4001C4AF6 /* WebListTableViewController.swift in Sources */,
 				C695A67125806C3200577503 /* Sec19ViewController3.swift in Sources */,
 				C6174A492537C30E00C1CF8F /* ArraySample.swift in Sources */,
+				C6064208259082D400099B0D /* Sec19ViewController6.swift in Sources */,
 				C661D0D82574976E000AFD85 /* Sec15ViewController2.swift in Sources */,
 				C6DD4D62255A385500714A56 /* BorderedLabel.swift in Sources */,
 				C630E44A2547D5DC00444C22 /* Car.swift in Sources */,

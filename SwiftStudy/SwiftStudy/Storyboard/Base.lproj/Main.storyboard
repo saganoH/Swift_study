@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -78,6 +78,13 @@
                                     <segue destination="Lhs-Xv-Q4g" kind="presentation" modalPresentationStyle="fullScreen" id="tXd-Jx-QI1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuA-Fm-c6z">
+                                <rect key="frame" x="108" y="626.5" width="198" height="30"/>
+                                <state key="normal" title="Chapter19-2 位置情報と地図"/>
+                                <connections>
+                                    <segue destination="l9k-2T-znW" kind="presentation" modalPresentationStyle="fullScreen" id="AlK-ct-f8f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -88,11 +95,13 @@
                             <constraint firstItem="YrG-Yg-1wm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dvl-Ds-KL9"/>
                             <constraint firstItem="oUH-k4-wsP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ESL-cE-iap"/>
                             <constraint firstItem="BZ4-bb-LFN" firstAttribute="top" secondItem="Jzc-13-PFD" secondAttribute="bottom" constant="30" id="GwQ-SG-BUd"/>
+                            <constraint firstItem="zuA-Fm-c6z" firstAttribute="top" secondItem="YrG-Yg-1wm" secondAttribute="bottom" constant="30" id="H0Z-Fc-4mN"/>
                             <constraint firstItem="Jzc-13-PFD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ir2-Jv-jt2"/>
                             <constraint firstItem="8p4-7u-etq" firstAttribute="top" secondItem="Mnh-Q7-8ZA" secondAttribute="bottom" constant="30" id="Kgz-lb-axF"/>
                             <constraint firstItem="Mnh-Q7-8ZA" firstAttribute="top" secondItem="jeP-hr-dA7" secondAttribute="bottom" constant="30" id="Pqu-RR-NYi"/>
                             <constraint firstItem="BXd-IT-NCP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T3g-aT-6fa"/>
                             <constraint firstItem="jeP-hr-dA7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ukd-cG-Y3M"/>
+                            <constraint firstItem="zuA-Fm-c6z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W7M-Zw-2gp"/>
                             <constraint firstItem="BZ4-bb-LFN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bd8-si-DrQ"/>
                             <constraint firstItem="dl9-T0-N35" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edw-79-NYl"/>
                             <constraint firstItem="YrG-Yg-1wm" firstAttribute="top" secondItem="dl9-T0-N35" secondAttribute="bottom" constant="30" id="ij2-0X-reF"/>
@@ -174,6 +183,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wpu-h6-veS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="601" y="603"/>
+        </scene>
+        <!--Chapter19-2-->
+        <scene sceneID="TLG-2s-a9c">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chapter19-2" id="l9k-2T-znW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wnG-wH-R8c"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Oi-vY-SoN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602" y="698"/>
         </scene>
         <!--Chapter18-->
         <scene sceneID="2Nx-CR-ir7">
