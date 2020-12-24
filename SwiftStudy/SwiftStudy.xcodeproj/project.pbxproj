@@ -69,6 +69,8 @@
 		C69718622594284500A5182A /* Sec17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69718612594284500A5182A /* Sec17ViewController.swift */; };
 		C697186B259428DC00A5182A /* Chapter17.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C697186A259428DC00A5182A /* Chapter17.storyboard */; };
 		C697187925945B7700A5182A /* Sec17ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697187825945B7700A5182A /* Sec17ViewController2.swift */; };
+		C697187E2594752400A5182A /* drawPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C697187D2594752400A5182A /* drawPresenter.swift */; };
+		C69718832594758B00A5182A /* NumberDecider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69718822594758B00A5182A /* NumberDecider.swift */; };
 		C6978DD52563653300172DDA /* Sec13ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6978DD42563653300172DDA /* Sec13ViewController6.swift */; };
 		C699C6C52553B96000D5EC92 /* Sec12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */; };
 		C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */; };
@@ -178,6 +180,8 @@
 		C69718612594284500A5182A /* Sec17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec17ViewController.swift; sourceTree = "<group>"; };
 		C697186A259428DC00A5182A /* Chapter17.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chapter17.storyboard; sourceTree = "<group>"; };
 		C697187825945B7700A5182A /* Sec17ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec17ViewController2.swift; sourceTree = "<group>"; };
+		C697187D2594752400A5182A /* drawPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawPresenter.swift; sourceTree = "<group>"; };
+		C69718822594758B00A5182A /* NumberDecider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberDecider.swift; sourceTree = "<group>"; };
 		C6978DD42563653300172DDA /* Sec13ViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController6.swift; sourceTree = "<group>"; };
 		C699C6C42553B96000D5EC92 /* Sec12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController.swift; sourceTree = "<group>"; };
 		C699C6C92553D59A00D5EC92 /* Sec12ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec12ViewController2.swift; sourceTree = "<group>"; };
@@ -418,6 +422,8 @@
 			children = (
 				C69718612594284500A5182A /* Sec17ViewController.swift */,
 				C697187825945B7700A5182A /* Sec17ViewController2.swift */,
+				C697187D2594752400A5182A /* drawPresenter.swift */,
+				C69718822594758B00A5182A /* NumberDecider.swift */,
 			);
 			name = Chapter17;
 			path = "Chapter19-2/Chapter17";
@@ -631,6 +637,7 @@
 				C6E27425256F6ABB00C35660 /* MyTabBarController.swift in Sources */,
 				C615B68A252AEFD5008D3F0C /* AppDelegate.swift in Sources */,
 				C61B51E3257877FB0043A974 /* ColorDecider.swift in Sources */,
+				C69718832594758B00A5182A /* NumberDecider.swift in Sources */,
 				C6C82E40257F563400F0E77C /* Sec19ViewController2.swift in Sources */,
 				C61431262549080900642F07 /* GameProtocol.swift in Sources */,
 				C630E4422547C0A200444C22 /* Player.swift in Sources */,
@@ -644,6 +651,7 @@
 				C699C6CA2553D59A00D5EC92 /* Sec12ViewController2.swift in Sources */,
 				C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */,
 				C6226A1A2535383600E2B794 /* StringSample.swift in Sources */,
+				C697187E2594752400A5182A /* drawPresenter.swift in Sources */,
 				C606420D2591887000099B0D /* Sec19ViewController7.swift in Sources */,
 				C615B68C252AEFD5008D3F0C /* SceneDelegate.swift in Sources */,
 				C697187925945B7700A5182A /* Sec17ViewController2.swift in Sources */,
