@@ -5,7 +5,8 @@ class Sec17ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let drawImage = drawLine()
+        let percentDouble = makeRandomNum()
+        let drawImage = drawLine(percent: percentDouble)
         let drawView = UIImageView(image: drawImage)
         view.addSubview(drawView)
     }
@@ -21,11 +22,10 @@ class Sec17ViewController2: UIViewController {
         return path
     }
     
-    private func drawLine() -> UIImage {
+    private func drawLine(percent: Double) -> UIImage {
         let size = view.bounds.size
         UIGraphicsBeginImageContextWithOptions(size, false, 1.0)
         
-        let percent = 58.2
         // 円弧のパスを作る
         UIColor.red.setStroke()
         let arcPath = arcPercent(80, percent)
@@ -46,5 +46,10 @@ class Sec17ViewController2: UIViewController {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image!
+    }
+    
+    private func makeRandomNum() -> Double {
+        let randomDouble = Double.random(in: 0.0...100.0)
+        return randomDouble
     }
 }
