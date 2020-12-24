@@ -40,16 +40,24 @@
                             <constraint firstItem="FIg-3m-hjK" firstAttribute="centerX" secondItem="ZPG-Xw-yHU" secondAttribute="centerX" id="yud-MO-Wxg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="図形の描画" id="nb6-GA-nQ1"/>
+                    <navigationItem key="navigationItem" title="図形の描画" id="nb6-GA-nQ1">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="R78-Y0-BCe"/>
+                        <barButtonItem key="leftBarButtonItem" title="メインへ" id="obT-ca-gUX">
+                            <connections>
+                                <segue destination="A1w-J8-uWh" kind="unwind" unwindAction="comeHomeWithSegue:" id="gKb-U9-LRU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEa-xX-2Mb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="A1w-J8-uWh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1066.6666666666667" y="73.660714285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Sec17 View Controller2-->
         <scene sceneID="pH0-KJ-eoJ">
             <objects>
-                <viewController id="me8-Xi-Owq" sceneMemberID="viewController">
+                <viewController id="me8-Xi-Owq" customClass="Sec17ViewController2" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gKe-03-kMB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
