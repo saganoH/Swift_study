@@ -39,10 +39,12 @@ extension PhpickerSample: PHPickerViewControllerDelegate {
         let itemProvider = results.first?.itemProvider
         if let itemProvider = itemProvider, itemProvider.canLoadObject(ofClass: UIImage.self) {
             itemProvider.loadObject(ofClass: UIImage.self) { image, error in
-                if let image = image as? UIImage {
-                    // 選択されたimageを表示
-                    self.imageView.image = image
-                }
+                DispatchQueue.main.async {
+                    if let image = image as? UIImage {
+                        // 選択されたimageを表示
+                        self.imageView.image = image
+                    }
+                } 
             }
         }
     }
