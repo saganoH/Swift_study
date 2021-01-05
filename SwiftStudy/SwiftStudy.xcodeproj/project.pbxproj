@@ -11,6 +11,7 @@
 		105D4D982535394F0062B0E3 /* OperatorSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581DE252EEF00009C884C /* OperatorSample.swift */; };
 		C60380272577321700466238 /* Sec16ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60380262577321700466238 /* Sec16ViewController2.swift */; };
 		C603F369253023F70005F46F /* FunctionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603F368253023F70005F46F /* FunctionSample.swift */; };
+		C605CD0625A42B2400F30732 /* PhpickerSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C605CD0525A42B2400F30732 /* PhpickerSample.swift */; };
 		C6064208259082D400099B0D /* Sec19ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6064207259082D400099B0D /* Sec19ViewController6.swift */; };
 		C606420D2591887000099B0D /* Sec19ViewController7.swift in Sources */ = {isa = PBXBuildFile; fileRef = C606420C2591887000099B0D /* Sec19ViewController7.swift */; };
 		C608B9692546A55100098140 /* ClassSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608B9682546A55100098140 /* ClassSample.swift */; };
@@ -114,6 +115,7 @@
 		105D4D93253539480062B0E3 /* OperatorSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorSampleTests.swift; sourceTree = "<group>"; };
 		C60380262577321700466238 /* Sec16ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec16ViewController2.swift; sourceTree = "<group>"; };
 		C603F368253023F70005F46F /* FunctionSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionSample.swift; sourceTree = "<group>"; };
+		C605CD0525A42B2400F30732 /* PhpickerSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhpickerSample.swift; sourceTree = "<group>"; };
 		C6064207259082D400099B0D /* Sec19ViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController6.swift; sourceTree = "<group>"; };
 		C606420C2591887000099B0D /* Sec19ViewController7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec19ViewController7.swift; sourceTree = "<group>"; };
 		C608B9682546A55100098140 /* ClassSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSample.swift; sourceTree = "<group>"; };
@@ -265,6 +267,8 @@
 				C683A6BB25788C4000EF8EDE /* Chapter18 */,
 				C6C82E30257F45CB00F0E77C /* Chapter19-1 */,
 				C6DFAC5D2589C0FE00B94889 /* Chapter19-2 */,
+				C69718692594288F00A5182A /* Chapter17 */,
+				C605CD0525A42B2400F30732 /* PhpickerSample.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -590,6 +594,7 @@
 				C63DC01A25528ABA009A624E /* Sec11ViewController.swift in Sources */,
 				C630E43D2547B2A300444C22 /* Circle.swift in Sources */,
 				C615B68E252AEFD5008D3F0C /* ViewController.swift in Sources */,
+				C605CD0625A42B2400F30732 /* PhpickerSample.swift in Sources */,
 				C6C0D05825621FC3006E2195 /* Sec13ViewController3.swift in Sources */,
 				C62581DA252EED99009C884C /* IfSample.swift in Sources */,
 				C6B9A306256DF889001C4AF6 /* Sec14ViewController.swift in Sources */,
