@@ -1,13 +1,35 @@
 import UIKit
 
-class savePhotoSample: UIViewController {
+class PhotoSample: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var lightSlider: UISlider!
+    private var ciFilter: CIFilter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         imageView.isUserInteractionEnabled = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // Filterに合わせた最大値、最小値、初期値の設定
+        lightSlider.maximumValue = 1
+        lightSlider.minimumValue = -1
+        lightSlider.value = 0
+        
+        ciFilter = CIFilter(name: "CIColorControls")
+        ciFilter.setValue(CIImage(image: imageView.image!), forKey: kCIInputImageKey)
+    }
+    
+    @IBAction func valueChanged(_ sender: UISlider) {
+        // 明るさの設定
+        ciFilter.setValue(sender.value, forKey: "inputBrightness")
+        
+        // Filter適応後の画像を表示
+        if let filteredImage = ciFilter.outputImage {
+            imageView.image = UIImage(ciImage: filteredImage)
+        }
     }
     
     @IBAction func savePhoto(_ sender: UILongPressGestureRecognizer) {

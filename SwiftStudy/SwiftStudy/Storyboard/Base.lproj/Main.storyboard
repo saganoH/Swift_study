@@ -181,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="87" y="1280"/>
         </scene>
-        <!--画像を保存する-->
+        <!--明るさ調節・画像保存-->
         <scene sceneID="3nC-sl-hts">
             <objects>
-                <viewController id="KEj-ZU-kEq" customClass="savePhotoSample" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KEj-ZU-kEq" customClass="PhotoSample" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VUk-11-zcx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,19 +196,32 @@
                                     <outletCollection property="gestureRecognizers" destination="eQ9-zH-blA" appends="YES" id="RHc-pv-gpq"/>
                                 </connections>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iea-oa-wnc">
+                                <rect key="frame" x="130" y="748" width="154" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="LQJ-LO-Xee"/>
+                                    <constraint firstAttribute="height" constant="30" id="LrZ-xO-s3V"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="valueChanged:" destination="KEj-ZU-kEq" eventType="valueChanged" id="Hxx-Ch-xvp"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rAL-bH-Bsr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="iea-oa-wnc" firstAttribute="centerX" secondItem="VUk-11-zcx" secondAttribute="centerX" id="AtC-xV-YIc"/>
+                            <constraint firstItem="rAL-bH-Bsr" firstAttribute="bottom" secondItem="iea-oa-wnc" secondAttribute="bottom" constant="30" id="aJm-tA-EgR"/>
                             <constraint firstItem="9u3-nd-4Yt" firstAttribute="leading" secondItem="rAL-bH-Bsr" secondAttribute="leading" id="ia5-Nv-AA3"/>
                             <constraint firstItem="9u3-nd-4Yt" firstAttribute="trailing" secondItem="rAL-bH-Bsr" secondAttribute="trailing" id="lXW-KW-yk3"/>
                             <constraint firstAttribute="bottom" secondItem="9u3-nd-4Yt" secondAttribute="bottom" id="pGe-TO-ylQ"/>
                             <constraint firstItem="9u3-nd-4Yt" firstAttribute="top" secondItem="rAL-bH-Bsr" secondAttribute="top" id="rEe-4t-FKc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="画像を保存する" id="VmL-k8-ZQK"/>
+                    <navigationItem key="navigationItem" title="明るさ調節・画像保存" id="VmL-k8-ZQK"/>
                     <connections>
                         <outlet property="imageView" destination="9u3-nd-4Yt" id="r2C-hg-nnx"/>
+                        <outlet property="lightSlider" destination="iea-oa-wnc" id="PjV-3J-Flx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VV3-lz-ssH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
