@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★Select Chapter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUH-k4-wsP">
-                                <rect key="frame" x="121.5" y="79" width="171" height="27.5"/>
+                                <rect key="frame" x="121.5" y="69" width="171" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -88,6 +88,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaL-Do-uJ9">
                                 <rect key="frame" x="131.5" y="636.5" width="151" height="30"/>
                                 <state key="normal" title="Chapter17 図形の描画"/>
+                                <connections>
+                                    <segue destination="NAS-BV-D7L" kind="presentation" modalPresentationStyle="fullScreen" id="PoW-iq-XYi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Io-w3-PQV">
                                 <rect key="frame" x="10" y="822" width="46" height="30"/>
@@ -115,6 +118,7 @@
                             <constraint firstItem="jeP-hr-dA7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ukd-cG-Y3M"/>
                             <constraint firstItem="zuA-Fm-c6z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W7M-Zw-2gp"/>
                             <constraint firstItem="BZ4-bb-LFN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bd8-si-DrQ"/>
+                            <constraint firstItem="XaL-Do-uJ9" firstAttribute="top" secondItem="zuA-Fm-c6z" secondAttribute="bottom" constant="25" id="bku-zX-r5H"/>
                             <constraint firstItem="dl9-T0-N35" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edw-79-NYl"/>
                             <constraint firstItem="YrG-Yg-1wm" firstAttribute="top" secondItem="dl9-T0-N35" secondAttribute="bottom" constant="25" id="ij2-0X-reF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Io-w3-PQV" secondAttribute="trailing" symbolic="YES" id="ltL-sr-Z1G"/>
@@ -240,6 +244,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Oi-vY-SoN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="602" y="698"/>
+        </scene>
+        <!--Chapter17-->
+        <scene sceneID="zCP-Yv-KNU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chapter17" id="NAS-BV-D7L" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oej-OG-VoX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="793"/>
         </scene>
         <!--Chapter18-->
         <scene sceneID="2Nx-CR-ir7">
