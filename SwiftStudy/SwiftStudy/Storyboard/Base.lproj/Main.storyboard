@@ -136,7 +136,7 @@
             </objects>
             <point key="canvasLocation" x="-657" y="528"/>
         </scene>
-        <!--Phpicker Sample-->
+        <!--画像を取り込む-->
         <scene sceneID="VDC-U5-ldy">
             <objects>
                 <viewController id="tay-5M-lfi" customClass="PhpickerSample" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
@@ -159,7 +159,7 @@
                             <constraint firstItem="3gx-QK-YGz" firstAttribute="centerX" secondItem="mq9-dV-XYQ" secondAttribute="centerX" id="Kzl-iX-tYU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="buT-z2-X1d">
+                    <navigationItem key="navigationItem" title="画像を取り込む" id="buT-z2-X1d">
                         <barButtonItem key="backBarButtonItem" title="戻る" id="opl-2D-H0b"/>
                         <barButtonItem key="leftBarButtonItem" title="メインへ" id="uE0-HN-KOK">
                             <connections>
@@ -181,21 +181,44 @@
             </objects>
             <point key="canvasLocation" x="87" y="1280"/>
         </scene>
-        <!--Save Photo Sample-->
+        <!--画像を保存する-->
         <scene sceneID="3nC-sl-hts">
             <objects>
                 <viewController id="KEj-ZU-kEq" customClass="savePhotoSample" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VUk-11-zcx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="9u3-nd-4Yt">
+                                <rect key="frame" x="0.0" y="56" width="414" height="786"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eQ9-zH-blA" appends="YES" id="RHc-pv-gpq"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="rAL-bH-Bsr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9u3-nd-4Yt" firstAttribute="leading" secondItem="rAL-bH-Bsr" secondAttribute="leading" id="ia5-Nv-AA3"/>
+                            <constraint firstItem="9u3-nd-4Yt" firstAttribute="trailing" secondItem="rAL-bH-Bsr" secondAttribute="trailing" id="lXW-KW-yk3"/>
+                            <constraint firstAttribute="bottom" secondItem="9u3-nd-4Yt" secondAttribute="bottom" id="pGe-TO-ylQ"/>
+                            <constraint firstItem="9u3-nd-4Yt" firstAttribute="top" secondItem="rAL-bH-Bsr" secondAttribute="top" id="rEe-4t-FKc"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VmL-k8-ZQK"/>
+                    <navigationItem key="navigationItem" title="画像を保存する" id="VmL-k8-ZQK"/>
+                    <connections>
+                        <outlet property="imageView" destination="9u3-nd-4Yt" id="r2C-hg-nnx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VV3-lz-ssH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="eQ9-zH-blA">
+                    <connections>
+                        <action selector="savePhoto:" destination="KEj-ZU-kEq" id="LGG-Z9-e7k"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="851" y="1280"/>
+            <point key="canvasLocation" x="850.72463768115949" y="1279.6875"/>
         </scene>
         <!--Chapter11-->
         <scene sceneID="x8B-0c-0S5">
@@ -314,6 +337,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="coffee" width="3024" height="4032"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
