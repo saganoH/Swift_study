@@ -45,6 +45,7 @@
 		C62581EE252EF247009C884C /* LoopOptionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62581ED252EF247009C884C /* LoopOptionSample.swift */; };
 		C6260CF62565006D00167D5F /* Sec13ViewController8.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6260CF52565006D00167D5F /* Sec13ViewController8.swift */; };
 		C6266922255E60A9003B6E28 /* Sec13ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6266921255E60A9003B6E28 /* Sec13ViewController2.swift */; };
+		C62F12E325A558670019F5E9 /* SavePhotoSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F12E225A558670019F5E9 /* SavePhotoSample.swift */; };
 		C63084AD2579DB4E006B9F80 /* Sec18ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63084AC2579DB4E006B9F80 /* Sec18ViewController4.swift */; };
 		C630E43D2547B2A300444C22 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E43C2547B2A300444C22 /* Circle.swift */; };
 		C630E4422547C0A200444C22 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C630E4412547C0A200444C22 /* Player.swift */; };
@@ -157,6 +158,7 @@
 		C62581ED252EF247009C884C /* LoopOptionSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopOptionSample.swift; sourceTree = "<group>"; };
 		C6260CF52565006D00167D5F /* Sec13ViewController8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController8.swift; sourceTree = "<group>"; };
 		C6266921255E60A9003B6E28 /* Sec13ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec13ViewController2.swift; sourceTree = "<group>"; };
+		C62F12E225A558670019F5E9 /* SavePhotoSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePhotoSample.swift; sourceTree = "<group>"; };
 		C63084AC2579DB4E006B9F80 /* Sec18ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec18ViewController4.swift; sourceTree = "<group>"; };
 		C630E43C2547B2A300444C22 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		C630E4412547C0A200444C22 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				C6DFAC5D2589C0FE00B94889 /* Chapter19-2 */,
 				C69718692594288F00A5182A /* Chapter17 */,
 				C605CD0525A42B2400F30732 /* PhpickerSample.swift */,
+				C62F12E225A558670019F5E9 /* SavePhotoSample.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -669,6 +672,7 @@
 				C61431312549303200642F07 /* EnumSample.swift in Sources */,
 				C69BFA6B253FF8DD003DBF87 /* OptionalSample.swift in Sources */,
 				C6D8417C2579CD2700DC7AA9 /* Sec18ViewController3.swift in Sources */,
+				C62F12E325A558670019F5E9 /* SavePhotoSample.swift in Sources */,
 				C6B9A313256E13B4001C4AF6 /* WebListTableViewController.swift in Sources */,
 				C695A67125806C3200577503 /* Sec19ViewController3.swift in Sources */,
 				C6174A492537C30E00C1CF8F /* ArraySample.swift in Sources */,

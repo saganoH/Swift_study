@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★Select Chapter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUH-k4-wsP">
-                                <rect key="frame" x="121.5" y="69" width="171" height="27.5"/>
+                                <rect key="frame" x="121.5" y="79" width="171" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -96,7 +96,7 @@
                                 <rect key="frame" x="10" y="822" width="46" height="30"/>
                                 <state key="normal" title="おまけ"/>
                                 <connections>
-                                    <segue destination="tay-5M-lfi" kind="presentation" modalPresentationStyle="fullScreen" id="sdI-IW-VMz"/>
+                                    <segue destination="tQV-QU-lnj" kind="show" id="Xj9-Dr-c8h"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -141,11 +141,11 @@
             <objects>
                 <viewController id="tay-5M-lfi" customClass="PhpickerSample" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mq9-dV-XYQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3gx-QK-YGz">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <rect key="frame" x="87" y="357" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Tju-s3-501"/>
                                     <constraint firstAttribute="width" constant="240" id="qIv-WE-zpc"/>
@@ -159,13 +159,43 @@
                             <constraint firstItem="3gx-QK-YGz" firstAttribute="centerX" secondItem="mq9-dV-XYQ" secondAttribute="centerX" id="Kzl-iX-tYU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="buT-z2-X1d">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="opl-2D-H0b"/>
+                        <barButtonItem key="leftBarButtonItem" title="メインへ" id="uE0-HN-KOK">
+                            <connections>
+                                <segue destination="ygr-fH-shy" kind="unwind" unwindAction="comeHomeWithSegue:" id="3AG-lf-gDS"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="次へ" id="Ymo-F0-6uT">
+                            <connections>
+                                <segue destination="KEj-ZU-kEq" kind="show" id="aI8-42-6li"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="3gx-QK-YGz" id="OTR-Et-xSB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wx5-Rh-zHF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ygr-fH-shy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-658" y="1264"/>
+            <point key="canvasLocation" x="87" y="1280"/>
+        </scene>
+        <!--Save Photo Sample-->
+        <scene sceneID="3nC-sl-hts">
+            <objects>
+                <viewController id="KEj-ZU-kEq" customClass="savePhotoSample" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VUk-11-zcx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rAL-bH-Bsr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VmL-k8-ZQK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VV3-lz-ssH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="1280"/>
         </scene>
         <!--Chapter11-->
         <scene sceneID="x8B-0c-0S5">
@@ -260,6 +290,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PpM-dz-YHM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="559" y="494"/>
+        </scene>
+        <!--おまけ-->
+        <scene sceneID="BQS-4z-aqZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tQV-QU-lnj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="おまけ" id="98S-KH-fHe">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="s9x-Mr-cTE"/>
+                    </navigationItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2rt-kK-Bgs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tay-5M-lfi" kind="relationship" relationship="rootViewController" id="JKd-S6-iuN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NuR-SD-tOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-658" y="1280"/>
         </scene>
     </scenes>
     <resources>
