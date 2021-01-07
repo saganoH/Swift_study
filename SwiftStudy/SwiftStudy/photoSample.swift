@@ -27,8 +27,14 @@ class PhotoSample: UIViewController {
         ciFilter.setValue(sender.value, forKey: "inputBrightness")
         
         // Filter適応後の画像を表示
-        if let filteredImage = ciFilter.outputImage {
-            imageView.image = UIImage(ciImage: filteredImage)
+        if let ciImage: CIImage = ciFilter.outputImage,
+           let beforeUIImage: UIImage = imageView.image {
+            let orientation = beforeUIImage.imageOrientation
+            
+            if let cgImage = CIContext(options: nil).createCGImage(ciImage, from: ciImage.extent) {
+                let resultUIImage = UIImage(cgImage: cgImage, scale: 0, orientation: orientation)
+                imageView.image = resultUIImage
+            }
         }
     }
     
